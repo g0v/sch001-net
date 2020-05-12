@@ -8,4 +8,3 @@ git add *
 git commit -m "regen for $REV"
 git push
 cd ..
-#git push -f -u middle2 master
