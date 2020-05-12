@@ -1,0 +1,138 @@
+a, b, p, h1, h2, h3, h4, h5, h6, li{
+	color: #444;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+p {		
+	color: #666;	
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+
+a:link, a:visited {
+	color: #007bff;
+}
+
+.navbar .navbar-brand {
+	font-weight: bold;
+}
+
+.navbar .navbar-nav a.nav-link:hover {
+	color: #f8f9fa;
+	background-color: #0b2e43;
+	border-radius: 3px;
+}
+
+.navbar .navbar-nav a.nav-dash {
+	border-radius: 3px;
+	border: 1px solid #AAA;
+	margin: 0 0.5rem;
+}
+
+#header {
+	height: 100vh;
+	background-image: url(../assets/img/header.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+#header-img {
+	width: 100%;
+}
+
+#howto-steps > div {
+	margin-bottom: 1rem;
+}
+
+#howto-steps div p {
+	padding: 0.5rem;
+    text-align-last: center;
+}
+
+#howto-steps div a {
+	font-size: 0.9rem;
+}
+
+.step-img {
+	margin-bottom: 10px;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 3px;
+	background-position: center center;
+	background-size: cover;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #AAA;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: calc(100% - 1.2rem);
+	margin-top: 0.6rem;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 2rem 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: #AAA;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+	margin: 0.6rem 0;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    z-index: 400;
+}
+ul.timeline > li p {
+	text-align: left;
+	margin: 0.5rem;
+	word-break: break-all;
+}
+ul.timeline .timeline-title {
+	font-size: 1.2rem;
+}
+ul.timeline .timeline-date {
+	color: #666;
+	font-size: 0.8rem;
+	margin: 0 1rem;
+}
+ul.timeline .timeline-details {
+	line-height: 1rem;
+	padding: 1rem 0;
+}
+
+.team-img {
+	margin-bottom: 10px;
+    width: 100%;
+    min-height: 150px;
+    border-radius: 3px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#contact p {
+	text-align: left;	
+}
+
+#footer {
+	padding: 1rem 0;
+	background-color: #444;
+}
+
+#footer a:link {
+	color: #DDD;
+}
+#footer a:visited {
+	color: #DDD;
+}

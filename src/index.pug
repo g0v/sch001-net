@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+html(lang="zh-Hant-TW")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title sch001 零時小學校
+    link(rel="shortcut icon" type="image/x-icon" href="assets/g0v.ico")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet")
+    link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+    link(rel="stylesheet" href="styles/index.css")
+  body(data-spy="scroll" data-target=".navbar" data-offset="100")
+    nav#navbar.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+      a.navbar-brand(href="#") Sch001 零時小學校
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        mixin navli(_href, _title)
+          li.nav-item
+            a.nav-link(href=_href)= _title
+        ul.navbar-nav.ml-auto
+          +navli("#about", "關於零時小學校")
+          +navli("#howto", "如何參與")
+          +navli("#schedule", "課程表")
+          +navli("#team", "主辦／合作夥伴")
+          li.nav-item
+            a.nav-link.nav-dash.disabled(href="#") 看提案
+          li.nav-item
+            a.nav-link.nav-dash.disabled(href="#") 找資源
+    #header.container-fluid.m-0.p-0
+    .container-md
+      #about.container-fluid.p-5
+        div(data-aos="fade-up")
+          h1.text-center 什麼是零時小學校？
+          p.p-4 零時小學校（Sch001）是聚焦在教育的 g0v 專案，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色，代表教育與數位社群的連結與協作。
+          h1.text-center 什麼是 g0v？為什麼 g0v 要做教育專案？
+          p.p-4
+            | g0v 黑客松自 2012 年開辦以來，g0v 參與者以每兩個月一次的頻率，透過 g0v 黑客松，協作出一個個屬性不同的開源專案，用富有開放透明精神的資料，以縮短數位落差為初衷，降低公民參與門檻，使得議題審議可立基在具體事實，提升理性討論公共事務的意識。
+            | <br/><br/>
+            b 離開紙本，知識在社群活起來           
+            | <br/><br/>
+            | 在知識的面向，g0v 社群曾經協作「<a href="https://www.moedict.tw/'%E6%99%BA%E8%AD%98" target="_blank">萌典</a>」、「<a href="https://amis.moedict.tw/#:co'ong" target="_blank">阿美語萌典</a>」、「<a href="https://itaigi.tw/k/%E5%8F%B0%E8%AA%9E/" target="_blank">iTaigi</a>」和「<a href="https://chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同：整理數位資料、宅宅文字辨識 OCR（Otaku Character Recognition）、社群語音支援、社群幫校對等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。
+            | <br/><br/>
+            | 為了激發更多創新的公民科技專案，讓更多知識開放在公共領域，成為跨世代、跨媒介的教育資源，以及公民思辨的重要素材，g0v 揪松團希望以「教育」作為 2020 年的主題，透過「g0v 黑客松」，以及新設的「零時小學校」（工作坊 + Demo Day），希望號召不同領域的知識愛好者，運用資訊科技、分析問題、協作分工，促使更多教育專案有機會邁向標準化、數位化與服務化發展，讓知識在社群活起來。
+            | <br/><br/>
+            | 自 2020 年起，誠致教育基金會「程有威先生教育科技獎」的經費將交給 g0v 揪松團執行，延續該獎的初衷，並轉型成「零時小學校」，獎勵開源的教育科技專案，期盼開源專案讓教師和學生都能有機會獲得均等和一流學習權。
+            | <br/><br/>
+            | 除此之外，g0v 揪松團也延續與聯合報系願景工程自 2017 年的合作，從《g0v 公民科技創新獎助金》到零時小學校，形式也許會變，不變的是我們想要共同讓社會更好的期盼。
+            | <br/><br/>
+            b 我們相信，好的科技工具能夠改變社會，好的科技工具也可以教育出更好的人，讓台灣變成更好的社會。
+      #howto.container-fluid.p-5
+        div(data-aos="fade-up")
+          h1.text-center 我要怎麼參與這個專案？不會寫程式可以嗎？
+          p.p-4
+            b: i 不會寫程式當然沒問題！
+            | <br/>
+            | 目前，零時小學校（Sch001）有教育工作者、設計師和工程師加入協作的行列，因此，只要你希望透過這個平台，與大家一起協作，都歡迎你透過以下方式，加入 g0v 社群！
+          .container
+            #howto-steps.row.justify-content-center
+              .col-lg-4.text-center
+                .step-img(style="background-image: url(assets/img/step0.png);")
+                h3.text-center 第零步：加入 g0v Slack 的 #edu 頻道
+                p 請進到 g0v Slack 的申請頁面，輸入自己的 E-mail 就可以邀請自己加入了！Slack 有網頁版／電腦版與手機 APP 版，讓你在何時何地都可以快速與社群一起協作。
+                a(target="_blank" href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSkJeaBbGL") 點這裡看更多說明
+              .col-lg-4.text-center
+                .step-img(style="background-image: url(assets/img/header.png);")
+                h3.text-center 第一步：找到零時小學校網站
+                p 所有零時小學校的介紹、協作方式、參考案例和合作夥伴介紹都在這裡。
+                a(target="_blank" href="https://sch001.g0v.tw/") https://sch001.g0v.tw
+              .col-lg-4.text-center
+                .step-img(style="background-image: url(assets/img/step2.png);")
+                h3.text-center 第二步：開始使用零時小學校的共筆，徜徉在教育與科技的世界！
+                p 零時小學校有自己專屬的許願池，歡迎到許願池寫下你的提案，如果沒有自己想要做的提案，也歡迎看看別人的提案，有機會的話都可以在 g0v Slack #edu 跟坑主一起討論，或者是來參加下次的工作坊。
+                a(target="_blank" href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSykOnPZGU") 點這裡跳進許願池
+        #schedule.container-fluid.p-5
+          div(data-aos="fade-up")
+            h1.text-center 零時小學校：課程表
+            .container: .row: .col-lg-10.m-auto: ul.timeline
+              li
+                div
+                  span.timeline-title 開學日（第一次工作坊）
+                  span.timeline-date 2020/02/22
+                div.timeline-details
+                p 工作坊共筆與錄影：<a href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSyT8dEm1I" target="_blank">連結</a>
+                p  簡短版活動紀錄：<a href="https://makeweb.io/page/4Cd6Cj0-z05p+0CHA03RaEic/view" target="_blank">連結</a>
+              li
+                div
+                  span.timeline-title g0v 三月大松 g0v Hachath38n
+                  span.timeline-date 2020/03/14
+                div.timeline-details
+                  p 報名：<a href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FB1DBSGTEL" target="_blank">連結</a>
+              li
+                div
+                  span.timeline-title 第二次工作坊
+                  span.timeline-date 2020/04/19
+                div.timeline-details
+                  p 工作坊共筆：<a href="https://g0v.hackmd.io/@jothon/Sch001_workshopII" target="_blank">連結</a>
+                  p 簡短版活動紀錄：<a href="https://makeweb.io/page/RaIAb0Dju05Xe0AFJ04ZYV6/view" target="_blank">連結</a>
+              li
+                div
+                  span.timeline-title g0v 五月大松 g0v Hachath39n
+                  span.timeline-date 2020/05/23
+                div.timeline-details
+                  p 報名：<a href="https://g0v.hackmd.io/@jothon/g0v-hackath39n/" target="_blank">連結</a>
+              li
+                div
+                  span.timeline-title 第三次工作坊
+                  span.timeline-date 2020/06/21
+              li
+                div
+                  span.timeline-title g0v 七月大松 g0v Hachath40n
+                  span.timeline-date 2020/07
+              li
+                div
+                  span.timeline-title 結業式 Sch001 Demo Day
+                  span.timeline-date 2020/08/29
+        #team.container-fluid.p-5
+          div(data-aos="fade-up")
+            h1.text-center 主辦／合作夥伴
+            p.text-center.p-4 零時小學校 Sch001 是由 g0v 零時政府揪松團主辦的專案，並由誠致教育基金會與聯合報系願景工程贊助。
+            .container
+              .row.justify-content-center
+                .team-img.col-lg-3(style="background-image: url('assets/img/jothon-icon.png');")
+                .team-img.col-lg-3(style="background-image: url('assets/img/誠致教育基金會 logo.png');")
+                .team-img.col-lg-3(style="background-image: url('assets/img/願景工程+努力讓台灣更好-1.png');")
+        #contact.container-fluid.p-5
+          div(data-aos="fade-up")
+          h1.text-center 專案聯繫
+          hr/
+          .container: .row.justify-content-center
+            .col-lg-4
+              p.
+                b 電子郵件 
+                | <br/><br/>
+                | 專案窗口 Bess 的 Email：<br><a href="mailto:bess@jothon.g0v.tw">bess@jothon.g0v.tw</a><br><br>
+                | 歡迎副本 cc 給 g0v 揪松團 Email：<br><a href="mailto:jothon-organizers@g0v.tw">jothon-organizers@g0v.tw</a>
+            .col-lg-1.d-lg-none hr/
+            .col-lg-4
+              p.
+                b 線上社群平台（Slack）
+                | <br><br>
+                ul
+                  li <a href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSkJeaBbGL" target="_blank">如何加入 g0v Slack？</a>
+                  li g0v Slack 公開討論頻道： #edu
+                  li 直接私訊給專案窗口： @bess
+    #footer.container-fluid.m-0
+      p.text-center.m-0.p-0 <a href="https://sch001.g0v.tw/" target="_blank">零時小學校首頁</a>　<a href="https://jothon.g0v.tw/" target="_blank">揪松網</a>
+
+
+        
+  script(src="https://code.jquery.com/jquery-3.4.1.js")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
+  script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+  script.
+    AOS.init();
+    $(function(){
+      $('.nav-link').click(function(event){
+        var scroll_target = $(event.target).attr("href");
+        $('html,body').animate({scrollTop:$(scroll_target).offset().top-$('#navbar').height()},300);
+      });
+      
+      $(window).on('activate.bs.scrollspy', function (e,obj) {
+      });
+    });
