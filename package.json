@@ -20,6 +20,7 @@
     "browser-sync": "^2.26.7",
     "express": "^4.17.1",
     "gulp-express": "^0.3.5",
-    "gulp-pug": "^4.0.1"
+    "gulp-pug": "^4.0.1",
+    "qs": "^6.9.4"
   }
 }
