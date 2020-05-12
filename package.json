@@ -10,10 +10,16 @@
     "type": "git",
     "url": "https://github.com/g0v/sch001-net"
   },
+  "scripts": {
+    "start": "gulp server"
+  },
   "devDependencies": {
     "gulp": "^4.0.2"
   },
   "dependencies": {
+    "browser-sync": "^2.26.7",
+    "express": "^4.17.1",
+    "gulp-express": "^0.3.5",
     "gulp-pug": "^4.0.1"
   }
 }
