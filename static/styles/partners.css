@@ -1,0 +1,17 @@
+.partners-block {
+  transition: 0.5s;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+}
+.partners-block:hover {
+  
+  transition: 0.3s;
+  border: 1px solid #888;
+}
+.partners-block .partner-img {
+  min-height: 200px;
+  border-radius: 3px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}

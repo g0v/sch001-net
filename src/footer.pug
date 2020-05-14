@@ -1,0 +1,18 @@
+#footer.container-fluid.m-0
+  p.text-center.m-0.p-0 <a href="https://sch001.g0v.tw/" target="_blank">零時小學校首頁</a>　<a href="https://jothon.g0v.tw/" target="_blank">揪松網</a>
+script(src="https://code.jquery.com/jquery-3.4.1.js")
+script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
+script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+script.
+  AOS.init();
+  $(function(){
+    $('.nav-link').click(function(event){
+      var scroll_target = $(event.target).attr("href").replace("/","");
+      console.log(scroll_target);
+      $('html,body').animate({scrollTop:$(scroll_target).offset().top-$('#navbar').height()},300);
+    });
+    
+    $(window).on('activate.bs.scrollspy', function (e,obj) {
+    });
+  });

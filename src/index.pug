@@ -1,34 +1,9 @@
 - var _title = title;
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title #{_title}
-    link(rel="shortcut icon" type="image/x-icon" href="assets/g0v.ico")
-    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
-    link(href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet")
-    link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
-    link(rel="stylesheet" href="styles/index.css")
+  include header.pug
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
-    nav#navbar.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
-      a.navbar-brand(href="#") Sch001 零時小學校
-      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
-        span.navbar-toggler-icon
-      #navbarNav.collapse.navbar-collapse
-        mixin navli(_href, _title)
-          li.nav-item
-            a.nav-link(href=_href)= _title
-        ul.navbar-nav.ml-auto
-          +navli("#about", "關於零時小學校")
-          +navli("#howto", "如何參與")
-          +navli("#schedule", "課程表")
-          +navli("#team", "主辦／合作夥伴")
-          li.nav-item
-            a.nav-link.nav-dash.disabled(href="#") 看提案
-          li.nav-item
-            a.nav-link.nav-dash.disabled(href="#") 找資源
+    include nav.pug
     #header.container-fluid.m-0.p-0
     .container-md
       #about.container-fluid.p-5
@@ -130,7 +105,8 @@ html(lang="zh-Hant-TW")
                 .team-img.col-lg-3(type="button" data-toggle="modal" data-target="#modal-jothon" style="background-image: url('assets/img/jothon-icon.png');")                  
                 .team-img.col-lg-3(type="button" data-toggle="modal" data-target="#modal-kist" style="background-image: url('assets/img/誠致教育基金會 logo.png');")
                 .team-img.col-lg-3(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('assets/img/願景工程+努力讓台灣更好-1.png');")
-        
+              hr
+              a(href="/partners"): h5.text-center 社群夥伴
         #modal-jothon.modal.fade(tabindex="-1" role="dialog" aria-labelledby="jothon-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
           .modal-header
             h5#jothon-title.modal-title g0v 零時政府揪松團（主辦單位）
@@ -192,23 +168,5 @@ html(lang="zh-Hant-TW")
                   li <a href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSkJeaBbGL" target="_blank">如何加入 g0v Slack？</a>
                   li g0v Slack 公開討論頻道： #edu
                   li 直接私訊給專案窗口： @bess
-    #footer.container-fluid.m-0
-      p.text-center.m-0.p-0 <a href="https://sch001.g0v.tw/" target="_blank">零時小學校首頁</a>　<a href="https://jothon.g0v.tw/" target="_blank">揪松網</a>
-
-
-        
-  script(src="https://code.jquery.com/jquery-3.4.1.js")
-  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
-  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
-  script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
-  script.
-    AOS.init();
-    $(function(){
-      $('.nav-link').click(function(event){
-        var scroll_target = $(event.target).attr("href");
-        $('html,body').animate({scrollTop:$(scroll_target).offset().top-$('#navbar').height()},300);
-      });
-      
-      $(window).on('activate.bs.scrollspy', function (e,obj) {
-      });
-    });
+    
+    include footer.pug

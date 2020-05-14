@@ -1,0 +1,19 @@
+nav#navbar.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+  a.navbar-brand(href="/") Sch001 零時小學校
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    mixin navli(_href, _title)
+      li.nav-item
+        a.nav-link(href=_href)= _title
+    ul.navbar-nav.ml-auto
+      +navli("/#about", "關於零時小學校")
+      +navli("/#howto", "如何參與")
+      +navli("/#schedule", "課程表")
+      +navli("/#team", "主辦／合作夥伴")
+      li.nav-item
+        a.nav-link(href="/partners") 社群夥伴
+      li.nav-item
+        a.nav-link.nav-dash.disabled(href="#") 看提案
+      li.nav-item
+        a.nav-link.nav-dash.disabled(href="#") 找資源

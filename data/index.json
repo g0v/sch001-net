@@ -1,4 +1,65 @@
 {
   "title": "sch001 零時小學校",
-  "text": "YOYOYOYOYO"
+  "partners": [
+    {
+      "name": "g0v-intl 國際交流小組",
+      "link": "https://g0v.hackmd.io/@chihao/rJmYFi0YS",
+      "img": "g0v-intl.png"
+    },
+    {
+      "name": "Code for Japan (CfJ)",
+      "link": "https://www.code4japan.org/",
+      "img": "cfj.png"
+    },    
+    {
+      "name": "AppWorks School",
+      "link": "https://school.appworks.tw/",
+      "img": "appworksschool.jpg"
+    },    
+    {
+      "name": "ChhoeTaigi 找台語",
+      "link": "https://chhoe.taigi.info/",
+      "img": "chhoetaigi.jpg"
+    },
+    {
+      "name": "Amis MoeDict 阿美語萌典",
+      "link": "https://amis.moedict.tw",
+      "img": "amis.jpg"
+    },
+    {
+      "name": "MoeDict 萌典",
+      "link": "https://www.moedict.tw/about.html",
+      "img": "moedict.png"
+    },
+    {
+      "name": "財團法人為台灣而教教育基金會 Teach for Taiwan",
+      "link": "https://www.teach4taiwan.org/",
+      "img": "teachfortaiwan.png"
+    },    
+    {
+      "name": "Wikidata Taiwan 臺灣維基數據社群",
+      "link": "https://www.facebook.com/WikidataTW/",
+      "img": "wikidata.png"
+    },    
+    {
+      "name": "MozTW (Mozilla 台灣社群)",
+      "link": "https://moztw.org/",
+      "img": "moztw.jpg"
+    },
+    {
+      "name": "好想工作室 Goodideas-Studio",
+      "link": "https://goodideas-studio.com/",
+      "img": "goodideas.png"
+    },    
+    {
+      "name": "逆轉聯盟協會",
+      "link": "http://www.2home.org.tw/RWD01/default.aspx",
+      "img": "futuretransformer.png"
+    },
+    {
+      "name": "教育噗浪客",
+      "link": "http://tpet.ntct.edu.tw/",
+      "img": "tpet.png"
+    }
+  ]
 }
