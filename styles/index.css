@@ -18,6 +18,7 @@ a:link, a:visited {
 }
 
 .navbar .navbar-nav a.nav-link:hover {
+  transition: 0.3s;
 	color: #f8f9fa;
 	background-color: #0b2e43;
 	border-radius: 3px;
@@ -54,10 +55,10 @@ a:link, a:visited {
 }
 
 .step-img {
-	margin-bottom: 10px;
-    width: 100%;
-    min-height: 200px;
-    border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 3px;
 	background-position: center center;
 	background-size: cover;
 }
