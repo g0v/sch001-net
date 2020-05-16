@@ -32,7 +32,7 @@ a:link, a:visited {
 
 #header {
 	height: 100vh;
-	background-image: url(../assets/img/header.png);
+	background-image: url(/assets/img/header.png);
 	background-position: center center;
 	background-size: cover;
 }
