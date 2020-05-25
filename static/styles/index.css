@@ -1,5 +1,7 @@
+body {
+  color: #444;
+}
 a, b, p, h1, h2, h3, h4, h5, h6, li{
-	color: #444;
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -10,8 +12,9 @@ p {
 }
 
 a:link, a:visited {
-	color: #007bff;
+	color: #e9322e;
 }
+
 
 .navbar .navbar-brand {
 	font-weight: bold;
@@ -41,6 +44,15 @@ a:link, a:visited {
 	width: 100%;
 }
 
+.part-dark {
+  background-color: #082130;
+  color: #FFF;
+}
+
+.part-dark p {
+  color: #DDD;
+}
+
 #howto-steps > div {
 	margin-bottom: 1rem;
 }
@@ -63,9 +75,9 @@ a:link, a:visited {
 	background-size: cover;
 }
 
+
 ul.timeline {
     list-style-type: none;
-    position: relative;
 }
 ul.timeline:before {
     content: ' ';
@@ -74,13 +86,15 @@ ul.timeline:before {
     position: absolute;
     left: 29px;
     width: 2px;
-    height: calc(100% - 1.2rem);
-	margin-top: 0.6rem;
+    height: calc(100% - 4rem);
+	margin-top: 1.2rem;
     z-index: 400;
 }
 ul.timeline > li {
-    margin: 2rem 0;
-    padding-left: 20px;
+  border: 1px solid #AAA;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 }
 ul.timeline > li:before {
     content: ' ';
@@ -88,16 +102,11 @@ ul.timeline > li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-	margin: 0.6rem 0;
+    margin: 0.6rem 0;
     left: 25px;
     width: 10px;
     height: 10px;
     z-index: 400;
-}
-ul.timeline > li p {
-	text-align: left;
-	margin: 0.5rem;
-	word-break: break-all;
 }
 ul.timeline .timeline-title {
 	font-size: 1.2rem;
@@ -111,12 +120,36 @@ ul.timeline .timeline-details {
 	line-height: 1rem;
 	padding: 1rem 0;
 }
+ul.timeline > li .timeline-details a {
+  margin: 0 0.5rem 0.5rem 0;
+}
+ul.timeline > li .timeline-details p {
+  line-height: 1.5rem;  
+}
 
 .team-img {
 	margin-bottom: 10px;
     width: 100%;
     min-height: 150px;
     border-radius: 3px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.partners-block {
+  transition: 0.5s;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+}
+.partners-block:hover {
+  
+  transition: 0.3s;
+  border: 1px solid #888;
+}
+.partners-block .partner-img {
+  min-height: 150px;
+  border-radius: 3px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -130,10 +163,16 @@ ul.timeline .timeline-details {
 	padding: 1rem 0;
 	background-color: #444;
 }
-
+#footer a {
+  font-size: 0.8rem;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: #FFF;  
+}
 #footer a:link {
-	color: #DDD;
+	color: #333;
 }
 #footer a:visited {
-	color: #DDD;
+	color: #333;
 }
