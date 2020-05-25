@@ -112,7 +112,7 @@ ul.timeline .timeline-title {
 	font-size: 1.2rem;
 }
 ul.timeline .timeline-date {
-	color: #666;
+	color: #DDD;
 	font-size: 0.8rem;
 	margin: 0 1rem;
 }
@@ -164,15 +164,13 @@ ul.timeline > li .timeline-details p {
 	background-color: #444;
 }
 #footer a {
-  font-size: 0.8rem;
-  padding: 3px;
-  margin: 3px;
+  font-size: 1rem;
+  margin: 0.5rem;
   border-radius: 5px;
-  background-color: #FFF;  
 }
 #footer a:link {
-	color: #333;
+  color: #AAA;
 }
 #footer a:visited {
-	color: #333;
+  color: #AAA;
 }
