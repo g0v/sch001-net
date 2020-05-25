@@ -1,5 +1,28 @@
 #footer.container-fluid.m-0
-  p.text-center.m-0.p-0 <a href="https://sch001.g0v.tw/" target="_blank">零時小學校首頁</a><a href="https://jothon.g0v.tw/" target="_blank">揪松網</a><a href="https://g0v.tw/" target="_blank">g0v</a><a href="https://github.com/g0v/sch001-net" target="_blank">github</a>
+  p.text-center.m-0.p-0 <a href="https://jothon.g0v.tw/" target="_blank">揪松網</a><a href="https://g0v.tw/" target="_blank">g0v</a><a href="https://github.com/g0v/sch001-net" target="_blank">github</a>
+
+#modal-contact.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contact-title" aria-hidden="true"): .modal-dialog.modal-lg(role="document"): .modal-content
+  .modal-header
+    h5#contact-title.modal-title 專案聯繫
+    button.close(type="button" data-dismiss="modal" aria-label="Close")
+      span(aria-hidden="true") &times;
+  .modal-body
+    .container: .row.justify-content-center
+      .col-lg-4
+        p
+          b 電子郵件 
+          | <br/><br/>
+          | 專案窗口 Bess 的 Email：<br><a href="mailto:bess@jothon.g0v.tw">bess@jothon.g0v.tw</a><br><br>
+          | 歡迎副本 cc 給 g0v 揪松團 Email：<br><a href="mailto:jothon-organizers@g0v.tw">jothon-organizers@g0v.tw</a>
+      .col-lg-1.d-lg-none hr/
+      .col-lg-4
+        p
+          b 線上社群平台（Slack）
+          | <br><br>
+          ul
+            li <a href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSkJeaBbGL" target="_blank">如何加入 g0v Slack？</a>
+            li g0v Slack 公開討論頻道： #edu
+            li 直接私訊給專案窗口： @bess
 script(src="https://code.jquery.com/jquery-3.4.1.js")
 script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
 script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
