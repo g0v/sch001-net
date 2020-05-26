@@ -32,7 +32,7 @@ script.
   $(function(){
     $('.nav-link').click(function(event){
       var scroll_target = $(event.target).attr("href").replace("/","");
-      console.log(scroll_target);
+      //console.log(scroll_target);
       $('html,body').animate({scrollTop:$(scroll_target).offset().top-$('#navbar').height()},300);
     });
     

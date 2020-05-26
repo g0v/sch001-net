@@ -1,5 +1,6 @@
 - var _title = title;
 - var _partners = partners;
+- var _team_members = team_members;
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
   include header.pug
@@ -104,18 +105,35 @@ html(lang="zh-Hant-TW")
                 span.timeline-date 2020/08/29
     #team.container-sm.py-5
       div(data-aos="fade-up")
+        h1.text-center 主辦單位
+        mixin team-block(_id)
+          .team-block.col-lg-6.p-3.d-flex.flex-row
+            .team-avatar
+              img.team-img(src="/assets/avatar/"+_team_members[_id].en+".jpg")
+            .team-detail
+              h5= _team_members[_id].name+"／"+_team_members[_id].en
+              h6= _team_members[_id].title
+              p.m-0= _team_members[_id].disc
+        .container.text-left
+          a.jothon-banner(style="background-image: url('/assets/img/jothon-bg.svg');")
+          p.p-3
+            |「g0v 零時政府揪松團」係 g0v.tw 社群籌辦雙月黑客松的工作小組，除了籌畫每雙月的百人黑客松外，2016 年起亦積極推動社群基礎建設，並於同年底推出 g0v 公民科技創新獎助金計畫 。2020 年開辦「零時小學校」。<br/><br/>
+          .row.justify-content-center          
+            each val, index in _team_members
+              +team-block(index)        
+            .team-block.col-lg-6.px-3
+    hr
+    #partner.container-sm.py-5
+      div(data-aos="fade-up")
         h1.text-center 合作夥伴
         p.text-center.p-4 零時小學校 Sch001 是由 g0v 零時政府揪松團主辦的專案，並由誠致教育基金會與聯合報系願景工程贊助。
         .container.text-center
-          .row.justify-content-center
-            .col-lg-3
-              .team-img(type="button" data-toggle="modal" data-target="#modal-jothon" style="background-image: url('assets/img/jothon-icon.png');")
-              a g0v 零時政府揪松團
-            .col-lg-3
-              .team-img(type="button" data-toggle="modal" data-target="#modal-kist" style="background-image: url('assets/img/誠致教育基金會 logo.png');")
+          .row.justify-content-center            
+            .col-lg-4
+              .partner-img(type="button" data-toggle="modal" data-target="#modal-kist" style="background-image: url('/assets/img/誠致教育基金會 logo.png');")
               a 財團法人誠致文教基金會
-            .col-lg-3
-              .team-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('assets/img/願景工程+努力讓台灣更好-1.png');")
+            .col-lg-4
+              .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/願景工程+努力讓台灣更好-1.png');")
               a 聯合報系願景工程
         hr
         h3.text-center 社群夥伴
@@ -126,17 +144,7 @@ html(lang="zh-Hant-TW")
               a #{_partners[_id].name}
         .row.justify-content-center
           each val, index in _partners
-            +partners-block(index)
-    #modal-jothon.modal.fade(tabindex="-1" role="dialog" aria-labelledby="jothon-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
-      .modal-header
-        h5#jothon-title.modal-title g0v 零時政府揪松團（主辦單位）
-        button.close(type="button" data-dismiss="modal" aria-label="Close")
-          span(aria-hidden="true") &times;
-      .modal-body
-        p.p-3
-          |「g0v 零時政府揪松團」係 g0v.tw 社群籌辦雙月黑客松的工作小組，除了籌畫每雙月的百人黑客松外，2016 年起亦積極推動社群基礎建設，並於同年底推出 g0v 公民科技創新獎助金計畫 。2020 年開辦「零時小學校」。<br/><br/>
-          |<a class="btn btn-outline-danger" role="button" target="_blank" href="https://jothon.g0v.tw/">揪松團網站</a>　<a class="btn btn-outline-danger" role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/ByVO6CTsN">108 課綱的研究</a>
-    
+            +partners-block(index)        
     #modal-kist.modal.fade(tabindex="-1" role="dialog" aria-labelledby="kist-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
       .modal-header
         h5#kist-title.modal-title 財團法人誠致教育基金會

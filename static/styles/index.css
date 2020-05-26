@@ -69,7 +69,7 @@ a:link, a:visited {
 .step-img {
   margin-bottom: 10px;
   width: 100%;
-  min-height: 200px;
+  min-height: 150px;
   border-radius: 3px;
 	background-position: center center;
 	background-size: cover;
@@ -127,11 +127,32 @@ ul.timeline > li .timeline-details p {
   line-height: 1.5rem;  
 }
 
+.jothon-banner {
+  width: 100%;
+  min-height: 150px;
+  display: inline-block;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain;  
+}
+.team-block .team-avatar {
+  width: 100px;
+  margin-right: 1rem;
+}
+.team-block .team-detail {  
+  flex: 1;
+}
 .team-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.partner-img {
 	margin-bottom: 10px;
-    width: 100%;
-    min-height: 150px;
-    border-radius: 3px;
+  width: 100%;
+  min-height: 150px;
+  border-radius: 3px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -148,11 +169,7 @@ ul.timeline > li .timeline-details p {
   border: 1px solid #888;
 }
 .partners-block .partner-img {
-  min-height: 150px;
-  border-radius: 3px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
+	margin-bottom: 0;
 }
 
 #contact p {
