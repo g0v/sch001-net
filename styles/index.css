@@ -36,6 +36,7 @@ a:link, a:visited {
 #header {
 	height: 100vh;
 	background-image: url(/assets/img/header.png);
+  background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
 }
