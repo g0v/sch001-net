@@ -1,20 +1,32 @@
 body {
-  color: #444;
+  color: #FCD0D3;
+	background-image: url(/assets/img/main_1920x1080_b-01.jpg);
+  background-attachment: fixed;
+	background-position: center 50px;
+	background-size: cover;  
 }
 a, b, p, h1, h2, h3, h4, h5, h6, li{
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
 p {		
-	color: #666;	
+	color: #FFF;	
 	text-align: justify;
 	text-justify:inter-ideograph;
 }
 
 a:link, a:visited {
-	color: #e9322e;
+	color: #FC761B;
 }
-
+.btn-outline-my {
+  color: #FC761B;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #FC761B;
+}
+.btn-outline-my:hover {
+  color: #FFF;  
+  background-color: #FC761B;
+}
 
 .navbar .navbar-brand {
 	font-weight: bold;
@@ -35,23 +47,30 @@ a:link, a:visited {
 
 #header {
 	height: 100vh;
-	background-image: url(/assets/img/header.png);
-  background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
 }
-
-#header-img {
-	width: 100%;
+#header .inner {
+  height: 100%;
+	background-image: url(/assets/img/main_1920x1080_f-01.svg);
+	background-position: center top;
+	background-size: cover;  
 }
 
 .part-dark {
-  background-color: #082130;
-  color: #FFF;
+  background-color: rgba(8,33,48,0.5);
+  color: #FCD0D3;
 }
 
 .part-dark p {
-  color: #DDD;
+  color: #FFF;
+}
+
+.part-light {
+  background-color: #FFF;
+  color: #666;
+}
+
+.part-light p {
+  color: #444;
 }
 
 #howto-steps > div {
@@ -68,9 +87,10 @@ a:link, a:visited {
 }
 
 .step-img {
+  border: 1px solid rgba(8,33,48,1);
   margin-bottom: 10px;
   width: 100%;
-  min-height: 150px;
+  min-height: 200px;
   border-radius: 3px;
 	background-position: center center;
 	background-size: cover;
