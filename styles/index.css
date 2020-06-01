@@ -65,7 +65,7 @@ a:link, a:visited {
 }
 
 .part-light {
-  background-color: #FFF;
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
   color: #666;
 }
 
@@ -156,6 +156,7 @@ ul.timeline > li .timeline-details p {
 	background-repeat: no-repeat;
 	background-size: contain;  
 }
+
 .team-block .team-avatar {
   width: 100px;
   margin-right: 1rem;
@@ -198,8 +199,9 @@ ul.timeline > li .timeline-details p {
 }
 
 #footer {
+  bottom: 0;
 	padding: 1rem 0;
-	background-color: #444;
+	background-color: rgba(0,0,0,0.6);
 }
 #footer a {
   font-size: 1rem;
