@@ -1,0 +1,22 @@
+h1::before {
+  content: "";
+  background-color: #FCD0D3;
+  display: inline-block;
+  width: 5px;
+  height: 0.75em;
+  margin: 0 0.3em 0 0;
+}
+i {
+  color: #AAA;
+  width: 1em;
+  display: block;
+  margin-right: 0.5em;
+}
+.part-dark {
+  background-color: rgba(8,33,48,0.5);
+  color: #FCD0D3;
+}
+
+.part-dark p {
+  color: #AAA;
+}
