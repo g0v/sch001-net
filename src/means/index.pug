@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
   include ../header.pug
-  link(rel="stylesheet" href="../styles/index.css")
+  link(rel="stylesheet" href="../styles/means.css")
+  link(rel="stylesheet" href="../styles/common.css")
+  link(rel="stylesheet" href="../styles/fontawesome/css/all.min.css")
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
     include ../nav.pug
-    .container-fluid(style="height: 100vh;")
+    .container-fluid.part-dark
+      #opencall.container-sm.py-5
+        h1.pl-4 徵件辦法
+        h3.p-4 徵件主題
+        div.px-4(style="font-size: 1.2em")
+          p 為鼓勵開源教育科技專案的發展，由 g0v 揪松團選定之零時小學校 2020 Demo Day 競賽日題目為：
+          h5 <i class="fas fa-network-wired"></i> 遠距教學解決方案（Solution of Distance Learing）
+          h5 <i class="fas fa-american-sign-language-interpreting"></i> 社群經營與基礎建設（Community Management & Infrastructure）
+          h5 <i class="fas fa-chalkboard-teacher"></i> 教育內容（Educational Content）
+          h5 <i class="fas fa-door-open"></i> 其他（Others）
+
+        h3.p-4 資格
+        ul
+          li: h5 居住於台灣、或具台灣國籍之自然人。
+          li: h5 不限年齡。
+        h3.p-4 申請期間
+        ul
+          li
+            h5 公開提案暨提案修改：2020 年 6 月 15 日（一）至 7 月 19 日（日）
+            p 提案團隊須於 2020 年 7 月 19 日（日）23:59 前上傳申請提案，上傳至提案平台之提案，在截止日期前皆可以修改。
+          li 
+            h5 公開評論：2020 年 6 月 15 日（一）起
+            p 任何登入提案平台的人都可以在截止日期之前，在每個提案頁面進行評論。
+          li
+            h5 評選：2020 年 7 月 20 日（一）～8 月 28 日（五）
+            ul
+              li 主辦單位初選前檢核：七月下旬。g0v 揪松團將會在初選之前進行提案檢核，提案若有缺件或資格不符情形，將不會被列入初選名單。
+              li 初選：八月上旬。g0v 揪松團邀請之評選委員會召開線上初選會議，進行初選投票，選出 10 組入圍團隊之後，將在八月中旬公布名單。
+              li 提案定版：八月中旬。評選委員將提供書面問題與具體修改意見，入圍團隊須在一週內提交定版之提案。
+                p 入圍團隊可於收到修改意見後的一週內（以主辦單位公佈時間為主），依據大眾意見、追問人書審意見與評選委員意見修改提案內容。
+          li
+            h5 競賽日：2020 年 8 月 30 日（日）
+            p 10 組入圍團隊必須出席 2020 年 8 月 30 日（日）於台北市舉辦之競賽日，現場進行提案並回應評選委員提問，最終 5 組獲獎團隊將在當日公布並進行頒獎典禮。
+        img(src="../assets/img/opencall.png" style="width: 100%; background-color: rgba(8,33,48,0.5); padding: 2em; border-radius: 15px;")
+        hr
+        h1.px-4 評選標準
+        h3.p-4 標準
+        ul
+          li: h5 影響力 Impact（提案整體願景的影響力）
+          li: h5 可重複使用性 Reusability（成果的元件是否辦法為其他專案使用）
+          li: h5 可行性 Feasibility（技術可行與社會或預期使用者採納的可能性）
+          li: h5 完成度 Completeness（提案範疇對於整體提案願景的貢獻度或含括範圍）
+        h3.p-4 審查內容
+        ul
+          li: h5 提案者或團隊簡介
+          li: h5 最終定版提案內容
+          li: h5 「提案追問團」對於提案者針對其提問的回應或內容修改之評估
+          li: h5 競賽日呈現之提案出版軟體（Demo）或解決方案內容
+        h3.p-4 內容規範
+        ul
+          li: h5 所有提案須符合 <a href="http://g0v.tw/zh-TW/manifesto.html" target="_blank">g0v 社群宣言精神</a>。
+          li: h5 提案不限於軟體開發，惟提案內容與提案之初版軟體（demo）或解決方案，在入圍之後，須符合 <a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E6%96%87%E5%8C%96%E4%BD%9C%E5%93%81%E5%AE%9A%E7%BE%A9" target="_blank">Free Culture Works</a> 定義，以「<a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank">CC 姓名標示 4.0 國際</a>」授權條款授權釋出。
+          li: h5 軟體開發專案必須使用符合 <a href="https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B" target="_blank">OSI</a> 認可之授權，並考量行動裝置友善（Mobile-Friendly）。
+          li: h5 所有提案文字、圖像與影像等內容使用，提案團隊有責任保證不侵害他人智慧財產權，且符合個人資料保護法及其他相關法令規範。
+
     include ../footer.pug

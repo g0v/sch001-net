@@ -5,10 +5,12 @@
 html(lang="zh-Hant-TW")
   include header.pug
   link(rel="stylesheet" href="styles/index.css")
+  link(rel="stylesheet" href="styles/common.css")
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
     include nav.pug
     #header.container-fluid.m-0.p-0
       .inner
+        a.btn.btn-lg.btn-outline-my(role="button" href="/means") 徵件辦法
     .part-dark
       #about.container-sm.py-5
         div(data-aos="")
