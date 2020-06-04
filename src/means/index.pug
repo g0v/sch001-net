@@ -60,5 +60,41 @@ html(lang="zh-Hant-TW")
           li 提案不限於軟體開發，惟提案內容與提案之初版軟體（demo）或解決方案，在入圍之後，須符合 <a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E6%96%87%E5%8C%96%E4%BD%9C%E5%93%81%E5%AE%9A%E7%BE%A9" target="_blank">Free Culture Works</a> 定義，以「<a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank">CC 姓名標示 4.0 國際</a>」授權條款授權釋出。
           li 軟體開發專案必須使用符合 <a href="https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B" target="_blank">OSI</a> 認可之授權，並考量行動裝置友善（Mobile-Friendly）。
           li 所有提案文字、圖像與影像等內容使用，提案團隊有責任保證不侵害他人智慧財產權，且符合個人資料保護法及其他相關法令規範。
-
+        hr
+        h1.px-4 Q&A
+        mixin cardmaker(_parent, _id, _label, _content)
+          .card-header(id="head-"+_parent+"-"+_id): a(data-toggle="collapse", href="#"+_parent+"-"+_id, role="button", aria-expanded="false", aria-controls="#"+_parent+"-"+_id )= _label
+          .collapse(id=_parent+"-"+_id, aria-labelledby="head-"+_parent+"-"+_id, data-parent="#"+_parent+"-accordion"): .card-body
+            p= _content
+        h3.p-4 申請資格
+        #qlfy-accordion
+          .card
+            +cardmaker("qlfy","q1","團隊是否可以報名？","可以，零時小學校的提案單位就是團隊，即使只有一個人，也視為一個團隊。團隊內部分工與主辦單位無涉，不過入圍和獲獎團隊的獎勵，將以兩人為限。")
+            +cardmaker("qlfy","q2","如果我們是一個團隊的話，所有人都會被列在專案網站、報導上面嗎？","團隊須在提案申請表說明團隊的成員與工作分配，後續若有報導，則會希望涵蓋各團隊成員貢獻。")
+            +cardmaker("qlfy","q3","我不會寫程式，但有個點子，可以提案嗎？","可以，但需要在提案申請表註明如何達成專案目標，或者擬定具體的解決方案，例如：我的想法可以透過怎麼樣的作法去實現？專案團隊現在有什麼人才？還需要什麼人才？或可到 零時小學校許願池 貢獻點子。")
+            +cardmaker("qlfy","q4","現有專案是否能申請？","我們歡迎基於擴充現有專案的計畫申請，只要專案能夠在入圍之後能夠開源釋出即可。")
+            +cardmaker("qlfy","q5","我可以一次提很多專案嗎？","當然可以！不過每個團隊在當屆最多只會收到一次獎勵。")
+            +cardmaker("qlfy","q6","我想幫助非台灣的議題可以來申請嗎？ ( e.g., 敘利亞難民 )","開源無國界，只要符合開源與公民科技的精神，任何提案都歡迎。")
+            +cardmaker("qlfy","q7","你們接受英語或其它語系的專案嗎？","我們僅接受正體華文提案申請表，專案內容需可以至少以正體華文呈現。")
+            +cardmaker("qlfy","q8","若還有下屆小學校徵件計畫，同一專案或同一個團隊是否可以申請第二次？","可以。歡迎在公民科技領域持續努力！")
+        h3.p-4 審查
+        #chk-accordion
+          .card
+            +cardmaker("chk","q1","預計獎勵幾個專案？","入圍 10 個專案將獲得 g0v Summit 2020 門票、最後獲獎 5 個專案將獲得 g0v Summit 2020 期間之食宿與交通補助。")
+            +cardmaker("chk","q2","不同主題的專案分開競爭？各主題只有一個名額嗎？","專案審查不依照主題分類，只要是指定主題所涵蓋的公民科技專案皆可申請，委員會將評估所有專案。")
+        h3.p-4 成果
+        #rs-accordion
+          .card
+            .card-header(id="head-rs-q1"): a(data-toggle="collapse", href="#rs-q1", role="button", aria-expanded="false", aria-controls="#rs-q1" ) 有規定使用哪種開源條款嗎？
+            .collapse(id="rs-q1", aria-labelledby="head-rs-q1", data-parent="#rs-accordion"): .card-body
+              p 根據成果類型的不同，請選用適當的授權方式，包括：<ul><li>軟體專案須使用符合 <a href="https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B" target="_blank">OSI</a> 認可之授權。</li><li>所有專案會使用到的文字、圖像等，都需符合 <a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E6%96%87%E5%8C%96%E4%BD%9C%E5%93%81%E5%AE%9A%E7%BE%A9" target="_blank">Free Culture Works</a> 定義。</li>
+            +cardmaker("rs","q2","成果如何審核？","只有入圍和獲獎專案會被檢視是否以開源釋出，確認釋出後才能領取獎勵。")
+            +cardmaker("rs","q3","Demo 或解決方案的完成狀態是什麼？","Demo 可讓公民初步試用並驗證構想。解決方案須說明構想是否有過驗證，或者如何驗證構想。")
+        h3.p-4 獎勵
+        #rw-accordion
+          .card
+            +cardmaker("rw","q1","我什麼時候會拿到獎勵？","入圍或獲獎團隊須與主辦單位確認已將專案開源釋出，方可領取獎勵。")
+            +cardmaker("rw","q2","我想贊助零時小學校！","非常感謝！請寄信到 jothon-organizers {at} g0v.tw")
+            +cardmaker("rw","q3","我要如何聯絡主辦單位？","請寄信到 jothon-organizers {at} g0v.tw")
+      
     include ../footer.pug
