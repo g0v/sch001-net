@@ -20,3 +20,16 @@ i {
 .part-dark p {
   color: #AAA;
 }
+
+#opencallio {
+  width: 100%; 
+  background-color: rgba(8,33,48,0.5); 
+  padding: 3em; 
+  border-radius: 15px;
+}
+
+@media (max-width: 992px) {
+  #opencallio {
+    padding: 1em;     
+  }
+}

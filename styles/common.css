@@ -45,8 +45,22 @@ a:link, a:visited {
 	margin: 0 0.5rem;
 }
 
-#contact p {
-	text-align: left;	
+.part-dark {
+  background-color: rgba(8,33,48,0.5);
+  color: #FCD0D3;
+}
+
+.part-dark p {
+  color: #FFF;
+}
+
+.part-light {
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
+  color: #666;
+}
+
+.part-light p, .part-light li {
+  color: #444;
 }
 
 #footer {
@@ -64,4 +78,10 @@ a:link, a:visited {
 }
 #footer a:visited {
   color: #AAA;
+}
+
+@media (max-width: 992px) {
+  .navbar .nav-item .btn {
+    margin-top: 0.5em;
+  }
 }

@@ -32,7 +32,7 @@
   color: #666;
 }
 
-.part-light p {
+.part-light p, .part-light li {
   color: #444;
 }
 
