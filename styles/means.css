@@ -24,6 +24,19 @@ hr {
   color: #AAA;
 }
 
+.judge-details {
+  flex: 1;
+}
+.judge-img {
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.judge-img img {
+  border-radius: 10px;  
+  width: 100%;
+}
+
 #opencallio {
   width: 100%; 
   background-color: rgba(8,33,48,0.5); 
