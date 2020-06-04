@@ -12,6 +12,9 @@ i {
   display: block;
   margin-right: 0.5em;
 }
+hr {
+  border-top: 3px solid rgba(0,0,0,0.1);
+}
 .part-dark {
   background-color: rgba(8,33,48,0.5);
   color: #FCD0D3;
@@ -27,6 +30,11 @@ i {
   padding: 3em; 
   border-radius: 15px;
 }
+.card {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,.3);
+}
+
 
 @media (max-width: 992px) {
   #opencallio {
