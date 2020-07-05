@@ -11,7 +11,8 @@
     "url": "https://github.com/g0v/sch001-net"
   },
   "scripts": {
-    "start": "gulp server"
+    "start": "gulp server",
+    "build": "gulp build"
   },
   "devDependencies": {
     "gulp": "^4.0.2"

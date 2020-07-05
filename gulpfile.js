@@ -17,3 +17,9 @@ gulp.task('server', function () {
       event();
     });
 });
+
+gulp.task('build', function() {
+    gulp.src('src/**/index.pug').pipe(data(function(file) {
+      return JSON.parse(fs.readFileSync('data/index.json'));
+    })).pipe(pug()).pipe(gulp.dest('./static/'));  
+});
