@@ -4,16 +4,19 @@ body {
 	background-image: url(/assets/img/bg.min.jpg);
   background-attachment: fixed;
 	background-position: center 50px;
-	background-size: cover;  
+	background-size: cover;
 }
 a, b, p, h1, h2, h3, h4, h5, h6, li{
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-p, li {		
-	color: #FFF;	
+p, li {
+	color: #FFF;
 	text-align: justify;
 	text-justify:inter-ideograph;
+}
+red {
+  color: red;
 }
 
 a:link, a:visited {
@@ -25,7 +28,7 @@ a:link, a:visited {
   border: 1.2px solid #FC761B;
 }
 .btn-outline-my:hover {
-  color: #FFF;  
+  color: #FFF;
   background-color: #FC761B;
 }
 
