@@ -4,10 +4,9 @@
 }
 #header .inner {
   height: 100%;
-  margin: 2em -8em 0 2em;
-	background-image: url(/assets/img/demoday_block_main_f.svg);
-	background-position: left top;
-	background-size: auto 90%;
+	background-image: url(/assets/img/main_1920x1080_f-01.svg);
+	background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 @keyframes inner_btn {
@@ -92,7 +91,7 @@ ul.timeline > li .timeline-details a {
   margin: 0 0.5rem 0.5rem 0;
 }
 ul.timeline > li .timeline-details p {
-  line-height: 1.5rem;  
+  line-height: 1.5rem;
 }
 
 .jothon-banner {
@@ -101,14 +100,14 @@ ul.timeline > li .timeline-details p {
   display: inline-block;
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: contain;  
+	background-size: contain;
 }
 
 .team-block .team-avatar {
   width: 100px;
   margin-right: 1rem;
 }
-.team-block .team-detail {  
+.team-block .team-detail {
   flex: 1;
 }
 .team-img {
@@ -133,7 +132,7 @@ ul.timeline > li .timeline-details p {
   border: 1px solid #CCC;
 }
 .partners-block:hover {
-  
+
   transition: 0.3s;
   border: 1px solid #888;
 }
@@ -145,10 +144,4 @@ ul.timeline > li .timeline-details p {
 #header {
   height: 100vh;
 }
-#header .inner {
-	background-size: auto 80%;
-  margin: 0;
-  background-position: center top;
-}
-  
 }
