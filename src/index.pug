@@ -13,7 +13,7 @@ html(lang="zh-Hant-TW")
         a.btn.btn-lg.btn-outline-my(role="button" href="https://sch001.g0v.tw/dash/brd/sch001/list") 看提案
     .part-dark
       #about.container-sm.py-5
-        div(data-aos="")
+        div(data-aos="fade-up")
           h1.pl-4 關於
           p.p-4 零時小學校（Sch001）是聚焦在教育的 g0v 專案，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色，代表教育與數位社群的連結與協作。
           h1.pl-4 g0v.tw 社群與教育
@@ -44,24 +44,24 @@ html(lang="zh-Hant-TW")
           | 目前，零時小學校（Sch001）有教育工作者、設計師和工程師加入協作的行列，因此，只要你希望透過這個平台，與大家一起協作，都歡迎你透過以下方式，加入 g0v 社群！
         .container
           #howto-steps.row.justify-content-center
-            .col-lg-4.text-center
+            .col-lg-4.text-center(data-aos="fade-up")
               .step-img(style="background-image: url(assets/img/step0.png);")
               h3.text-center 第零步：加入 g0v Slack 的 #edu 頻道
               p 請進到 g0v Slack 的申請頁面，輸入自己的 E-mail 就可以邀請自己加入了！Slack 有網頁版／電腦版與手機 APP 版，讓你在何時何地都可以快速與社群一起協作。
               a(target="_blank" href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSkJeaBbGL") 點這裡看更多說明
-            .col-lg-4.text-center
+            .col-lg-4.text-center(data-aos="fade-up", data-aos-delay="100")
               .step-img(style="background-image: url(assets/img/header.png);")
               h3.text-center 第一步：找到零時小學校網站
               p 所有零時小學校的介紹、協作方式、參考案例和合作夥伴介紹都在這裡。
               a(target="_blank" href="https://sch001.g0v.tw/") https://sch001.g0v.tw
-            .col-lg-4.text-center
+            .col-lg-4.text-center(data-aos="fade-up", data-aos-delay="200")
               .step-img(style="background-image: url(assets/img/step2.png);")
               h3.text-center 第二步：開始使用零時小學校的共筆，徜徉在教育與科技的世界！
               p 零時小學校有自己專屬的許願池，歡迎到許願池寫下你的提案，如果沒有自己想要做的提案，也歡迎看看別人的提案，有機會的話都可以在 g0v Slack #edu 跟坑主一起討論，或者是來參加下次的工作坊。
               a(target="_blank" href="https://g0v.hackmd.io/@jothon/sch001/%2F%40jothon%2FSykOnPZGU") 點這裡跳進許願池
     hr
     #schedule.container-sm.py-5
-      div(data-aos="")
+      div(data-aos="zoom-in-left")
         h1.text-center 零時小學校：課程表
         .container: .row: .col-lg-10.m-auto: ul.timeline
           li
@@ -158,14 +158,19 @@ html(lang="zh-Hant-TW")
                 a 聯合報系願景工程
           hr
           h3.text-center 社群夥伴
+          - var delay = 0;
           mixin partners-block(_id)
-            .partners-block.col-lg-2.text-center.p-2.m-2
+            .partners-block.col-lg-2.text-center.p-2.m-2(data-aos="fade-up", data-aos-delay= delay+=100)
               a(target="_blank" href=_partners[_id].link)
                 .partner-img(style="background-image: url(/assets/partners/"+_partners[_id].img+");")
                 a #{_partners[_id].name}
+                            
           .row.justify-content-center
             each val, index in _partners
-              +partners-block(index)        
+              if index%5 == 0
+                - delay = 0;
+              +partners-block(index)
+                   
       #modal-kist.modal.fade(tabindex="-1" role="dialog" aria-labelledby="kist-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
         .modal-header
           h5#kist-title.modal-title 財團法人誠致教育基金會
