@@ -63,6 +63,11 @@ ul.timeline > li {
   margin: 0.5rem 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 }
+ul.timeline > li:hover {
+  border-color: #DDD;
+  transition-duration: 300ms;
+}
+
 ul.timeline > li:before {
     content: ' ';
     background: #AAA;
