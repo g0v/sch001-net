@@ -66,12 +66,17 @@
       "name": "Code for Japan (CfJ)",
       "link": "https://www.code4japan.org/",
       "img": "cfj.png"
-    },    
+    },
+    {
+      "name": "聯發科技教育基金會",
+      "link": "https://www.mediatekfoundation.org/",
+      "img": "MTK.png"
+    },
     {
       "name": "AppWorks School",
       "link": "https://school.appworks.tw/",
       "img": "appworksschool.jpg"
-    },    
+    },
     {
       "name": "ChhoeTaigi 找台語",
       "link": "https://chhoe.taigi.info/",
@@ -91,12 +96,12 @@
       "name": "財團法人為台灣而教教育基金會 Teach for Taiwan",
       "link": "https://www.teach4taiwan.org/",
       "img": "teachfortaiwan.png"
-    },    
+    },
     {
       "name": "Wikidata Taiwan 臺灣維基數據社群",
       "link": "https://www.facebook.com/WikidataTW/",
       "img": "wikidata.png"
-    },    
+    },
     {
       "name": "MozTW (Mozilla 台灣社群)",
       "link": "https://moztw.org/",
@@ -106,7 +111,7 @@
       "name": "好想工作室 Goodideas-Studio",
       "link": "https://goodideas-studio.com/",
       "img": "goodideas.png"
-    },    
+    },
     {
       "name": "逆轉聯盟協會",
       "link": "http://www.2home.org.tw/RWD01/default.aspx",
