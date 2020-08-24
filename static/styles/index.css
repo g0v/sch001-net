@@ -12,12 +12,14 @@
 }
 @keyframes inner_btn {
   0%  {bottom: 20px;}
-  50%  {bottom: 25px;}
+  50%  {bottom: 30px;}
 }
 #header .inner .btn{
   position: absolute;
+	font-size: 3em;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
+	border-width: 3px;
   animation: inner_btn 1s linear infinite;
 }
 
