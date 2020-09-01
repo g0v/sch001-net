@@ -4,10 +4,9 @@
 }
 #header .inner {
   height: 100%;
-  margin: 2em -8em 0 2em;
-	background-image: url(/assets/img/demoday_block_main_f2.svg);
-	background-position: left top;
-	background-size: auto 90%;
+	background-image: url(/assets/img/main_1920x1080_f-01.svg);
+	background-position: center top;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 @keyframes inner_btn {
@@ -149,12 +148,7 @@ ul.timeline > li .timeline-details p {
 }
 
 @media (max-width: 992px) {
-  #header {
-    height: 100vh;
-  }
-  #header .inner {
-  	background-size: auto 80%;
-    margin: 0;
-    background-position: center top;
-  }
+#header {
+  height: 100vh;
+}
 }
