@@ -58,6 +58,11 @@
   ],
   "partners": [
     {
+      "name": "開放文化基金會",
+      "link": "https://ocf.tw/",
+      "img": "OCF.png"
+    },
+    {
       "name": "g0v-intl 國際交流小組",
       "link": "https://g0v.hackmd.io/@chihao/rJmYFi0YS",
       "img": "g0v-intl.png"
