@@ -1,0 +1,59 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #333;
+}
+p {
+    color: #666;
+    text-align: justify;
+    word-break: break-all;
+}
+#header-img {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/img/Sch001_2020.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#team-area {
+}
+.team-block {
+    border: 1px solid #AAA;
+    transition: 0.5s;
+}
+.team-block:hover {
+    border: 1px solid #666;
+}
+.team-img {
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#courses {
+    background-color: #33F;
+    min-height: 20em;
+}
+
+#courselist p {
+    color: #AAA;
+}
+#courselist .animatenumbers {
+    color: #FDD;
+    font-size: 1.5em;
+    width: 1.5em;
+    display: inline-block;
+}
+
+@media (max-width: 991px) {
+    body {
+        font-size: 1.2em;
+    }
+    #header-img {
+        height: 30vh;
+        background-attachment: local;
+    }
+}

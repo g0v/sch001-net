@@ -1,0 +1,125 @@
+- var _team_data = final_datas;
+<!DOCTYPE html>
+html(lang="zh-Hant-TW")
+    include ../header.pug    
+    link(rel="stylesheet" href="../styles/power.css")
+body
+    #header-img
+    #intros.container-fluid.p-4
+        .row.justify-content-center
+            .col-11.col-lg-8
+                .container
+                    h3 零時小學校（Sch001）2020 成果列表
+                    p 「教育科技（EdTech）」是透過創新科技方法和策略，幫助學習者學到更多知識。為了激發更多創新的公民科技專案，讓更多知識開放在公共領域，成為跨世代、跨媒介的教育資源，以及公民思辨的重要素材，g0v 揪松團以「教育」作為 2020 年的主題，透過「g0v 黑客松」和「零時小學校」，號召不同領域的知識愛好者，運用資訊科技、分析問題、協作分工，促使更多教育專案有機會邁向標準化、數位化與服務化發展，讓知識在社群活起來。
+                    p g0v 揪松團與誠致教育基金會、聯合報系願景工程合作，自 2019 年底開始籌備「零時小學校（Sch001）」專案，並在 2020 年串連國內外十餘個關注教育的單位或社群，邀請 8 位講師，在 7 次線上／線下的工作坊和黑客松累積 21 件教育科技提案，並在八月底舉辦「零時小學校競賽日（Sch001 Demo Day）」，由百位參與者共同見證首屆獲獎團隊的誕生，共 6 組獲獎團隊將成果開源釋出。
+                    p 「零時小學校競賽日（Sch001 Demo Day）」評選委員選出 5 組獲獎團隊：「幸福存摺」、「繁體中文 CC0 句庫」、「島島阿學教育資源平台」、「CoTeach 教案共享平臺（原名：Plan Hub）」和「CBFHSS 專為高中生設計的管家型聊天機器人」；零時小學校合作夥伴「誠致教育基金會」頒發「識字量檢測特別獎」給「識字題庫」。
+                    .text-center
+                        a.btn.btn-primary(href="/" role="button") 看更多零時小學校介紹
+                hr
+                mixin teams(_id)
+                    .p-2.col-11.col-lg-4
+                        .p-4.team-block.h-100
+                            a.team-modal(href="/power/#" data-toggle="modal" data-target="#teamModal"+_id data-teamid=_id)
+                                .container-fluid.team-img(style=`background-image: url('../assets/img/${_team_data[_id]['img']}')`)
+                            hr
+                            h3.text-center #{_team_data[_id]['title']}
+                            p #{_team_data[_id]['brief']}
+                #team-area.row.justify-content-center
+                    each val, index in _team_data
+                        +teams(index)
+                mixin modals(_id)
+                    .modal.fade(id="teamModal"+_id tabindex="-1" role="dialog" aria-labelledby="teamModalLabel" aria-hidden="true")
+                        .modal-dialog.modal-xl(role="document")
+                            .modal-content
+                                .modal-header
+                                    button.close(type="button" data-dismiss="modal" aria-label="Close")
+                                        span(aria-hidden="true") &times;
+                                .modal-body
+                                    .row.justify-content-center
+                                        .col-11.col-lg-5.team-img(style=`background-image: url('../assets/img/${_team_data[_id]['img']}')`)
+                                        .col-11.col-lg-5.team-disc.p-4
+                                            h3 #{_team_data[_id]['title']}
+                                            p #{_team_data[_id]['brief']}
+                                    hr
+                                    .row.justify-content-center
+                                        .col-11
+                                            h3 團隊成員
+                                            p.team-members #{_team_data[_id]['members']}
+                                            h3 專案開源
+                                            p.team-opensource #{_team_data[_id]['opensource']}
+                each val, index in _team_data
+                    +modals(index)
+
+                hr
+                .text-center
+                    a.btn.btn-primary(href="https://sch001.g0v.tw/dash/brd/sch001/list" role="button") 看更多零時小學校提案
+    #courses.container-fluid.p-4(data-showed="false")
+        .row.justify-content-center.align-items-center
+            .col-11.col-lg-5
+                #carouselIndicators.carousel.slide(data-ride="carousel")
+                    ol.carousel-indicators
+                        li.active(data-target="#carouselIndicators" data-slide-to="0")
+                        li(data-target="#carouselIndicators" data-slide-to="1")
+                        li(data-target="#carouselIndicators" data-slide-to="2")
+                    .carousel-inner
+                        .carousel-item.active
+                            img.d-block.w-100(src="../assets/img/slides/1.jpg" alt="")
+                        .carousel-item
+                            img.d-block.w-100(src="../assets/img/slides/2.jpg" alt="")
+                        .carousel-item
+                            img.d-block.w-100(src="../assets/img/slides/3.jpg" alt="")
+                    a.carousel-control-prev(href="#carouselIndicators" role="button" data-slide="prev")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next(href="#carouselIndicators" role="button" data-slide="next")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next
+            #courselist.col-11.col-lg-5.offset-lg-1.p-4
+                p
+                    span.animatenumbers(data-targetnum="7") 0
+                    | 次每月聚會
+                p
+                    span.animatenumbers(data-targetnum="8") 0
+                    | 位講師
+                p
+                    span.animatenumbers(data-targetnum="13") 0
+                    | 個國內外關注教育的單位或社群
+                p
+                    span.animatenumbers(data-targetnum="21") 0
+                    | 件工作坊提案
+                p
+                    span.animatenumbers(data-targetnum="24") 0
+                    | 件 Demo Day 提案
+    #mediareports.container-fluid.p-4
+        .row.justify-content-center
+            .col-11.col-lg-8
+                h3 媒體報導
+                .row
+                    .p-2.col-11.col-lg-4
+                        .p-4.team-block.h-100
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    script.
+        function runNums(target, targetNum, curNum) {
+            $(target).text(curNum);
+            if (targetNum > curNum) {
+                curNum++;
+                setTimeout(function() {
+                    runNums(target, targetNum, curNum)
+                }, 30);
+            }
+        }
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() + window.innerHeight > $("#courses").offset().top + $("#courses").height()/2 && $("#courses").data("showed") == false){
+                $("#courses").data("showed", true);
+                var animNumDoms = $(".animatenumbers");
+                animNumDoms.each(function(index){
+                   var targetNum = $(this).data("targetnum");
+                   runNums(`.animatenumbers[data-targetnum=${targetNum}]`, targetNum, 0);
+                });
+            }
+        });
