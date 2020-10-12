@@ -1,13 +1,15 @@
 - var _team_data = final_datas;
+- var _media_data = media_datas;
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
     include ../header.pug    
     link(rel="stylesheet" href="../styles/power.css")
 body
     #header-img
+        .inner-img
     #intros.container-fluid.p-4
         .row.justify-content-center
-            .col-11.col-lg-8
+            .col-12.col-lg-8
                 .container
                     h3 零時小學校（Sch001）2020 成果列表
                     p 「教育科技（EdTech）」是透過創新科技方法和策略，幫助學習者學到更多知識。為了激發更多創新的公民科技專案，讓更多知識開放在公共領域，成為跨世代、跨媒介的教育資源，以及公民思辨的重要素材，g0v 揪松團以「教育」作為 2020 年的主題，透過「g0v 黑客松」和「零時小學校」，號召不同領域的知識愛好者，運用資訊科技、分析問題、協作分工，促使更多教育專案有機會邁向標準化、數位化與服務化發展，讓知識在社群活起來。
@@ -17,10 +19,10 @@ body
                         a.btn.btn-primary(href="/" role="button") 看更多零時小學校介紹
                 hr
                 mixin teams(_id)
-                    .p-2.col-11.col-lg-4
-                        .p-4.team-block.h-100
-                            a.team-modal(href="/power/#" data-toggle="modal" data-target="#teamModal"+_id data-teamid=_id)
-                                .container-fluid.team-img(style=`background-image: url('../assets/img/${_team_data[_id]['img']}')`)
+                    .p-2.col-12.col-lg-4
+                        .p-4.col-block.h-100
+                            a.team-brief(href="/power/#" data-toggle="modal" data-target="#teamModal"+_id data-teamid=_id)
+                                .container-fluid.team-img(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
                             hr
                             h3.text-center #{_team_data[_id]['title']}
                             p #{_team_data[_id]['brief']}
@@ -36,13 +38,13 @@ body
                                         span(aria-hidden="true") &times;
                                 .modal-body
                                     .row.justify-content-center
-                                        .col-11.col-lg-5.team-img(style=`background-image: url('../assets/img/${_team_data[_id]['img']}')`)
-                                        .col-11.col-lg-5.team-disc.p-4
+                                        .col-12.col-lg-5.team-img(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
+                                        .col-12.col-lg-5.team-disc.p-4
                                             h3 #{_team_data[_id]['title']}
                                             p #{_team_data[_id]['brief']}
                                     hr
                                     .row.justify-content-center
-                                        .col-11
+                                        .col-12.p-4
                                             h3 團隊成員
                                             p.team-members #{_team_data[_id]['members']}
                                             h3 專案開源
@@ -55,26 +57,32 @@ body
                     a.btn.btn-primary(href="https://sch001.g0v.tw/dash/brd/sch001/list" role="button") 看更多零時小學校提案
     #courses.container-fluid.p-4(data-showed="false")
         .row.justify-content-center.align-items-center
-            .col-11.col-lg-5
-                #carouselIndicators.carousel.slide(data-ride="carousel")
+            .col-12.col-lg-5
+                #carouselPhotos.carousel.slide(data-ride="carousel")
                     ol.carousel-indicators
-                        li.active(data-target="#carouselIndicators" data-slide-to="0")
-                        li(data-target="#carouselIndicators" data-slide-to="1")
-                        li(data-target="#carouselIndicators" data-slide-to="2")
+                        li.active(data-target="#carouselPhotos" data-slide-to="0")
+                        li(data-target="#carouselPhotos" data-slide-to="1")
+                        li(data-target="#carouselPhotos" data-slide-to="2")
+                        li(data-target="#carouselPhotos" data-slide-to="3")
+                        li(data-target="#carouselPhotos" data-slide-to="4")
                     .carousel-inner
                         .carousel-item.active
-                            img.d-block.w-100(src="../assets/img/slides/1.jpg" alt="")
+                            .carousel-img(style="background-image: url(../assets/img/slides/1.jpg)")
                         .carousel-item
-                            img.d-block.w-100(src="../assets/img/slides/2.jpg" alt="")
+                            .carousel-img(style="background-image: url(../assets/img/slides/2.jpg)")
                         .carousel-item
-                            img.d-block.w-100(src="../assets/img/slides/3.jpg" alt="")
-                    a.carousel-control-prev(href="#carouselIndicators" role="button" data-slide="prev")
+                            .carousel-img(style="background-image: url(../assets/img/slides/3.jpg)")
+                        .carousel-item
+                            .carousel-img(style="background-image: url(../assets/img/slides/4.jpg)")
+                        .carousel-item
+                            .carousel-img(style="background-image: url(../assets/img/slides/5.jpg)")
+                    a.carousel-control-prev(href="#carouselPhotos" role="button" data-slide="prev")
                         span.carousel-control-prev-icon(aria-hidden="true")
                         span.sr-only Previous
-                    a.carousel-control-next(href="#carouselIndicators" role="button" data-slide="next")
+                    a.carousel-control-next(href="#carouselPhotos" role="button" data-slide="next")
                         span.carousel-control-next-icon(aria-hidden="true")
                         span.sr-only Next
-            #courselist.col-11.col-lg-5.offset-lg-1.p-4
+            #courselist.col-12.col-lg-5.offset-lg-1.p-4
                 p
                     span.animatenumbers(data-targetnum="7") 0
                     | 次每月聚會
@@ -92,17 +100,38 @@ body
                     | 件 Demo Day 提案
     #mediareports.container-fluid.p-4
         .row.justify-content-center
-            .col-11.col-lg-8
+            .col-lg-12.col-xl-8
                 h3 媒體報導
-                .row
-                    .p-2.col-11.col-lg-4
-                        .p-4.team-block.h-100
+                #carouselMedias.carousel.slide(data-ride="carousel")
+                    .carousel-inner
+                        mixin medias(_id)
+                            .p-2.col-12.col-lg-3
+                                .p-3.col-block.h-100
+                                    .media-img(style=`background-image: url('../assets/img/medias/${_id+1}.jpg')`)
+                                    p.media-date #{_media_data[_id]['date']}
+                                    p.media-title 
+                                        a(href=_media_data[_id]['link'] target="_blank") #{_media_data[_id]['title']}
+                        .carousel-item.active
+                            .row.p-2
+                                each val in [0,1,2,3]
+                                    +medias(val)
+                                    
+                        .carousel-item
+                            .row.p-2
+                                each val in [4,5,6]
+                                    +medias(val)
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     script.
+        $(window).mousemove(function( event ) {
+            var xPos = 100*event.pageX/window.innerWidth;
+            var yPos = 100*event.pageY/window.innerHeight;
+            //$("#header-img .inner-img").css({"background-position": `${xPos}% ${yPos}%`});
+        });
+        
         function runNums(target, targetNum, curNum) {
             $(target).text(curNum);
             if (targetNum > curNum) {

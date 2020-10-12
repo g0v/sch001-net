@@ -130,8 +130,8 @@
             "title": "幸福存摺",
             "img": "happybank.png",
             "brief": "設計給非營利事業組織兒少陪伴單位的電子獎勵系統，讓孩子們透過執行任務獲得點數，累積的點數可向機構換取獎品或是客製化的需求（例如：修鞋，修車）。",
-            "members": "",
-            "opensource": ""
+            "members": "John (@John Huang), Justin (@Justin), Cindy (@Cindy), 賈彬 (@Giovanni), 小草書屋 (http://www.grassbookhouse.org.tw/)",
+            "opensource": "CC BY-NC-SA 4.0"
 
         },
         {
@@ -139,35 +139,76 @@
             "img": "cc0.png",
             "brief": "搜集整理無版權限制的繁體中文句子，建立CC0授權、不限定任何用途的資料庫，作為中文相關專案的基礎建設",
             "members": "",
-            "opensource": ""
+            "opensource": "MIT"
         },
         {
             "title": "CoTeach",
             "img": "coteach.jpeg",
             "brief": "提供教師分享其設計的教案，促進教師間的經驗交流，亦可建置個人教學記錄，就像是工程師使用的程式碼管理平臺 GitHub，讓好的資源能在社群內共享協作，且能不斷迭代更新。",
-            "members": "",
-            "opensource": ""
+            "members": "孟庭 (@mengting), 張振 (@Nesl), 嘉豪 (@kahou)",
+            "opensource": "MIT"
         },
         {
             "title": "CBFHSS",
             "img": "cbfhss.png",
             "brief": "CBFHSS 為以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。",
             "members": "",
-            "opensource": ""
+            "opensource": "GPLv3"
         },
         {
             "title": "識字題庫",
             "img": "lt.png",
             "brief": "以機器產生題目並網羅各政府機關提供的識字題目。以萌典結構化資料為基礎，建立供教師、開發者使用，開放授權的識字量題庫。",
             "members": "",
-            "opensource": ""
+            "opensource": "CC0 1.0"
         },
         {
             "title": "島島阿學",
             "img": "daodao.jpeg",
             "brief": "島島阿學」提供可共編的學習資源整合服務，透過建立學習資源網絡，進而成為自己想成為的人，並從中培養共好精神。",
-            "members": "",
+            "members": "怡廷(@tiff)、阿輝(@侯智輝)、snow(@snow)、小許(@小許)、Lin(@Lin)、糖糖(@sucre)、東東(Tung-Han Lin)、大黑(@張大黑)",
             "opensource": ""
+        }
+    ],
+    "media_datas": [{
+            "date": "2020/02/22",
+            "title": "聯合報：社企送暖 特殊童上學無礙（蔡佩芳）",
+            "link": "https://vision.udn.com/vision/story/7648/4362083"
+        },
+        {
+            "date": "2020/02/22",
+            "title": "聯合報：翻轉教育推手方新舟挑戰：識字只能用注音符號嗎？（郭琇真）",
+            "link": "https://udn.com/news/story/6885/4363001"
+        },
+        {
+            "date": "2020/02/22",
+            "title": "聯合報：廣徵教育、程式好手 零時小學校用科技讓教育更容易（郭琇真）",
+            "link": "https://udn.com/news/story/7270/4363664"
+        },
+        {
+            "date": "2020/02/22",
+            "title": "聯合報：零時小學校 科技找教育新解方（郭琇真）",
+            "link": "https://vision.udn.com/vision/story/7648/4371884"
+        },
+        {
+            "date": "2020/02/26",
+            "title": "親子天下：g0v 零時小學校開跑！科技協作社群期待迸出教育新解方（陳詩妤）",
+            "link": "https://flipedu.parenting.com.tw/article/5691?eturec=1&ercamp=extend_article"
+        },
+        {
+            "date": "2020/06/22",
+            "title": "親子天下：會考數學非選7萬人抱蛋！g0v用科技提升閱讀成就感（陳詩妤）",
+            "link": "https://flipedu.parenting.com.tw/article/5974"
+        },
+        {
+            "date": "2020/07/01",
+            "title": "聯合報：鍵盤拯救偏鄉識字量 「零時小學校」五萬獎金等你拿（梁玉芳）",
+            "link": "https://udn.com/news/story/7266/4671649"
+        },
+        {
+            "date": "",
+            "title": "",
+            "link": ""
         }
     ]
 }
