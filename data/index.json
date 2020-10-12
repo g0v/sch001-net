@@ -206,9 +206,9 @@
             "link": "https://udn.com/news/story/7266/4671649"
         },
         {
-            "date": "",
-            "title": "",
-            "link": ""
+            "date": "aaa",
+            "title": "bbb",
+            "link": "ccc"
         }
     ]
 }
