@@ -1,6 +1,10 @@
 body {
     font-family: 'Noto Sans TC', sans-serif;
     color: #333;
+      background-image: url(/assets/img/bg.min.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
 }
 p {
     color: #666;
@@ -10,17 +14,13 @@ p {
 a, a:visited, a:hover {
     color: #666;
 }
-a.btn, a.btn:hover {
-    color: #FFF;
+a.btn {
+    color: #FC761B;
 }
+
 #header-img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/img/bg.min.jpg");
     overflow: hidden;
 }
 .inner-img {
@@ -33,12 +33,16 @@ a.btn, a.btn:hover {
     width: 100%;
 }
 #header-img .inner-img.inner-1 {
-    background-size: 75%;
+    background-size: 60%;
     background-image: url("../assets/img/Sch001_2020_f2.png");
 }
 #header-img .inner-img.inner-2 {
     background-size: 120%;
     background-image: url("../assets/img/Sch001_2020_f1.png");
+}
+
+#intros {
+    background-color: white;
 }
 
 .col-block {
@@ -49,7 +53,13 @@ a.btn, a.btn:hover {
     border: 1px solid #666;
 }
 .team-img {
-    height: 200px;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-img-inner {
+    padding-top: 75%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,8 +68,7 @@ a.btn, a.btn:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 150px;
+    padding-top: 75%;
 }
 .carousel-img {
     background-size: cover;
@@ -69,22 +78,17 @@ a.btn, a.btn:hover {
 }
 
 #courses {
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url("../assets/img/bg.min.jpg");
-    background-color: #33F;
     min-height: 20em;
 }
 
 #courselist p {
     color: #AAA;
+    font-size: 1.2em;
 }
 #courselist .animatenumbers {
     color: #FDD;
-    font-size: 1.5em;
-    width: 1.5em;
+    font-size: 1.8em;
+    width: 1.8em;
     display: inline-block;
 }
 
@@ -92,6 +96,36 @@ a.btn, a.btn:hover {
     outline: 5px solid #fff;
 }
 
+#mediareports {
+    background-color: white;
+}
+
+#footer {
+  bottom: 0;
+padding: 1rem 0;
+background-color: rgba(0,0,0,0.6);
+}
+#footer a {
+  font-size: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+#footer a:link {
+  color: #AAA;
+}
+#footer a:visited {
+  color: #AAA;
+}
+
+.btn-outline-my {
+  color: #FC761B;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid #FC761B;
+}
+.btn-outline-my:hover {
+  color: #FFF;
+  background-color: #FC761B;
+}
 
 @media (max-width: 991px) {
     body {
