@@ -17,7 +17,12 @@ a, a:visited, a:hover {
 a.btn {
     color: #FC761B;
 }
-
+#lang-btn {
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    z-index: 99999999999999;
+}
 #header-img {
     height: 100vh;
     width: 100%;
