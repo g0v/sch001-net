@@ -131,43 +131,48 @@
             "img": "happybank.png",
             "brief": "設計給非營利事業組織兒少陪伴單位的電子獎勵系統，讓孩子們透過執行任務獲得點數，累積的點數可向機構換取獎品或是客製化的需求（例如：修鞋，修車）。",
             "members": "John (@John Huang), Justin (@Justin), Cindy (@Cindy), 賈彬 (@Giovanni), 小草書屋 (http://www.grassbookhouse.org.tw/)",
-            "opensource": "CC BY-NC-SA 4.0"
-
+            "opensource": "CC BY-NC-SA 4.0",
+            "link": "https://sch001.g0v.tw/dash/prj/D8VmG0EJZ05v909-U09nNFF"
         },
         {
             "title": "CC0 繁體中文句庫",
             "img": "cc0.png",
             "brief": "搜集整理無版權限制的繁體中文句子，建立CC0授權、不限定任何用途的資料庫，作為中文相關專案的基礎建設",
-            "members": "",
-            "opensource": "MIT"
+            "members": "Irvin(@irvin)",
+            "opensource": "MIT、CC0 1.0",
+            "link": "https://sch001.g0v.tw/dash/prj/3UfZN402G205ov0CO104l+vAs"
         },
         {
             "title": "CoTeach",
             "img": "coteach.jpeg",
             "brief": "提供教師分享其設計的教案，促進教師間的經驗交流，亦可建置個人教學記錄，就像是工程師使用的程式碼管理平臺 GitHub，讓好的資源能在社群內共享協作，且能不斷迭代更新。",
             "members": "孟庭 (@mengting), 張振 (@Nesl), 嘉豪 (@kahou)",
-            "opensource": "MIT"
+            "opensource": "MIT",
+            "link": "https://sch001.g0v.tw/dash/prj/nKCOH08qe05oC0AC603cRzfD"
         },
         {
             "title": "CBFHSS",
             "img": "cbfhss.png",
             "brief": "CBFHSS 為以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。",
-            "members": "",
-            "opensource": "GPLv3"
+            "members": "煥杰(@煥杰)",
+            "opensource": "GPLv3",
+            "link": "https://sch001.g0v.tw/dash/prj/2WKwu804cg05O-0B9B0257ui+"
         },
         {
             "title": "識字題庫",
             "img": "lt.png",
             "brief": "以機器產生題目並網羅各政府機關提供的識字題目。以萌典結構化資料為基礎，建立供教師、開發者使用，開放授權的識字量題庫。",
-            "members": "",
-            "opensource": "CC0 1.0"
+            "members": "Tmonk(@tmonk)",
+            "opensource": "CC0 1.0",
+            "link": "https://sch001.g0v.tw/dash/prj/3VWQ8m06DW05jP09ve04J5dcB"
         },
         {
             "title": "島島阿學",
             "img": "daodao.jpeg",
             "brief": "島島阿學」提供可共編的學習資源整合服務，透過建立學習資源網絡，進而成為自己想成為的人，並從中培養共好精神。",
             "members": "怡廷(@tiff)、阿輝(@侯智輝)、snow(@snow)、小許(@小許)、Lin(@Lin)、糖糖(@sucre)、東東(Tung-Han Lin)、大黑(@張大黑)",
-            "opensource": ""
+            "opensource": "",
+            "link": "https://sch001.g0v.tw/dash/prj/Fp4Qq04-s05t409gX0hmxwC"
         }
     ],
     "media_datas": [{
@@ -206,9 +211,9 @@
             "link": "https://udn.com/news/story/7266/4671649"
         },
         {
-            "date": "aaa",
-            "title": "bbb",
-            "link": "ccc"
+            "date": "",
+            "title": "",
+            "link": ""
         }
     ]
 }

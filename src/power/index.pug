@@ -6,7 +6,8 @@ html(lang="zh-Hant-TW")
     link(rel="stylesheet" href="../styles/power.css")
 body
     #header-img
-        .inner-img
+        .inner-img.inner-1
+        .inner-img.inner-2
     #intros.container-fluid.p-4
         .row.justify-content-center
             .col-12.col-lg-8
@@ -37,18 +38,22 @@ body
                                     button.close(type="button" data-dismiss="modal" aria-label="Close")
                                         span(aria-hidden="true") &times;
                                 .modal-body
-                                    .row.justify-content-center
+                                    .row.justify-content-center.align-items-center
                                         .col-12.col-lg-5.team-img(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
                                         .col-12.col-lg-5.team-disc.p-4
-                                            h3 #{_team_data[_id]['title']}
+                                            h3 #{_team_data[_id]['title']} 
+                                                a.btn.btn-primary(role="button" href=_team_data[_id]['link'] target="_blank") 提案連結
+                                            
                                             p #{_team_data[_id]['brief']}
+                                            .row
+                                                .col-6
+                                                    h3 團隊成員
+                                                    p.team-members #{_team_data[_id]['members']}
+                                                .col-6.pl-4
+                                                    h3 專案開源
+                                                    p.team-opensource #{_team_data[_id]['opensource']}
                                     hr
-                                    .row.justify-content-center
-                                        .col-12.p-4
-                                            h3 團隊成員
-                                            p.team-members #{_team_data[_id]['members']}
-                                            h3 專案開源
-                                            p.team-opensource #{_team_data[_id]['opensource']}
+                                            
                 each val, index in _team_data
                     +modals(index)
 
@@ -127,9 +132,10 @@ body
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     script.
         $(window).mousemove(function( event ) {
-            var xPos = 100*event.pageX/window.innerWidth;
-            var yPos = 100*event.pageY/window.innerHeight;
-            //$("#header-img .inner-img").css({"background-position": `${xPos}% ${yPos}%`});
+            var xPos = 100*event.pageX/window.innerWidth -50;
+            var yPos = 100*event.pageY/window.innerHeight -50;
+            $("#header-img .inner-1").css({"background-position": `${50+xPos/20}% ${50+yPos/8}%`});
+            $("#header-img .inner-2").css({"background-position": `${50-xPos/5}% ${50-yPos/2}%`});
         });
         
         function runNums(target, targetNum, curNum) {

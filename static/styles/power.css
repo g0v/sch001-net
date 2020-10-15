@@ -10,16 +10,32 @@ p {
 p a, p a:visited, p a:hover {
     color: #666;
 }
-#header-img, #header-img .inner-img {
-    height: 100vh;
-    width: 100%;
-    background-image: url("../assets/img/Sch001_2020.png");
+#header-img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/img/bg.min.jpg");
+    overflow: hidden;
 }
-#header-img .inner-img {
+.inner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+#header-img .inner-img.inner-1 {
+    background-size: 75%;
+    background-image: url("../assets/img/Sch001_2020_f2.png");
+}
+#header-img .inner-img.inner-2 {
+    background-size: 120%;
+    background-image: url("../assets/img/Sch001_2020_f1.png");
 }
 
 .col-block {
@@ -50,6 +66,11 @@ p a, p a:visited, p a:hover {
 }
 
 #courses {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../assets/img/bg.min.jpg");
     background-color: #33F;
     min-height: 20em;
 }
@@ -64,12 +85,21 @@ p a, p a:visited, p a:hover {
     display: inline-block;
 }
 
+#carouselPhotos {
+    outline: 5px solid #fff;
+}
+
+
 @media (max-width: 991px) {
     body {
         font-size: 1.2em;
     }
-    #header-img, #header-img .inner-img {
+    #header-img .inner-img {
+        display: none;
+    }
+    #header-img {
         height: 30vh;
+        background-image: url("../assets/img/Sch001_2020.png");
         background-attachment: local;
     }
     .carousel-img {

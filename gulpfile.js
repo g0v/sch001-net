@@ -6,14 +6,14 @@ const fs = require('fs');
 
 gulp.task('server', function () {
     gulp.src('src/**/index.pug').pipe(data(function(file) {
-      console.log("[build] "+file);
+      console.log("[build] "+file['history']);
       return JSON.parse(fs.readFileSync('data/index.json'));
     })).pipe(pug()).pipe(gulp.dest('./static/'));
     server.run(['app.js']);
 
     gulp.watch(['src/**/*.pug'], function(event){
       gulp.src('src/**/index.pug').pipe(data(function(file) {
-        console.log("[build] "+file);
+        console.log("[build] "+file['history']);
         return JSON.parse(fs.readFileSync('data/index.json'));
       })).pipe(pug()).pipe(gulp.dest('./static/'));
       event();
@@ -22,7 +22,7 @@ gulp.task('server', function () {
 
 gulp.task('build', function() {
     gulp.src('src/**/index.pug').pipe(data(function(file) {
-      console.log("[build] "+file);
+      console.log("[build] "+file['history']);
       return JSON.parse(fs.readFileSync('data/index.json'));
     })).pipe(pug()).pipe(gulp.dest('./static/'));
 });
