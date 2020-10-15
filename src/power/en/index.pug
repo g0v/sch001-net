@@ -2,8 +2,9 @@
 - var _media_data = media_datas;
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
-    include ../header.pug    
-    link(rel="stylesheet" href="../styles/power.css")
+    include ../../header.pug    
+    link(rel="stylesheet" href="../../styles/power.css")
+    link(rel="stylesheet" href="../../styles/power_en.css")
 body
     #header-img
         .inner-img.inner-1
@@ -12,21 +13,19 @@ body
         .row.justify-content-center
             .col-12.col-lg-8
                 .container
-                    h3 零時小學校（Sch001）2020 成果列表
-                    p 「教育科技（EdTech）」是透過創新科技方法和策略，幫助學習者學到更多知識。為了激發更多創新的公民科技專案，讓更多知識開放在公共領域，成為跨世代、跨媒介的教育資源，以及公民思辨的重要素材，g0v 揪松團以「教育」作為 2020 年的主題，透過「g0v 黑客松」和「零時小學校」，號召不同領域的知識愛好者，運用資訊科技、分析問題、協作分工，促使更多教育專案有機會邁向標準化、數位化與服務化發展，讓知識在社群活起來。
-                    p g0v 揪松團與誠致教育基金會、聯合報系願景工程合作，自 2019 年底開始籌備「零時小學校（Sch001）」專案，並在 2020 年串連國內外十餘個關注教育的單位或社群，邀請 8 位講師，在 7 次線上／線下的工作坊和黑客松累積 21 件教育科技提案，並在八月底舉辦「零時小學校競賽日（Sch001 Demo Day）」，由百位參與者共同見證首屆獲獎團隊的誕生，共 6 組獲獎團隊將成果開源釋出。
-                    p 「零時小學校競賽日（Sch001 Demo Day）」評選委員選出 5 組獲獎團隊：「幸福存摺」、「繁體中文 CC0 句庫」、「島島阿學教育資源平台」、「CoTeach 教案共享平臺（原名：Plan Hub）」和「CBFHSS 專為高中生設計的管家型聊天機器人」；零時小學校合作夥伴「誠致教育基金會」頒發「識字量檢測特別獎」給「識字題庫」。
+                    h3 Sch001 2020 Final
+                    p “Sch001” project puts 0 and 1 representing the digital native generation in the “School”. Starting from February 2020, Sch001 has accumulated 21 Edtech proposals in 3 workshops, 3 g0v hackathons, and selected 6 winning teams on Demo Day, including “Dao Dao Online Learning Platform”, “Traditional Chinese CC0 corpus and Mozilla Common Voice database”, “CoTeach”, “Happiness Bankbook”, “Chatbot for High School Students” and “Literacy Practices Database”. The winning team  members will share the origin and path of development, and give you refreshing new thinking about education.
                     .text-center
-                        a.btn.btn-outline-my(href="/" role="button") 看更多零時小學校介紹
+                        a.btn.btn-outline-my(href="/" role="button") More Infos
                 hr
                 mixin teams(_id)
                     .p-2.col-12.col-lg-4
                         .p-4.col-block.h-100
                             a.team-brief(href="/power/#" data-toggle="modal" data-target="#teamModal"+_id data-teamid=_id)
-                                .container-fluid.team-img(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
+                                .container-fluid.team-img(style=`background-image: url('../../assets/img/teams/${_team_data[_id]['img']}')`)
                             hr
-                            h3.text-center #{_team_data[_id]['title']}
-                            p #{_team_data[_id]['brief']}
+                            h5.text-center #{_team_data[_id]['title_en']}
+                            //p #{_team_data[_id]['brief_en']}
                 #team-area.row.justify-content-center
                     each val, index in _team_data
                         +teams(index)
@@ -40,23 +39,20 @@ body
                                 .modal-body
                                     .row.justify-content-center.align-items-center.p-4
                                         .col-12.col-lg-6
-                                            .team-img-inner(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
+                                            .team-img-inner(style=`background-image: url('../../assets/img/teams/${_team_data[_id]['img']}')`)
                                             .p-4.text-center
-                                                a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link'] target="_blank") 提案連結
-                                                a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link2'] target="_blank") 專案網站
+                                                a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link'] target="_blank") Proposal
+                                                a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link2'] target="_blank") Website
                                             
                                         .col-12.col-lg-6.team-disc.p-4
-                                            h3 #{_team_data[_id]['title']} 
-                                            if _team_data[_id]['details']
-                                                p #{_team_data[_id]['details']}
-                                            else
-                                                p #{_team_data[_id]['brief']}
+                                            h5 #{_team_data[_id]['title_en']} 
+                                            p #{_team_data[_id]['details_en']}
                                             .row
                                                 .col-6
-                                                    h3 團隊成員
+                                                    h3 Members
                                                     p.team-members #{_team_data[_id]['members']}
                                                 .col-6.pl-4
-                                                    h3 專案開源
+                                                    h3 License
                                                     p.team-opensource #{_team_data[_id]['opensource']}
                                     hr
                                             
@@ -65,7 +61,7 @@ body
 
                 hr
                 .text-center
-                    a.btn.btn-outline-my(href="https://sch001.g0v.tw/dash/brd/sch001/list" role="button") 看更多零時小學校提案
+                    a.btn.btn-outline-my(href="https://sch001.g0v.tw/dash/brd/sch001/list" role="button") More Proposals
     #courses.container-fluid.p-4(data-showed="false")
         .row.justify-content-center.align-items-center
             .col-12.col-lg-5
@@ -96,29 +92,29 @@ body
             #courselist.col-12.col-lg-5.offset-lg-1.p-4
                 p
                     span.animatenumbers(data-targetnum="7") 0
-                    | 次每月聚會
+                    | Monthly Workshop
                 p
                     span.animatenumbers(data-targetnum="8") 0
-                    | 位講師
+                    | Speakers
                 p
                     span.animatenumbers(data-targetnum="13") 0
-                    | 個國內外關注教育的單位或社群
+                    | Units & Communities
                 p
                     span.animatenumbers(data-targetnum="21") 0
-                    | 件工作坊提案
+                    | Proposals in Workshop
                 p
                     span.animatenumbers(data-targetnum="24") 0
-                    | 件 Demo Day 提案
+                    | Proposals for Demo Day
     #mediareports.container-fluid.p-4
         .row.justify-content-center
             .col-lg-12.col-xl-8
-                h3 媒體報導
+                h3 Media Reports
                 #carouselMedias.carousel.slide(data-ride="carousel")
                     .carousel-inner
                         mixin medias(_id)
                             .p-2.col-12.col-lg-3
                                 .p-3.col-block.h-100
-                                    .media-img(style=`background-image: url('../assets/img/medias/${_id+1}.jpg')`)
+                                    .media-img(style=`background-image: url('../../assets/img/medias/${_id+1}.jpg')`)
                                     p.media-date #{_media_data[_id]['date']}
                                     p.media-title 
                                         a(href=_media_data[_id]['link'] target="_blank") #{_media_data[_id]['title']}
@@ -132,7 +128,7 @@ body
                                 each val in [4,5,6]
                                     +medias(val)
     #footer.container-fluid.m-0
-      p.text-center.m-0.p-0 <a href="https://jothon.g0v.tw/" target="_blank">揪松網</a><a href="https://g0v.tw/" target="_blank">g0v</a><a href="https://github.com/g0v/sch001-net" target="_blank">github</a>
+      p.text-center.m-0.p-0 <a href="https://jothon.g0v.tw/" target="_blank">jothon</a><a href="https://g0v.tw/" target="_blank">g0v</a><a href="https://github.com/g0v/sch001-net" target="_blank">github</a>
     .part-light
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -53,8 +53,14 @@ a.btn {
     border: 1px solid #666;
 }
 .team-img {
-    height: 200px;
+    padding-top: 100%;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.team-img-inner {
+    padding-top: 75%;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -62,8 +68,7 @@ a.btn {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 150px;
+    padding-top: 75%;
 }
 .carousel-img {
     background-size: cover;
