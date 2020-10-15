@@ -7,8 +7,11 @@ p {
     text-align: justify;
     word-break: break-all;
 }
-p a, p a:visited, p a:hover {
+a, a:visited, a:hover {
     color: #666;
+}
+a.btn, a.btn:hover {
+    color: #FFF;
 }
 #header-img {
     background-size: cover;

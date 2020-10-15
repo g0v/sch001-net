@@ -131,48 +131,58 @@
             "img": "happybank.png",
             "brief": "設計給非營利事業組織兒少陪伴單位的電子獎勵系統，讓孩子們透過執行任務獲得點數，累積的點數可向機構換取獎品或是客製化的需求（例如：修鞋，修車）。",
             "members": "John (@John Huang), Justin (@Justin), Cindy (@Cindy), 賈彬 (@Giovanni), 小草書屋 (http://www.grassbookhouse.org.tw/)",
-            "opensource": "CC BY-NC-SA 4.0",
-            "link": "https://sch001.g0v.tw/dash/prj/D8VmG0EJZ05v909-U09nNFF"
+            "link": "https://sch001.g0v.tw/dash/prj/D8VmG0EJZ05v909-U09nNFF",
+            "link2": "https://www.happinessbankbook.org/",
+            "opensource": "CC BY-NC-SA 4.0"
+
         },
         {
             "title": "CC0 繁體中文句庫",
             "img": "cc0.png",
             "brief": "搜集整理無版權限制的繁體中文句子，建立CC0授權、不限定任何用途的資料庫，作為中文相關專案的基礎建設",
-            "members": "Irvin(@irvin)",
-            "opensource": "MIT、CC0 1.0",
-            "link": "https://sch001.g0v.tw/dash/prj/3UfZN402G205ov0CO104l+vAs"
+            "link": "https://sch001.g0v.tw/dash/prj/3UfZN402G205ov0CO104l+vAs",
+            "link2": "https://github.com/irvin/cc0-sentences/",
+            "members": "Irvin (@irvin)",
+            "opensource": "MIT, CC0 1.0"
         },
         {
             "title": "CoTeach",
             "img": "coteach.jpeg",
-            "brief": "提供教師分享其設計的教案，促進教師間的經驗交流，亦可建置個人教學記錄，就像是工程師使用的程式碼管理平臺 GitHub，讓好的資源能在社群內共享協作，且能不斷迭代更新。",
+            "brief": "CoTeach 提供體制內外教育工作者一個分享教案的平臺，除了可建置個人教學記錄，也希望突破學校及區域的限制，媒合各地教師線上共同備課，提升教師社群間共好的可能性，降低教師交流知識與經驗的門檻。",
+            "details": "CoTeach 提供體制內外教育工作者一個分享教案的平臺，除了可建置個人教學記錄，也希望突破學校及區域的限制，媒合各地教師線上共同備課，提升教師社群間共好的可能性，降低教師交流知識與經驗的門檻。CoTeach 想把「開源、協作、共享」的精神落實於教師端的教學資源，讓各地學習者都有機會享受多元的學習內容，減低教育資源的不均等。",
+            "link": "https://sch001.g0v.tw/dash/prj/nKCOH08qe05oC0AC603cRzfD",
+            "link2": "https://coteach.app",
             "members": "孟庭 (@mengting), 張振 (@Nesl), 嘉豪 (@kahou)",
-            "opensource": "MIT",
-            "link": "https://sch001.g0v.tw/dash/prj/nKCOH08qe05oC0AC603cRzfD"
+            "opensource": "MIT"
         },
         {
             "title": "CBFHSS",
             "img": "cbfhss.png",
-            "brief": "CBFHSS 為以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。",
-            "members": "煥杰(@煥杰)",
-            "opensource": "GPLv3",
-            "link": "https://sch001.g0v.tw/dash/prj/2WKwu804cg05O-0B9B0257ui+"
+            "brief": "CBFHSS 為一以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。主要功能包含新增、刪除、檢視作業及考試，段考資訊查詢、過期資料自動刪除、放學前推播提醒。",
+            "details": "CBFHSS 為一以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。主要功能包含新增、刪除、檢視作業及考試，段考資訊查詢、過期資料自動刪除、放學前推播提醒。2020 年 3 月因新冠肺炎疫情加入體溫登記相關功能，避免接觸感染發生的機率。2020 年 9 月開始進行第二版程式 CBFHSSv2 的開發，新版程式將原先較為複雜的指令改為對使用者友善的介面，並大幅提升回應的速度。預計於 2021 年開放全臺高中班級註冊使用。",
+            "link": "https://sch001.g0v.tw/dash/prj/2WKwu804cg05O-0B9B0257ui+",
+            "link2": "https://cbfhss.tech",
+            "members": "執行長兼共同發起人 廖煥杰（@liaojason2）, 前端工程師 賀洋生（@youngsonho）, 程式顧問 吳文元 （@jw910731）, 張宇航（@yuhang）",
+            "opensource": "GPLv3"
         },
         {
             "title": "識字題庫",
             "img": "lt.png",
             "brief": "以機器產生題目並網羅各政府機關提供的識字題目。以萌典結構化資料為基礎，建立供教師、開發者使用，開放授權的識字量題庫。",
-            "members": "Tmonk(@tmonk)",
-            "opensource": "CC0 1.0",
-            "link": "https://sch001.g0v.tw/dash/prj/3VWQ8m06DW05jP09ve04J5dcB"
+            "link": "https://sch001.g0v.tw/dash/prj/3VWQ8m06DW05jP09ve04J5dcB",
+            "link2": "https://literacy-db.tmonk.tw",
+            "members": "tmonk（@tmonk）",
+            "opensource": "CC0 1.0"
         },
         {
             "title": "島島阿學",
             "img": "daodao.jpeg",
-            "brief": "島島阿學」提供可共編的學習資源整合服務，透過建立學習資源網絡，進而成為自己想成為的人，並從中培養共好精神。",
+            "brief": "｜島島阿學｜學習資源平台由一群學生、老師共創，因為在教育現場深感自主學習者常因「找不到合適學習資源」造成學習困難，故致力於建立「可共編的學習資源平台」，協助對接需求與資源。",
+            "details": "｜島島阿學｜學習資源平台由一群學生、老師共創，因為在教育現場深感自主學習者常因「找不到合適學習資源」造成學習困難，故致力於建立「可共編的學習資源平台」，協助對接需求與資源。藉由自學者共編各領域及形式的資源，促使資源透明，同時豐富資源的「量」，並以民主教育及自主學習理論進行資源篩選及分類，提升資源的「質」，希望學習者能藉由平台豐富生命經驗、培養自學能力以及共好的民主精神，更為「自主學習世代」打造基礎建設。",
+            "link": "https://sch001.g0v.tw/dash/prj/Fp4Qq04-s05t409gX0hmxwC",
+            "link2": "https://www.daotw.tk/",
             "members": "怡廷(@tiff)、阿輝(@侯智輝)、snow(@snow)、小許(@小許)、Lin(@Lin)、糖糖(@sucre)、東東(Tung-Han Lin)、大黑(@張大黑)",
-            "opensource": "",
-            "link": "https://sch001.g0v.tw/dash/prj/Fp4Qq04-s05t409gX0hmxwC"
+            "opensource": ""
         }
     ],
     "media_datas": [{
@@ -211,9 +221,9 @@
             "link": "https://udn.com/news/story/7266/4671649"
         },
         {
-            "date": "",
-            "title": "",
-            "link": ""
+            "date": "aaa",
+            "title": "bbb",
+            "link": "ccc"
         }
     ]
 }

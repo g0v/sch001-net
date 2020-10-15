@@ -38,13 +38,19 @@ body
                                     button.close(type="button" data-dismiss="modal" aria-label="Close")
                                         span(aria-hidden="true") &times;
                                 .modal-body
-                                    .row.justify-content-center.align-items-center
-                                        .col-12.col-lg-5.team-img(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
-                                        .col-12.col-lg-5.team-disc.p-4
-                                            h3 #{_team_data[_id]['title']} 
-                                                a.btn.btn-primary(role="button" href=_team_data[_id]['link'] target="_blank") 提案連結
+                                    .row.justify-content-center.align-items-center.p-4
+                                        .col-12.col-lg-6
+                                            .team-img(style=`background-image: url('../assets/img/teams/${_team_data[_id]['img']}')`)
+                                            .p-4.text-center
+                                                a.m-1.btn.btn-primary(role="button" href=_team_data[_id]['link'] target="_blank") 提案連結
+                                                a.m-1.btn.btn-primary(role="button" href=_team_data[_id]['link2'] target="_blank") 專案網站
                                             
-                                            p #{_team_data[_id]['brief']}
+                                        .col-12.col-lg-6.team-disc.p-4
+                                            h3 #{_team_data[_id]['title']} 
+                                            if _team_data[_id]['details']
+                                                p #{_team_data[_id]['details']}
+                                            else
+                                                p #{_team_data[_id]['brief']}
                                             .row
                                                 .col-6
                                                     h3 團隊成員
