@@ -106,28 +106,7 @@ body
                 p
                     span.animatenumbers(data-targetnum="24") 0
                     | Proposals for Demo Day
-    #mediareports.container-fluid.p-4
-        .row.justify-content-center
-            .col-lg-12.col-xl-8
-                h3 Media Reports
-                #carouselMedias.carousel.slide(data-ride="carousel")
-                    .carousel-inner
-                        mixin medias(_id)
-                            .p-2.col-12.col-lg-3
-                                .p-3.col-block.h-100
-                                    .media-img(style=`background-image: url('../../assets/img/medias/${_id+1}.jpg')`)
-                                    p.media-date #{_media_data[_id]['date']}
-                                    p.media-title 
-                                        a(href=_media_data[_id]['link'] target="_blank") #{_media_data[_id]['title']}
-                        .carousel-item.active
-                            .row.p-2
-                                each val in [0,1,2,3]
-                                    +medias(val)
-                                    
-                        .carousel-item
-                            .row.p-2
-                                each val in [4,5,6]
-                                    +medias(val)
+
     #footer.container-fluid.m-0
       p.text-center.m-0.p-0 <a href="https://jothon.g0v.tw/" target="_blank">jothon</a><a href="https://g0v.tw/" target="_blank">g0v</a><a href="https://github.com/g0v/sch001-net" target="_blank">github</a>
     .part-light

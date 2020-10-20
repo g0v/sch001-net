@@ -7,7 +7,7 @@
 6 silly lifecycle sch001-net@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle sch001-net@1.0.0~start: sch001-net@1.0.0
 8 verbose lifecycle sch001-net@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle sch001-net@1.0.0~start: PATH: /usr/share/npm/bin/node-gyp-bin:/mnt/d/cases/sch001-net/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2020.824.0_x64__79rhkp1fndgsc:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/haca0/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/haca0/AppData/Local/atom/bin:/snap/bin
+9 verbose lifecycle sch001-net@1.0.0~start: PATH: /usr/share/npm/bin/node-gyp-bin:/mnt/d/cases/sch001-net/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Users/haca0/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/haca0/AppData/Local/atom/bin:/mnt/c/Users/haca0/AppData/Local/Microsoft/WindowsApps:/snap/bin
 10 verbose lifecycle sch001-net@1.0.0~start: CWD: /mnt/d/cases/sch001-net
 11 silly lifecycle sch001-net@1.0.0~start: Args: [ '-c', 'gulp server' ]
 12 silly lifecycle sch001-net@1.0.0~start: Returned: code: 1  signal: null
@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
 15 verbose pkgid sch001-net@1.0.0
 16 verbose cwd /mnt/d/cases/sch001-net
-17 error Linux 4.4.0-18362-Microsoft
+17 error Linux 4.4.0-19041-Microsoft
 18 error argv "/usr/bin/node" "/usr/bin/npm" "start"
 19 error node v8.10.0
 20 error npm  v3.5.2
