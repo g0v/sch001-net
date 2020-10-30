@@ -45,7 +45,8 @@ body
                                             .p-4.text-center
                                                 a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link'] target="_blank") 提案連結
                                                 a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link2'] target="_blank") 專案網站
-                                            
+                                                if _team_data[_id]['link_src']
+                                                    a.m-1.btn.btn-outline-my(role="button" href=_team_data[_id]['link_src'] target="_blank") 開源資料
                                         .col-12.col-lg-6.team-disc.p-4
                                             h3 #{_team_data[_id]['title']} 
                                             if _team_data[_id]['details']
