@@ -21,7 +21,7 @@ a.btn {
     position: fixed;
     right: 1em;
     top: 1em;
-    z-index: 99999999999999;
+    z-index: 999;
     font-size: 0.8em;
 }
 #header-img {
