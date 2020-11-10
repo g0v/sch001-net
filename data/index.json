@@ -184,7 +184,7 @@
             "brief": "以機器產生題目並網羅各政府機關提供的識字題目。以萌典結構化資料為基礎，建立供教師、開發者使用，開放授權的識字量題庫。",
             "details_en": "Provide variety of CC licensed mandarin literacy practices for game developer, teachers or any kind of users. The database is build on structured dictionary data from moedict.tw and the practices are mainly come from computer generated and  education department at governments at all levels.",
             "link": "https://sch001.g0v.tw/dash/prj/3VWQ8m06DW05jP09ve04J5dcB",
-            "link2": "https://literacy-db.tmonk.tw",
+            "link2": "https://literacy-db.g0v.tw",
             "link_src": "https://github.com/felixshai/literacy-db",
             "members": "tmonk（@tmonk）",
             "opensource": "CC0 1.0"
