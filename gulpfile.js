@@ -1,28 +1,48 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
 const data = require('gulp-data');
-const server = require('gulp-express');
+const connect = require('gulp-connect');
+const sitemap = require('gulp-sitemap');
 const fs = require('fs');
 
 gulp.task('server', function () {
-    gulp.src('src/**/index.pug').pipe(data(function(file) {
+    connect.server({
+        port: 3000,
+        livereload: true,
+        root: 'static'
+    })
+    gulp.src('src/**/index.pug')
+    .pipe(data((file) => {
       console.log("[build] "+file['history']);
-      return JSON.parse(fs.readFileSync('data/index.json'));
-    })).pipe(pug()).pipe(gulp.dest('./static/'));
-    server.run(['app.js']);
+      const result = {
+        index: require('./data/index.json'),
+        index_old: require('./data/index2020.json'),
+        power: require('./data/power.json')
+      };
+      return result;
+    }))
+    .pipe(pug())
+    .pipe(gulp.dest('./static/'))
+    .pipe(sitemap({siteUrl: 'https://sch001.g0v.tw'}))
+    .pipe(gulp.dest('./static/'))
+    .pipe(connect.reload());
 
-    gulp.watch(['src/**/*.pug'], function(event){
-      gulp.src('src/**/index.pug').pipe(data(function(file) {
+    gulp.watch(['src/**/*.pug', 'data/*.json'], function(event){
+      gulp.src('src/**/index.pug')
+      .pipe(data((file) => {
         console.log("[build] "+file['history']);
-        return JSON.parse(fs.readFileSync('data/index.json'));
-      })).pipe(pug()).pipe(gulp.dest('./static/'));
+        const result = {
+          index: require('./data/index.json'),
+          index_old: require('./data/index2020.json'),
+          power: require('./data/power.json')
+        };
+        return result;
+      }))
+      .pipe(pug())
+      .pipe(gulp.dest('./static/'))
+      .pipe(sitemap({siteUrl: 'https://sch001.g0v.tw'}))
+      .pipe(gulp.dest('./static/'))
+      .pipe(connect.reload());
       event();
     });
-});
-
-gulp.task('build', function() {
-    gulp.src('src/**/index.pug').pipe(data(function(file) {
-      console.log("[build] "+file['history']);
-      return JSON.parse(fs.readFileSync('data/index.json'));
-    })).pipe(pug()).pipe(gulp.dest('./static/'));
 });

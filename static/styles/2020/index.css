@@ -19,6 +19,10 @@
     text-align-last: center;
 }
 
+#howto-steps div a {
+	font-size: 0.9rem;
+}
+
 .step-img {
   border: 1px solid rgba(8,33,48,1);
   margin-bottom: 10px;
@@ -117,12 +121,12 @@ ul.timeline > li .timeline-details p {
 	background-size: contain;
 }
 
-.partners-block > div {
+.partners-block {
   transition: 0.5s;
   border-radius: 3px;
   border: 1px solid #CCC;
 }
-.partners-block > div:hover {
+.partners-block:hover {
 
   transition: 0.3s;
   border: 1px solid #888;

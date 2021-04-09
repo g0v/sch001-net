@@ -1,6 +1,7 @@
 {
     "title": "sch001 零時小學校",
-    "team_members": [{
+    "team_members": [
+        {
             "name": "侯宜秀",
             "en": "isabelhou",
             "title": "揪松團輪值主席／法律顧問",
@@ -47,201 +48,137 @@
             "en": "ichieh",
             "title": "揪松團執行秘書",
             "disc": "和g0v一樣從0開始，認識社群。比平凡更平凡的人，希望當一顆閃閃發亮的小螺絲，讓沒有接觸過社群的人知道，加入社群只需要空出一個星期六。"
-        },
-        {
-            "name": "高任翔",
-            "en": "seangau",
-            "title": "揪松團工程師",
-            "disc": "g0v 社群參與者，電機、藝術、環境、設計相關背景，為「大河小溪全民齊督工」共同發起人。"
         }
     ],
-    "partners": [{
-            "name": "開放文化基金會",
-            "link": "https://ocf.tw/",
-            "img": "OCF.png"
-        },
-        {
-            "name": "g0v-intl 國際交流小組",
-            "link": "https://g0v.hackmd.io/@chihao/rJmYFi0YS",
-            "img": "g0v-intl.png"
-        },
-        {
-            "name": "Code for Japan (CfJ)",
-            "link": "https://www.code4japan.org/",
-            "img": "cfj.png"
-        },
-        {
-            "name": "聯發科技教育基金會",
-            "link": "https://www.mediatekfoundation.org/",
-            "img": "MTK.png"
-        },
-        {
-            "name": "AppWorks School",
-            "link": "https://school.appworks.tw/",
-            "img": "appworksschool.jpg"
-        },
-        {
-            "name": "ChhoeTaigi 找台語",
-            "link": "https://chhoe.taigi.info/",
-            "img": "chhoetaigi.jpg"
-        },
-        {
-            "name": "Amis MoeDict 阿美語萌典",
-            "link": "https://amis.moedict.tw",
-            "img": "amis.jpg"
-        },
-        {
-            "name": "MoeDict 萌典",
-            "link": "https://www.moedict.tw/about.html",
-            "img": "moedict.png"
-        },
-        {
-            "name": "財團法人為台灣而教教育基金會 Teach for Taiwan",
-            "link": "https://www.teach4taiwan.org/",
-            "img": "teachfortaiwan.png"
-        },
-        {
-            "name": "Wikidata Taiwan 臺灣維基數據社群",
-            "link": "https://www.facebook.com/WikidataTW/",
-            "img": "wikidata.png"
-        },
-        {
-            "name": "MozTW (Mozilla 台灣社群)",
-            "link": "https://moztw.org/",
-            "img": "moztw.jpg"
-        },
-        {
-            "name": "好想工作室 Goodideas-Studio",
-            "link": "https://goodideas-studio.com/",
-            "img": "goodideas.png"
-        },
-        {
-            "name": "逆轉聯盟協會",
-            "link": "http://www.2home.org.tw/RWD01/default.aspx",
-            "img": "futuretransformer.png"
-        },
-        {
-            "name": "教育噗浪客",
-            "link": "http://tpet.ntct.edu.tw/",
-            "img": "tpet.png"
-        }
-    ],
-    "final_datas": [{
-            "title": "幸福存摺",
-            "title_en": "Happiness Bankbook",
-            "img": "happybank.png",
-            "brief": "設計給非營利事業組織兒少陪伴單位的電子獎勵系統，讓孩子們透過執行任務獲得點數，累積的點數可向機構換取獎品或是客製化的需求（例如：修鞋，修車）。",
-            "details_en": "A reward and behavior tracking application for educational organizations in remote areas.",
-            "members": "John (@John Huang), Justin (@Justin), Cindy (@Cindy), 賈彬 (@Giovanni), 小草書屋 (http://www.grassbookhouse.org.tw/)",
-            "link": "https://sch001.g0v.tw/dash/prj/D8VmG0EJZ05v909-U09nNFF",
-            "link2": "https://www.happinessbankbook.org/",
-            "link_src": "https://github.com/chunyenHuang/piggy-bank-of-happiness",
-            "opensource": "CC BY-NC-SA 4.0"
-
-        },
-        {
-            "title": "CC0 繁體中文句庫",
-            "title_en": "Traditional Chinese CC0 corpus and Mozilla Common Voice database",
-            "img": "cc0.png",
-            "brief": "搜集整理無版權限制的繁體中文句子，建立CC0授權、不限定任何用途的資料庫，作為中文相關專案的基礎建設",
-            "details_en": "To build a CC0 Traditional Chinese Sentences database without any copyright limit as a foundation of Chinese open source projects.",
-            "link": "https://sch001.g0v.tw/dash/prj/3UfZN402G205ov0CO104l+vAs",
-            "link2": "https://github.com/irvin/cc0-sentences/",
-            "link_src": "https://github.com/irvin/cc0-sentences/",
-            "members": "Irvin (@irvin)",
-            "opensource": "MIT, CC0 1.0"
-        },
-        {
-            "title": "CoTeach",
-            "title_en": "CoTeach",
-            "img": "coteach.jpeg",
-            "brief": "CoTeach 提供體制內外教育工作者一個分享教案的平臺，除了可建置個人教學記錄，也希望突破學校及區域的限制，媒合各地教師線上共同備課，提升教師社群間共好的可能性，降低教師交流知識與經驗的門檻。",
-            "details_en": "CoTeach offers a platform for educators to share their lesson plans. Teachers can not only build their own teaching records, but also overcome the hurdles between schools and places. Preparing lessons together through our platform can seek the common good in teacher communities and minimize the barriers during communication. CoTeach wants to implement the spirit of “open source, co-work, and share”, let learners from anywhere have the same chances to enjoy the diversity of learning resources, and reduce inequality of educational resources.",
-            "details": "CoTeach 提供體制內外教育工作者一個分享教案的平臺，除了可建置個人教學記錄，也希望突破學校及區域的限制，媒合各地教師線上共同備課，提升教師社群間共好的可能性，降低教師交流知識與經驗的門檻。CoTeach 想把「開源、協作、共享」的精神落實於教師端的教學資源，讓各地學習者都有機會享受多元的學習內容，減低教育資源的不均等。",
-            "link": "https://sch001.g0v.tw/dash/prj/nKCOH08qe05oC0AC603cRzfD",
-            "link2": "https://coteach.app",
-            "link_src": "https://github.com/coteach",
-            "members": "孟庭 (@mengting), 張振 (@Nesl), 嘉豪 (@kahou)",
-            "opensource": "MIT"
-        },
-        {
-            "title": "CBFHSS",
-            "title_en": "Chatbot for High School Students",
-            "img": "cbfhss.png",
-            "brief": "CBFHSS 為一以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。主要功能包含新增、刪除、檢視作業及考試，段考資訊查詢、過期資料自動刪除、放學前推播提醒。",
-            "details_en": "CBFHSS is a chatbot developed for high school students to assist high school students in their daily lives. In the beginning, CBFHSS feature including insert, remove and query homework and exam, push notification before leaving school. Due to COVID-19, we added a temperature registration system to avoid the risk of exposure when transferring paper forms. CBFHSSv2 is the second version of the CBFHSS. CBFHSSv2 replace original complicated commands with a user-friendly interface and an improved response time.CBFHSSv2 to be available for registration for all Taiwan high school classes in 2021.",
-            "details": "CBFHSS 為一以高中生生活出發所研發之聊天機器人，目的在於分攤學生一日校園生活的負擔。主要功能包含新增、刪除、檢視作業及考試，段考資訊查詢、過期資料自動刪除、放學前推播提醒。2020 年 3 月因新冠肺炎疫情加入體溫登記相關功能，避免接觸感染發生的機率。2020 年 9 月開始進行第二版程式 CBFHSSv2 的開發，新版程式將原先較為複雜的指令改為對使用者友善的介面，並大幅提升回應的速度。預計於 2021 年開放全臺高中班級註冊使用。",
-            "link": "https://sch001.g0v.tw/dash/prj/2WKwu804cg05O-0B9B0257ui+",
-            "link2": "https://cbfhss.tech",
-            "link_src": "https://github.com/CBFHSS",
-            "members": "執行長兼共同發起人 廖煥杰（@liaojason2）, 前端工程師 賀洋生（@youngsonho）, 程式顧問 吳文元 （@jw910731）, 張宇航（@yuhang）",
-            "opensource": "GPLv3"
-        },
-        {
-            "title": "識字題庫",
-            "title_en": "Literacy Practices Database",
-            "img": "lt.png",
-            "brief": "以機器產生題目並網羅各政府機關提供的識字題目。以萌典結構化資料為基礎，建立供教師、開發者使用，開放授權的識字量題庫。",
-            "details_en": "Provide variety of CC licensed mandarin literacy practices for game developer, teachers or any kind of users. The database is build on structured dictionary data from moedict.tw and the practices are mainly come from computer generated and  education department at governments at all levels.",
-            "link": "https://sch001.g0v.tw/dash/prj/3VWQ8m06DW05jP09ve04J5dcB",
-            "link2": "https://literacy-db.g0v.tw",
-            "link_src": "https://github.com/felixshai/literacy-db",
-            "members": "tmonk（@tmonk）",
-            "opensource": "CC0 1.0"
-        },
-        {
-            "title": "島島阿學",
-            "title_en": "Dao Dao Online Learning Platform",
-            "img": "daodao.jpeg",
-            "brief": "｜島島阿學｜學習資源平台由一群學生、老師共創，因為在教育現場深感自主學習者常因「找不到合適學習資源」造成學習困難，故致力於建立「可共編的學習資源平台」，協助對接需求與資源。",
-            "details_en": "Dao Dao Online Learning Platform was co-founded by a group of students and teachers who felt that self-directed learners often have difficulty in finding appropriate learning resources.Therefore, we are devoted to creating a \"co-edit learning resources platform\" to help match needs and resources. Through self-learners co-edit resources in various fields and forms, we aim to promote transparency of resources and increase the \"quantity\" of resources, as well as to filter and categorize resources based on the theory of democratic education and self-directed learning, in order to enhance the \"quality\" of resources. It is hoped that learners can use the platform to enrich their life experiences, cultivate self-learning skills, and deepen the quality of democracy by co-sharing, as well as build an infrastructure for the \"self-directed learning generation\".",
-            "details": "｜島島阿學｜學習資源平台由一群學生、老師共創，因為在教育現場深感自主學習者常因「找不到合適學習資源」造成學習困難，故致力於建立「可共編的學習資源平台」，協助對接需求與資源。藉由自學者共編各領域及形式的資源，促使資源透明，同時豐富資源的「量」，並以民主教育及自主學習理論進行資源篩選及分類，提升資源的「質」，希望學習者能藉由平台豐富生命經驗、培養自學能力以及共好的民主精神，更為「自主學習世代」打造基礎建設。",
-            "link": "https://sch001.g0v.tw/dash/prj/Fp4Qq04-s05t409gX0hmxwC",
-            "link2": "https://www.daotw.tk/",
-            "link_src": "https://github.com/LeeLin2602/DaoTW",
-            "members": "怡廷(@tiff)、阿輝(@侯智輝)、snow(@snow)、小許(@小許)、Lin(@Lin)、糖糖(@sucre)、東東(Tung-Han Lin)、大黑(@張大黑)",
-            "opensource": ""
-        }
-    ],
-    "media_datas": [{
-            "date": "2020/02/22",
-            "title": "聯合報：社企送暖 特殊童上學無礙（蔡佩芳）",
-            "link": "https://vision.udn.com/vision/story/7648/4362083"
-        },
-        {
-            "date": "2020/02/22",
-            "title": "聯合報：翻轉教育推手方新舟挑戰：識字只能用注音符號嗎？（郭琇真）",
-            "link": "https://udn.com/news/story/6885/4363001"
-        },
-        {
-            "date": "2020/02/22",
-            "title": "聯合報：廣徵教育、程式好手 零時小學校用科技讓教育更容易（郭琇真）",
-            "link": "https://udn.com/news/story/7270/4363664"
-        },
-        {
-            "date": "2020/02/22",
-            "title": "聯合報：零時小學校 科技找教育新解方（郭琇真）",
-            "link": "https://vision.udn.com/vision/story/7648/4371884"
-        },
-        {
-            "date": "2020/02/26",
-            "title": "親子天下：g0v 零時小學校開跑！科技協作社群期待迸出教育新解方（陳詩妤）",
-            "link": "https://flipedu.parenting.com.tw/article/5691?eturec=1&ercamp=extend_article"
-        },
-        {
-            "date": "2020/06/22",
-            "title": "親子天下：會考數學非選7萬人抱蛋！g0v用科技提升閱讀成就感（陳詩妤）",
-            "link": "https://flipedu.parenting.com.tw/article/5974"
-        },
-        {
-            "date": "2020/07/01",
-            "title": "聯合報：鍵盤拯救偏鄉識字量 「零時小學校」五萬獎金等你拿（梁玉芳）",
-            "link": "https://udn.com/news/story/7266/4671649"
-        },
-        {
-            "date": "aaa",
-            "title": "bbb",
-            "link": "ccc"
-        }
-    ]
+    "partners": {
+        "source": [
+            {
+                "name": "國立臺南女子高級中學",
+                "link": "http://www.tngs.tn.edu.tw/tngs/",
+                "img": "NTGSHS.jpg"
+            },
+            {
+                "name": "崑山科技大學",
+                "link": "https://www.ksu.edu.tw/",
+                "img": "KSU.jpg"
+            },
+            {
+                "name": "教育部偏鄉數位創新服務計畫",
+                "link": "https://www.facebook.com/%E6%95%99%E8%82%B2%E9%83%A8%E5%81%8F%E9%84%89%E6%95%B8%E4%BD%8D%E5%89%B5%E6%96%B0%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB-109141710913127/",
+                "img": "偏鄉數位.jpg"
+            }
+        ],
+        "community": [
+            {
+                "name": "開放文化基金會",
+                "link": "https://ocf.tw/",
+                "img": "OCF.png"
+            },
+            {
+                "name": "Cofacts 真的假的（訊息回報機器人與查證協作社群）",
+                "link": "https://cofacts.g0v.tw/",
+                "img": "cofacts.png"
+            },
+            {
+                "name": "台灣維基媒體協會 Wikimedia Taiwan",
+                "link": "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E5%8D%94%E6%9C%83",
+                "img": "wikimedia.png"
+            },
+            {
+                "name": "島島阿學",
+                "link": "https://www.daotw.tk/",
+                "img": "daodao.jpeg"
+            },
+            {
+                "name": "幸福存摺",
+                "link": "https://www.happinessbankbook.org/",
+                "img": "happybank.png"
+            },
+            {
+                "name": "CC0 繁體中文句庫",
+                "link": "https://sch001.g0v.tw/dash/prj/3UfZN402G205ov0CO104l+vAs",
+                "img": "cc0.png"
+            },
+            {
+                "name": "CoTeach",
+                "link": "https://coteach.app/",
+                "img": "coteach.jpeg"
+            },
+            {
+                "name": "CBFHSS 專為高中生設計的管家型聊天機器人",
+                "link": "https://www.facebook.com/cbfhss/",
+                "img": "cbfhss.png"
+            },
+            {
+                "name": "識字題庫",
+                "link": "https://literacy-db.g0v.tw/",
+                "img": "lt.png"
+            },
+            {
+                "name": "g0v-intl 國際交流小組",
+                "link": "https://g0v.hackmd.io/@chihao/rJmYFi0YS",
+                "img": "g0v-intl.png"
+            },
+            {
+                "name": "Code for Japan (CfJ)",
+                "link": "https://www.code4japan.org/",
+                "img": "cfj.png"
+            },
+            {
+                "name": "聯發科技教育基金會",
+                "link": "https://www.mediatekfoundation.org/",
+                "img": "MTK.png"
+            },
+            {
+                "name": "AppWorks School",
+                "link": "https://school.appworks.tw/",
+                "img": "appworksschool.jpg"
+            },
+            {
+                "name": "ChhoeTaigi 找台語",
+                "link": "https://chhoe.taigi.info/",
+                "img": "chhoetaigi.jpg"
+            },
+            {
+                "name": "Amis MoeDict 阿美語萌典",
+                "link": "https://amis.moedict.tw",
+                "img": "amis.jpg"
+            },
+            {
+                "name": "MoeDict 萌典",
+                "link": "https://www.moedict.tw/about.html",
+                "img": "moedict.png"
+            },
+            {
+                "name": "財團法人為台灣而教教育基金會 Teach for Taiwan",
+                "link": "https://www.teach4taiwan.org/",
+                "img": "teachfortaiwan.png"
+            },
+            {
+                "name": "Wikidata Taiwan 臺灣維基數據社群",
+                "link": "https://www.facebook.com/WikidataTW/",
+                "img": "wikidata.png"
+            },
+            {
+                "name": "MozTW (Mozilla 台灣社群)",
+                "link": "https://moztw.org/",
+                "img": "moztw.jpg"
+            },
+            {
+                "name": "好想工作室 Goodideas-Studio",
+                "link": "https://goodideas-studio.com/",
+                "img": "goodideas.png"
+            },
+            {
+                "name": "逆轉聯盟協會",
+                "link": "http://www.2home.org.tw/RWD01/default.aspx",
+                "img": "futuretransformer.png"
+            },
+            {
+                "name": "教育噗浪客",
+                "link": "http://tpet.ntct.edu.tw/",
+                "img": "tpet.png"
+            }
+        ]
+    }
 }
