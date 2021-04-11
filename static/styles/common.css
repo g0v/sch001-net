@@ -3,7 +3,7 @@ body {
   background-color: #0B2E43;
 	background-image: url(/assets/img/bg.min.jpg);
   background-attachment: fixed;
-	background-position: center 50px;
+	background-position: center bottom;
 	background-size: cover;
 }
 a, b, p, h1, h2, h3, h4, h5, h6, li{
@@ -58,8 +58,13 @@ a:link, a:visited {
   color: #FFF;
 }
 
-.part-light {
+.part-light-gradient {
   background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
+  color: #666;
+}
+
+.part-light {  
+  background-color: rgba(255,255,255,0.9);
   color: #666;
 }
 

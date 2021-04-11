@@ -3,11 +3,21 @@
   overflow: hidden;
 }
 #header .inner {
+  display: none;
   height: 100%;
 	background-image: url(/assets/img/main_1920x1080_f-01.svg);
 	background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#about .quote-box {
+	background-image: url(/assets/img/bg.min.jpg);
+  background-attachment: fixed;
+	background-position: center bottom;
+	background-size: cover;
+  border-radius: 5px;
+  color: white;
 }
 
 #howto-steps > div {
@@ -105,6 +115,11 @@ ul.timeline > li .timeline-details p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+#partner {
+  background-color: #FFF;
+  border-radius: 1em;
 }
 
 .partner-img {

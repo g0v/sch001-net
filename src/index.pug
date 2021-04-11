@@ -10,9 +10,9 @@ html(lang="zh-Hant-TW")
     include nav.pug
     #header.container-fluid.m-0.p-0
       .inner
-    .part-dark
-      #about.container-sm.py-5
-        div(data-aos="fade-up")
+    .part-light
+      #about.container-md.pt-4
+        div(data-aos-offset="100" data-aos="fade-up")
           h1.p-4 關於小學校
           p.px-4.py-1 
             | 零時小學校是聚焦在教育的 g0v 專案，旨在推廣資訊科技、分析問題和協作分工的概念，只要是有心學習的人，都可以站上自學和共學的起點，開啟專案參與的旅程！
@@ -20,7 +20,7 @@ html(lang="zh-Hant-TW")
             | 專案英文名稱「Sch001」將代表數位原生世代的「0」與「1」放入代表教育的「學校（School）」，期待可以此代表教育與數位社群的連結與協作，一起從零思考教育。
           h3.pl-4.pt-4 g0v 社群與 g0v 黑客松
           .container-fluid.p-4
-            p.p-4.m-0.font-italic(style="background-color: rgba(49,81,194,0.1); border-radius: 3px;")
+            p.p-4.m-0.font-italic.quote-box
               |「教育：一種有關培植人才，訓練技能，以支應於國家建設、社會發展的事業。」<br/>
               |「知識：認識的人、朋友；學問、所知道的事理。」<br/>
               |––萌典
@@ -31,38 +31,38 @@ html(lang="zh-Hant-TW")
           h3.pl-4.pt-4 活化紙本，知識在社群開放出來          
           p.p-4
             | g0v 社群的貢獻者們，曾經協作「<a href="https://www.moedict.tw/" target="_blank">萌典</a>」、「<a href="https://amis.moedict.tw/" target="_blank">阿美語萌典</a>」、「<a href="https://itaigi.tw/" target="_blank">iTaigi</a>」和「<a href="https://chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同，包括紙本資料數位化、資料格式化和宅宅文字辨識 OCR（Otaku Character Recognition）等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。(<a href="https://g0v.hackmd.io/@jothon/edu-list" target="_blank">參考更多教育專案</a>)
-    #howto.container-sm.py-5
-      div(data-aos="") 
-        h1.p-4 如何參與        
-        p.px-4.py-1
-          b 我要怎麼參與這個專案？不會寫程式可以嗎？<br/><br/>
-          i 不會寫程式當然沒問題！<br/><br/>
-          | 目前，零時小學校（Sch001）有教育工作者、設計師和工程師加入協作的行列，因此，只要你希望透過這個平台，與大家一起協作，都歡迎你透過以下方式，加入零時小學校或 g0v 社群！
-        .container
-          #howto-steps.row.justify-content-center
-            .col-lg-4.text-center(data-aos="fade-up")
-              .step-img(style="background-image: url(assets/img/header.png);")
-              h4.text-center 第零步：找到小學校網站和共筆，即時學習自己來！
-              p 所有零時小學校的介紹、協作方式、參考案例和合作夥伴介紹都在這。
-              a.btn.btn-outline-my.btn-block(role="button" href="https://sch001.g0v.tw/") 零時小學校
-            .col-lg-4.text-center(data-aos="fade-up", data-aos-delay="100")
-              .step-img(style="background-image: url(assets/img/step0.png);")
-              h4.text-center 第一步：線上加入小學校平台，不分地域找夥伴！
-              p Slack、臉書社團、IG 帳號、LINE 社群，隨時加入社群無負擔！
-              a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/howtojoinslackedu") 小學校平台一把抓
-            .col-lg-4.text-center(data-aos="fade-up", data-aos-delay="200")
-              .step-img(style="background-image: url(assets/img/step2_2021.jpg);")
-              h4.text-center 第二步：實體參加小學校活動，跟志同道合的夥伴一起討論專案！
-              p 小學校網站、共筆以及相關社群平台，都會發布最新活動訊息，只要你完成第零步和第一步，就可以無負擔參加小學校活動囉！
-              a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/jothon2021") 零時小學校 2021 行事曆
-    hr
-    
-    .part-light
-      #team.container-sm.py-5
-        div(data-aos="")
+
+      #howto.container-md.pt-4
+        div(data-aos-offset="100" data-aos="") 
+          h1.p-4 如何參與        
+          p.px-4.py-1
+            b 我要怎麼參與這個專案？不會寫程式可以嗎？<br/><br/>
+            i 不會寫程式當然沒問題！<br/><br/>
+            | 目前，零時小學校（Sch001）有教育工作者、設計師和工程師加入協作的行列，因此，只要你希望透過這個平台，與大家一起協作，都歡迎你透過以下方式，加入零時小學校或 g0v 社群！
+          .container
+            #howto-steps.row.justify-content-center
+              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up")
+                .step-img(style="background-image: url(assets/img/header.png);")
+                h4.text-center 第零步：找到小學校網站和共筆，即時學習自己來！
+                p 所有零時小學校的介紹、協作方式、參考案例和合作夥伴介紹都在這。
+                a.btn.btn-outline-my.btn-block(role="button" href="https://sch001.g0v.tw/") 零時小學校
+              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up", data-aos-delay="100")
+                .step-img(style="background-image: url(assets/img/step0.png);")
+                h4.text-center 第一步：線上加入小學校平台，不分地域找夥伴！
+                p Slack、臉書社團、IG 帳號、LINE 社群，隨時加入社群無負擔！
+                a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/howtojoinslackedu") 小學校平台一把抓
+              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up", data-aos-delay="200")
+                .step-img(style="background-image: url(assets/img/step2_2021.jpg);")
+                h4.text-center 第二步：實體參加小學校活動，跟志同道合的夥伴一起討論專案！
+                p 小學校網站、共筆以及相關社群平台，都會發布最新活動訊息，只要你完成第零步和第一步，就可以無負擔參加小學校活動囉！
+                a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/jothon2021") 零時小學校 2021 行事曆
+
+    .part-dark
+      #team.container-md.py-4
+        div(data-aos-offset="100" data-aos="")
           h1.text-center 主辦單位
           mixin team-block(_id)
-            .team-block.col-lg-6.p-3.d-flex.flex-row
+            .team-block.col-md-6.p-3.d-flex.flex-row
               .team-avatar
                 img.team-img(src="/assets/avatar/"+_team_members[_id].en+".jpg")
               .team-detail
@@ -70,19 +70,22 @@ html(lang="zh-Hant-TW")
                 h6= _team_members[_id].title
                 p.m-0= _team_members[_id].disc
           .container.text-left
-            a.jothon-banner(style="background-image: url('/assets/img/jothon-bg.svg');")
+            div(data-aos-offset="100" data-aos="flip-up")
+              .jothon-banner(style="background-image: url('/assets/img/jothon-bg-dark.svg');")
+              
             .container
               p.p-4
                 |「g0v 零時政府揪松團」係 g0v.tw 社群籌辦雙月黑客松的工作小組，除了籌畫每雙月的百人黑客松外，2016 年起亦積極推動社群基礎建設，並於同年底推出 g0v 公民科技創新獎助金計畫 。2020 年開辦「零時小學校」。<br/><br/>
             .row.justify-content-center          
               each val, index in _team_members
                 +team-block(index)        
-              .team-block.col-lg-6.px-3
+              .team-block.col-md-6.px-3
       hr
-      #partner.container-sm.py-5
-        div(data-aos="")
+    .part-light.py-4
+      #partner.container-md.p-4
+        div(data-aos-offset="100" data-aos="")
           h1.text-center 合作夥伴
-          .container: .p-4
+          .container
             p 
               | 零時小學校 Sch001 是由 g0v 零時政府揪松團發起的開源專案，所有成果以 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank">CC 姓名標示 4.0 國際</a> 授權條款授權釋出至公眾領域。
               | <br/><br/>
@@ -91,7 +94,7 @@ html(lang="zh-Hant-TW")
               a.btn.btn-lg.btn-outline-my.mr-1(href="https://drive.google.com/file/d/1gy3VNxXrjT5E6X6Sbra3Q5fNSIS4OIGS/view?usp=sharing" role="button" target="_blank") 零時小學校 2021 企畫書
           h3.text-center.py-2 啟蒙者夥伴
           .row.justify-content-center.text-center
-            .col-lg-4
+            .col-md-4
               .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/願景工程+努力讓台灣更好-1.png');")
               //a 聯合報系願景工程
           hr
@@ -99,7 +102,7 @@ html(lang="zh-Hant-TW")
           h3.text-center.py-2 源力夥伴
           - var delay = 0;
           mixin partners-block(_id)
-            .partners-block.col-lg-3.text-center.p-2(data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
+            .partners-block.col-md-3.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
               a(target="_blank" href=_partners['source'][_id].link)
                 .partner-img(style="background-image: url(/assets/partners/"+_partners['source'][_id].img+");")
                 a #{_partners['source'][_id].name}
@@ -112,7 +115,7 @@ html(lang="zh-Hant-TW")
           h3.text-center.py-2 社群夥伴
           - var delay = 0;
           mixin partners-block(_id)
-            .partners-block.col-lg-2.text-center.p-2(data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
+            .partners-block.col-md-3.col-lg-2.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
               a(target="_blank" href=_partners['community'][_id].link)
                 .partner-img(style="background-image: url(/assets/partners/"+_partners['community'][_id].img+");")
                 a #{_partners['community'][_id].name}
@@ -122,7 +125,7 @@ html(lang="zh-Hant-TW")
               if index%2 == 0
                 - delay = 0;
               +partners-block(index)
-                   
+                         
       #modal-udn.modal.fade(tabindex="-1" role="dialog" aria-labelledby="udn-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
         .modal-header
           h5#udn-title.modal-title 聯合報系願景工程
@@ -135,4 +138,9 @@ html(lang="zh-Hant-TW")
             | <a target="_blank" href="https://vision.udn.com/vision/story/8251/3203523">《偏鄉教育》</a>更是願景工程心之所繫，教育部挹注三億元改善偏鄉學校宿舍等措施回應；2017 年，「偏鄉教育法」三讀。2019 年，<a target="_blank" href="https://vision.udn.com/vision/cate/120639">《新課綱．救科技》</a>解析「科技領域」作為 108 新課綱亮點，是教學現場的全新挑戰。<br/><br/>
             |願景工程也多年與<a target="_blank" href="https://vision.udn.com/vision/story/12425/4169478">《g0v 公民科技創新獎助金》</a>合作，贊助優秀團隊；我們深認同「零時小學校」的理念：好的科技工具能夠改變社會，好的科技工具也可以教育出更好的人，讓台灣變成更好的社會。
       
-    include footer.pug
+    include footer.pug    
+    script.
+      $(window).on("load",function() {
+        console.log("loaded");
+        $("#header .inner").fadeIn(1000);
+      });
