@@ -11,7 +11,7 @@ html(lang="zh-Hant-TW")
     #header.container-fluid.m-0.p-0
       .inner
     .part-light
-      #about.container-md.pt-4
+      #about.container-md.p-4
         div(data-aos-offset="100" data-aos="fade-up")
           h1.p-4 關於小學校
           p.px-4.py-1 
@@ -32,7 +32,14 @@ html(lang="zh-Hant-TW")
           p.p-4
             | g0v 社群的貢獻者們，曾經協作「<a href="https://www.moedict.tw/" target="_blank">萌典</a>」、「<a href="https://amis.moedict.tw/" target="_blank">阿美語萌典</a>」、「<a href="https://itaigi.tw/" target="_blank">iTaigi</a>」和「<a href="https://chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同，包括紙本資料數位化、資料格式化和宅宅文字辨識 OCR（Otaku Character Recognition）等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。(<a href="https://g0v.hackmd.io/@jothon/edu-list" target="_blank">參考更多教育專案</a>)
 
-      #howto.container-md.pt-4
+      hr
+      #news.container-md.px-4.d-none
+        div(data-aos-offset="100" data-aos="") 
+          h1.p-4 最新消息
+          .news-list.p-4
+
+      hr
+      #howto.container-md.p-4
         div(data-aos-offset="100" data-aos="") 
           h1.p-4 如何參與        
           p.px-4.py-1
@@ -46,12 +53,12 @@ html(lang="zh-Hant-TW")
                 h4.text-center 第零步：找到小學校網站和共筆，即時學習自己來！
                 p 所有零時小學校的介紹、協作方式、參考案例和合作夥伴介紹都在這。
                 a.btn.btn-outline-my.btn-block(role="button" href="https://sch001.g0v.tw/") 零時小學校
-              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up", data-aos-delay="100")
+              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up" data-aos-delay="100")
                 .step-img(style="background-image: url(assets/img/step0.png);")
                 h4.text-center 第一步：線上加入小學校平台，不分地域找夥伴！
                 p Slack、臉書社團、IG 帳號、LINE 社群，隨時加入社群無負擔！
                 a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/howtojoinslackedu") 小學校平台一把抓
-              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up", data-aos-delay="200")
+              .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up" data-aos-delay="200")
                 .step-img(style="background-image: url(assets/img/step2_2021.jpg);")
                 h4.text-center 第二步：實體參加小學校活動，跟志同道合的夥伴一起討論專案！
                 p 小學校網站、共筆以及相關社群平台，都會發布最新活動訊息，只要你完成第零步和第一步，就可以無負擔參加小學校活動囉！
@@ -60,7 +67,7 @@ html(lang="zh-Hant-TW")
     .part-dark
       #team.container-md.py-4
         div(data-aos-offset="100" data-aos="")
-          h1.text-center 主辦單位
+          h1.text-center.p-4 主辦單位
           mixin team-block(_id)
             .team-block.col-md-6.p-3.d-flex.flex-row
               .team-avatar
@@ -72,7 +79,7 @@ html(lang="zh-Hant-TW")
           .container.text-left
             div(data-aos-offset="100" data-aos="flip-up")
               .jothon-banner(style="background-image: url('/assets/img/jothon-bg-dark.svg');")
-              
+
             .container
               p.p-4
                 |「g0v 零時政府揪松團」係 g0v.tw 社群籌辦雙月黑客松的工作小組，除了籌畫每雙月的百人黑客松外，2016 年起亦積極推動社群基礎建設，並於同年底推出 g0v 公民科技創新獎助金計畫 。2020 年開辦「零時小學校」。<br/><br/>
@@ -80,15 +87,15 @@ html(lang="zh-Hant-TW")
               each val, index in _team_members
                 +team-block(index)        
               .team-block.col-md-6.px-3
-      hr
+
     .part-light.py-4
       #partner.container-md.p-4
         div(data-aos-offset="100" data-aos="")
-          h1.text-center 合作夥伴
+          h1.text-center.p-4 合作夥伴
           .container
             p 
-              | 零時小學校 Sch001 是由 g0v 零時政府揪松團發起的開源專案，所有成果以 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank">CC 姓名標示 4.0 國際</a> 授權條款授權釋出至公眾領域。
-              | <br/><br/>
+              | 零時小學校 Sch001 是由 g0v 零時政府揪松團發起的開源專案，所有成果以 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank">CC 姓名標示 4.0 國際</a> 授權條款釋出至公眾領域。
+              | <br/>
               | 誠摯感謝所有合作夥伴贊助或以各種形式支持零時小學校。如果您有興趣贊助或以各種形式與我們合作，歡迎來信至 jothon-organizers {at} g0v.tw
             p.text-center
               a.btn.btn-lg.btn-outline-my.mr-1(href="https://drive.google.com/file/d/1gy3VNxXrjT5E6X6Sbra3Q5fNSIS4OIGS/view?usp=sharing" role="button" target="_blank") 零時小學校 2021 企畫書
@@ -119,13 +126,13 @@ html(lang="zh-Hant-TW")
               a(target="_blank" href=_partners['community'][_id].link)
                 .partner-img(style="background-image: url(/assets/partners/"+_partners['community'][_id].img+");")
                 a #{_partners['community'][_id].name}
-                            
+
           .row.justify-content-center
             each val, index in _partners['community']
               if index%2 == 0
                 - delay = 0;
               +partners-block(index)
-                         
+
       #modal-udn.modal.fade(tabindex="-1" role="dialog" aria-labelledby="udn-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
         .modal-header
           h5#udn-title.modal-title 聯合報系願景工程
@@ -137,10 +144,21 @@ html(lang="zh-Hant-TW")
             |教育議題，尤其是偏鄉教育，一直是願景工程關切的主題，我們深信，有素質的公民才能打造出理想的民主社會。2013 年推出<a target="_blank" href="https://vision.udn.com/vision/cate/7618">《為青年尋路四部曲》</a>，探討產學落差、人才外流等問題；2016 <a target="_blank" href="https://vision.udn.com/vision/story/7657/2223700">《高教轉骨》</a>追蹤報導及 2017 <a target="_blank" href="https://vision.udn.com/vision/story/12004/3082490">《高教十字路》</a>，分別促使教育部推動 200 億元的技職再造計畫，訂定高教創新轉型方案，以及以「玉山計畫」、「高教深耕計畫」回應。<br/><br/>
             | <a target="_blank" href="https://vision.udn.com/vision/story/8251/3203523">《偏鄉教育》</a>更是願景工程心之所繫，教育部挹注三億元改善偏鄉學校宿舍等措施回應；2017 年，「偏鄉教育法」三讀。2019 年，<a target="_blank" href="https://vision.udn.com/vision/cate/120639">《新課綱．救科技》</a>解析「科技領域」作為 108 新課綱亮點，是教學現場的全新挑戰。<br/><br/>
             |願景工程也多年與<a target="_blank" href="https://vision.udn.com/vision/story/12425/4169478">《g0v 公民科技創新獎助金》</a>合作，贊助優秀團隊；我們深認同「零時小學校」的理念：好的科技工具能夠改變社會，好的科技工具也可以教育出更好的人，讓台灣變成更好的社會。
-      
+
     include footer.pug    
     script.
       $(window).on("load",function() {
         console.log("loaded");
         $("#header .inner").fadeIn(1000);
+      });
+
+      //$.getJSON( "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post", function( data ) {
+      $.getJSON( "/assets/test_news.json", function( data ) {
+        console.log(data);
+        
+        data.forEach(element => {
+          console.log(element);
+          let time = new Date(element['modifiedtime']);
+          $("#news .news-list").append(`<p><a href="${element['slug']}" target="">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
+        });
       });

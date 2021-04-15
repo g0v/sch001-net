@@ -20,6 +20,10 @@
   color: white;
 }
 
+#news .news-list p{
+  font-size: 1.5em;
+}
+
 #howto-steps > div {
 	margin-bottom: 1rem;
 }

@@ -75,6 +75,11 @@
                 "img": "OCF.png"
             },
             {
+                "name": "Code for Japan (CfJ)",
+                "link": "https://www.code4japan.org/",
+                "img": "cfj.png"
+            },
+            {
                 "name": "Cofacts 真的假的（訊息回報機器人與查證協作社群）",
                 "link": "https://cofacts.g0v.tw/",
                 "img": "cofacts.png"
@@ -118,11 +123,6 @@
                 "name": "g0v-intl 國際交流小組",
                 "link": "https://g0v.hackmd.io/@chihao/rJmYFi0YS",
                 "img": "g0v-intl.png"
-            },
-            {
-                "name": "Code for Japan (CfJ)",
-                "link": "https://www.code4japan.org/",
-                "img": "cfj.png"
             },
             {
                 "name": "聯發科技教育基金會",
