@@ -3,25 +3,11 @@
   overflow: hidden;
 }
 #header .inner {
-  display: none;
   height: 100%;
 	background-image: url(/assets/img/main_1920x1080_f-01.svg);
 	background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#about .quote-box {
-	background-image: url(/assets/img/bg.min.jpg);
-  background-attachment: fixed;
-	background-position: center bottom;
-	background-size: cover;
-  border-radius: 5px;
-  color: white;
-}
-
-#news .news-list p{
-  font-size: 1.5em;
 }
 
 #howto-steps > div {
@@ -31,6 +17,10 @@
 #howto-steps div p {
 	padding: 0.5rem;
     text-align-last: center;
+}
+
+#howto-steps div a {
+	font-size: 0.9rem;
 }
 
 .step-img {
@@ -121,11 +111,6 @@ ul.timeline > li .timeline-details p {
   border-radius: 10px;
 }
 
-#partner {
-  background-color: #FFF;
-  border-radius: 1em;
-}
-
 .partner-img {
 	margin-bottom: 10px;
   width: 100%;
@@ -136,12 +121,12 @@ ul.timeline > li .timeline-details p {
 	background-size: contain;
 }
 
-.partners-block > div {
+.partners-block {
   transition: 0.5s;
   border-radius: 3px;
   border: 1px solid #CCC;
 }
-.partners-block > div:hover {
+.partners-block:hover {
 
   transition: 0.3s;
   border: 1px solid #888;
