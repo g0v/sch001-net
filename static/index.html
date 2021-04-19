@@ -26,8 +26,8 @@ $(function(){
   $("#header .inner").fadeIn(1000);
 });
 
-//$.getJSON( "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post", function( data ) {
-$.getJSON( "/assets/test_news.json", function( data ) {
+$.getJSON( "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post", function( data ) {
+//$.getJSON( "/assets/test_news.json", function( data ) {
   console.log(data);
   
   data.forEach(element => {
