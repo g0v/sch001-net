@@ -33,7 +33,7 @@ html(lang="zh-Hant-TW")
             | g0v 社群的貢獻者們，曾經協作「<a href="https://www.moedict.tw/" target="_blank">萌典</a>」、「<a href="https://amis.moedict.tw/" target="_blank">阿美語萌典</a>」、「<a href="https://itaigi.tw/" target="_blank">iTaigi</a>」和「<a href="https://chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同，包括紙本資料數位化、資料格式化和宅宅文字辨識 OCR（Otaku Character Recognition）等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。(<a href="https://g0v.hackmd.io/@jothon/edu-list" target="_blank">參考更多教育專案</a>)
 
       hr
-      #news.container-md.px-4
+      #news.container-md.px-4.d-none
         div(data-aos-offset="100" data-aos="") 
           h1.p-4 最新消息
           .news-list.p-4
@@ -155,10 +155,8 @@ html(lang="zh-Hant-TW")
       $.getJSON( "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post", function( data ) {
       //$.getJSON( "/assets/test_news.json", function( data ) {
         console.log(data);
-        if(data.length < 1) {
-          $("#news").addClass("d-none");
-        }
-        else {
+        if(data.length > 0) {
+          $("#news").removeClass("d-none");
           data.forEach(element => {
             console.log(element);
             let time = new Date(element['modifiedtime']);
