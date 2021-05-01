@@ -12,14 +12,14 @@ function deploy() {
     index_old: require('./data/index2020.json'),
     power: require('./data/power.json')
   };
-  console.log(datas);
   gulp.src('src/**/index.pug')    
     .pipe(pug({
       data: datas,
       i18n: {
         default: 'zh-TW',
         locales: 'src/locale/*.yml', // locales: en.yml, de.json,
-        filename: '{{basename}}{-{{lang}}}{-{{region}}}.html'
+        filename: '{{basename}}{-{{lang}}}{-{{region}}}.html',
+        namespace: '$i18n'
       }
     }))
     .pipe(gulp.dest('./static/'))
