@@ -160,7 +160,7 @@ html(lang="zh-Hant-TW")
           data.forEach(element => {
             console.log(element);
             let time = new Date(element['modifiedtime']);
-            $("#news .news-list").append(`<p><a href="${element['slug']}" target="">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
+            $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
           });
         }
       });
