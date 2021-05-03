@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         
+        <loc>https://sch001.g0v.tw/index-en.html</loc>
+    
+        
+        <lastmod>2021-05-03T14:07:37.233Z</lastmod>
+    
+    </url>
+    <url>
+        
         <loc>https://sch001.g0v.tw/</loc>
     
         
-        <lastmod>2021-04-29T04:50:53.646Z</lastmod>
+        <lastmod>2021-05-03T14:07:37.280Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sch001.g0v.tw/2020/index-en.html</loc>
+    
+        
+        <lastmod>2021-05-03T14:07:37.349Z</lastmod>
     
     </url>
     <url>
@@ -13,7 +29,15 @@
         <loc>https://sch001.g0v.tw/2020/</loc>
     
         
-        <lastmod>2021-04-19T10:25:50.357Z</lastmod>
+        <lastmod>2021-05-03T14:07:37.380Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sch001.g0v.tw/grant/index-en.html</loc>
+    
+        
+        <lastmod>2021-05-03T14:07:37.550Z</lastmod>
     
     </url>
     <url>
@@ -21,7 +45,15 @@
         <loc>https://sch001.g0v.tw/grant/</loc>
     
         
-        <lastmod>2021-04-19T10:25:28.940Z</lastmod>
+        <lastmod>2021-05-03T14:07:37.736Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sch001.g0v.tw/means/index-en.html</loc>
+    
+        
+        <lastmod>2021-05-03T14:07:37.752Z</lastmod>
     
     </url>
     <url>
@@ -29,7 +61,15 @@
         <loc>https://sch001.g0v.tw/means/</loc>
     
         
-        <lastmod>2021-04-19T10:25:28.963Z</lastmod>
+        <lastmod>2021-05-03T14:07:37.937Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sch001.g0v.tw/power/index-en.html</loc>
+    
+        
+        <lastmod>2021-05-03T14:07:37.985Z</lastmod>
     
     </url>
     <url>
@@ -37,7 +77,15 @@
         <loc>https://sch001.g0v.tw/power/</loc>
     
         
-        <lastmod>2021-04-19T10:25:50.404Z</lastmod>
+        <lastmod>2021-05-03T14:07:38.021Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sch001.g0v.tw/power/en/index-en.html</loc>
+    
+        
+        <lastmod>2021-05-03T14:07:38.054Z</lastmod>
     
     </url>
     <url>
@@ -45,7 +93,7 @@
         <loc>https://sch001.g0v.tw/power/en/</loc>
     
         
-        <lastmod>2021-04-19T10:25:50.396Z</lastmod>
+        <lastmod>2021-05-03T14:07:38.085Z</lastmod>
     
     </url>
 </urlset>
