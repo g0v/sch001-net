@@ -7,7 +7,10 @@ const fs = require('fs');
 
 
 function deploy() {
+  let build_time = new Date().getTime();
+  console.log(build_time);
   const datas = {
+    timestamp: build_time,
     index: require('./data/index.json'),
     index_old: require('./data/index2020.json'),
     power: require('./data/power.json')
