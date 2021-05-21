@@ -10,6 +10,11 @@ html(lang="zh-Hant-TW")
     include nav.pug
     #header.container-fluid.m-0.p-0
       .inner
+      .row.justify-content-center.p-4
+        .col-md-6
+          a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://g0v.hackmd.io/@jothon/Sch001_DontStopLearning" target="_blank") 停課不停學專區
+        .col-md-6
+          a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://app.studyathome.jp/zh-tw" target="_blank") 在家學習時間表
     .part-light
       #about.container-md.p-4
         div(data-aos-offset="100" data-aos="fade-up")
@@ -152,7 +157,7 @@ html(lang="zh-Hant-TW")
     script.
       $(window).on("load",function() {
         console.log("loaded");
-        $("#header .inner").fadeIn(1000);
+        $("#header .inner").animate({"opacity": 1},1000);
       });
 
       $.getJSON( "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post", function( data ) {
