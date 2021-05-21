@@ -19,15 +19,20 @@ red {
   color: red;
 }
 
+
 a:link, a:visited {
 	color: #FC761B;
 }
-.btn-outline-my {
+
+a[role=button] {  
+  color: white;
+}
+a.btn-outline-my {
   color: #FC761B;
   background-color: rgba(0,0,0,0);
   border: 1.2px solid #FC761B;
 }
-.btn-outline-my:hover {
+a.btn-outline-my:hover {
   color: #FFF;
   background-color: #FC761B;
 }
