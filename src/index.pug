@@ -10,12 +10,17 @@ html(lang="zh-Hant-TW")
     include nav.pug
     #header.container-fluid.m-0.p-0
       .inner
-      .row.justify-content-center.p-4
+      //.row.justify-content-center.p-4
         .col-md-6
           a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://g0v.hackmd.io/@jothon/Sch001_DontStopLearning" target="_blank") 停課不停學專區
         .col-md-6
           a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://app.studyathome.jp/zh-tw" target="_blank") 在家學習時間表
-    .part-light
+    .part-light    
+      #news.container-md.p-4.d-none
+        div(data-aos-offset="100" data-aos="") 
+          h1.p-4 最新消息
+          .news-list.px-4
+      hr
       #about.container-md.p-4
         div(data-aos-offset="100" data-aos="fade-up")
           h1.p-4 #{$i18n.AboutSch001}
@@ -41,12 +46,6 @@ html(lang="zh-Hant-TW")
             | 零時小學校全新企畫「Code for Sch001ing：g0v 源力增能營」將在 2021 年辦理六場，邀請 g0v 社群資深參與者來跟大家分享「自主學習」的經驗與「專案跨領域合作」的方法，不一定需要寫程式，零基礎也完全沒問題！只要你對 g0v 貢獻者如何運用協作工具、開放資料、開源專案成果，不斷自學與共學的方法有興趣，歡迎你一起來增加 g0v「開源力」的第一線協作知識，運用資訊科技、分析問題、協作分工，站上自學共學的起點，開啟專案參與的旅程！詳細營隊資訊，請見最新消息。 
 
       hr
-      #news.container-md.px-4.d-none
-        div(data-aos-offset="100" data-aos="") 
-          h1.p-4 最新消息
-          .news-list.p-4
-        hr
-
       #howto.container-md.p-4
         div(data-aos-offset="100" data-aos="") 
           h1.p-4 如何參與        
@@ -160,8 +159,10 @@ html(lang="zh-Hant-TW")
         $("#header .inner").animate({"opacity": 1},1000);
       });
 
-      $.getJSON( "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post", function( data ) {
-      //$.getJSON( "/assets/test_news.json", function( data ) {
+      let news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
+      news_url = "/assets/test_news.json";
+
+      $.getJSON( news_url , function( data ) {
         console.log(data);
         if(data.length > 0) {
           $("#news").removeClass("d-none");
