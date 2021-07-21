@@ -1,0 +1,72 @@
+- var _teachers = ssr2021["teachers"]
+<!DOCTYPE html>
+html(lang="zh-Hant-TW")
+  include ../header.pug
+  link(rel="stylesheet" href="../styles/common.css?version="+timestamp)
+  link(rel="stylesheet" href="../styles/ssr.css?version="+timestamp)
+  body(data-spy="scroll" data-target=".navbar" data-offset="100")
+    include ../nav.pug
+    img.header.w-100(src="../assets/img/ssr2021.jpg", alt="ssr2021")
+    .part-light: .container.py-4
+      .px-4
+        h1.py-4 簡介
+        p 零時小學校「夏日源理」2021 線上源力增能營是 g0v 貢獻者與 g0v 揪松團協作推出的線上課程計畫，以「開源、協作、開放學習」為主軸，期盼以開放的方式，在線上陪伴所有學習者，不分年齡、不需要學籍，只要你想學習，我們隨時都在線上陪伴你。
+        p 本次零時小學校線上源力增能營為期四週，整體課程架構包含課程影片、作業驗收、課程工作坊與最後的夏日黑客松，每堂課都是資深社群參與者的知識精華，學員在自主觀看影片學習之後，可以透過作業、工作坊和夏日黑客松，實作社群專案，找到協作的樂趣！
+        p 營隊沒有任何身分與年齡限制，不是學生也可以參加，歡迎有興趣的朋友報名參加零時小學校線上源力增能營，為你人生的牌組多添一張 SSR 成就。
+        p 完整參與課程並完成講師指定作業者，可以登記「零時小學校修業時數」，將可領取「零時小學校修業證書」以茲證明。
+        a.py-4.text-mark 註：SSR 有「Superior Super Rare」的意思，在常見的牌卡遊戲中，SSR 代表是非常稀有的卡。
+      hr
+      img.w-100.px-4.py-2(src="../assets/img/ssr2021_calendar.png", alt="ssr2021 calendar")
+      hr
+      .px-4
+        h1.py-4 必修
+        p: a(href="https://g0v.hackmd.io/SWNKVBlsQnyVytscCCA4GQ?view#%E5%BF%85%E4%BF%AE-%E6%8A%80%E8%83%BD%E5%AD%B8%E7%A8%8B%E3%80%8C%E6%96%B0%E6%89%8B%E6%9D%91%E3%80%8D%EF%BC%9A%E7%A4%BE%E7%BE%A4%E4%BB%8B%E7%B4%B9%E3%80%81%E5%8D%94%E4%BD%9C%E5%9F%BA%E7%A4%8E%E3%80%81%E5%8D%94%E4%BD%9C%E5%AF%A6%E4%BE%8B%E3%80%81%E7%B7%9A%E4%B8%8A%E6%B4%BB%E5%8B%95" target="_blank") 技能學程「新手村」：社群介紹、協作基礎、協作實例、線上活動
+        p g0v 是一個致力於推動開放協作的社群，以開放原始碼、開放資料、開放授權為基礎，g0v 宣言為共識，提供協作方法、平台、夥伴與連結，使公民透過貢獻專案成為社會中的行動者，發揮影響力。
+        p 在「新手村」，主辦 g0v 雙月黑客松的工作小組 g0v 零時政府揪松團（jothon）將透過既有的數位工具，以及經年累月形塑而成的協作心法與技巧，讓學員能夠跨越國界距離、撕去既定標籤，在推動社會進步的道路上攜手合作。除此之外，具有專案協作經驗的 g0v 貢獻者也將手把手帶領你一起踏入「協作」的大門，成為未來與他人合作的無形資產。
+        h1.py-4 選修
+        p: a(href="https://g0v.hackmd.io/SWNKVBlsQnyVytscCCA4GQ?view#%E9%81%B8%E4%BF%AE-%E6%8A%80%E8%83%BD%E5%AD%B8%E7%A8%8B%E3%80%8C%E9%BD%8A%E9%97%A2%E8%AC%A0%E3%80%8D%EF%BC%9A%E9%97%A2%E8%AC%A0%E6%9F%A5%E8%AD%89%E3%80%81%E6%9F%A5%E6%89%BE%E8%B3%87%E6%96%99%E3%80%81%E6%92%B0%E5%AF%AB%E6%A2%9D%E7%9B%AE" target="_blank") 技能學程「齊闢謠」：闢謠查證、查找資料、撰寫條目
+        //a(href="https://g0v.hackmd.io/SWNKVBlsQnyVytscCCA4GQ?view#%E3%84%87-Cofacts-%E7%9C%9F%E7%9A%84%E5%81%87%E7%9A%84%E9%97%A2%E8%AC%A0-LINE-Bot" target="_blank")
+        h5.py-2 Cofacts 真的假的闢謠 LINE Bot
+        p 長輩群組內的假訊息誤導你的爸媽、破壞你的人生，幫助你的家人朋友，從查證假訊息開始。除了媒體識讀與資訊素養等基礎公民知識，你將學習到查核記者如何進行事實查核的技巧與工具。更棒的是，你花的時間不會白費，查了一次，就可以造福他人千千萬萬次！本工作坊將讓你熟悉事實查核平台與群眾協作，你將獲得屬於自己的個人頁面與成就累積，鍵盤付出善行，讓所有人閱讀你的文字。
+        
+        //a(href="https://g0v.hackmd.io/SWNKVBlsQnyVytscCCA4GQ?view#%E3%84%88-Wikimedia-%E7%B6%AD%E5%9F%BA%E7%99%BE%E7%A7%91%E7%B7%A8%E8%BC%AF%E8%AA%B2" target="_blank")
+        h5.py-2 Wikimedia 維基百科編輯課
+        p 維基百科 20 周年了，這個全球最大的資料彙編的開放社群運動，你是否曾經想要嘗試參與卻又不知道如何開始呢？
+        p 台灣維基媒體協會這次與 g0v 零時小學校推出維基百科寫作系列課程，將會透過 12 堂的單元課程與數次的社群工作坊，帶你從頭了解維基百科與整個維基媒體計畫的大小事。
+        
+        //a(href="https://g0v.hackmd.io/SWNKVBlsQnyVytscCCA4GQ?view#%E3%84%89-%E5%9C%B0%E7%90%86%E8%B3%87%E6%96%99%E8%88%87%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96" target="_blank")
+        h5.py-2 技能學程「梳地理」：地理資料運用
+        p 地理圖資的系列課程中，講師會帶領大家摸索，關於地理資料與地圖的工具平台，並邀請 g0v 社群中與地圖相關的專案進行介紹，讓學員在課程結束後，可以運用地理資料，輔助於構思專案或研究主題。
+        
+        //a(href="https://g0v.hackmd.io/SWNKVBlsQnyVytscCCA4GQ?view#%E3%84%8A-%E7%B7%9A%E4%B8%8A%E6%8F%AA%E6%9D%BE%E7%9B%B4%E6%92%AD%E8%AA%B2" target="_blank")
+        h5.py-2 技能學程「開直播」：直播、影音
+        p 「開直播」或許一個按鍵按下去就能進行，但如何要讓直播影像與音訊穩定呈現，或是有更多的變化，就必須要搭配更多元的工具和操作撇步。線上直播課程中會帶大家從直播的軟硬體開始認識，並透過講者過往的直播經驗，總結出身為「導播」必備的背景知識，讓未來不管是想要成為直播主、辦線上活動，都能呈現高質感的畫面留住觀眾。
+    .part-dark: .container.py-4
+      .px-4
+        h1.py-4 講師
+          a.btn.btn-outline-my.ml-4(href="https://g0v.hackmd.io/@jothon/rydZuwOhd" target="_blank") 講師詳細介紹
+        mixin teacher-block(_id)
+          .teacher-block.col-md-6.mb-4: .row
+            .teacher-avatar.col-auto(style=`background-image: url(/assets/avatar/ssr/${_teachers[_id].avatar}.jpg`)
+            .teacher-detail.col
+              h5= _teachers[_id].name+"／"+_teachers[_id].title
+              p.m-0= _teachers[_id].content
+        .text-left
+          .row         
+            each val, index in _teachers
+              +teacher-block(index)
+    .part-light: .container.py-4
+      .px-4
+        h2.py-4 注意事項
+        ul 
+          li 課程需要以電腦操作，學員需自備電腦／平板參與活動。
+          li 選修課程共有四種，開幕式結束後，學員會收到選修課程選課網址，回答基本驗證問題即可進行選課。
+          li 課程影片將會以指定授權方式公開於影音平台上，不過只有報名的學員才能參加課程的 Office Hour／工作坊，並在營隊結業後，得到相對應時數的學習時數證書。
+      .px-4
+        h2.py-4 時數認證
+        ul 
+          li 請一定要於選修課 KKTIX 活動報名各選修課課程，才會登錄進時數認證名單。
+          li 時數認證方式需完成課程作業，由各課程講師認證統計。（各課程時數可參考課程目錄）
+          li 課程影片將會以指定授權方式公開於影音平台上，不過只有報名的學員才能參加課程的 Office Hour／工作坊，並在營隊結業後，得到相對應時數的學習時數證書。
+          li 營隊結業證書預計於 8/31（二）前寄發電子版至報名信箱。
+    include ../footer.pug

@@ -66,6 +66,21 @@
                 "name": "教育部偏鄉數位創新服務計畫",
                 "link": "https://www.facebook.com/%E6%95%99%E8%82%B2%E9%83%A8%E5%81%8F%E9%84%89%E6%95%B8%E4%BD%8D%E5%89%B5%E6%96%B0%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB-109141710913127/",
                 "img": "偏鄉數位.JPG"
+            },
+            {
+                "name": "臺南青年志工中心",
+                "link": "https://youthvolunteer.yda.gov.tw/promote_area.php?pid=19",
+                "img": "台南青年志工中心.jpg"
+            },
+            {
+                "name": "國立竹北高級中學",
+                "link": "https://www.cpshs.hcc.edu.tw/",
+                "img": "竹北高中.png"
+            },
+            {
+                "name": "臺中市立臺中女子高級中學",
+                "link": "https://tcgs.tc.edu.tw/",
+                "img": "台中女中-校徽校名@72x.png"
             }
         ],
         "community": [
@@ -83,6 +98,16 @@
                 "name": "Cofacts 真的假的（訊息回報機器人與查證協作社群）",
                 "link": "https://cofacts.g0v.tw/",
                 "img": "cofacts.png"
+            },
+            {
+                "name": "vTaiwan",
+                "link": "https://vtaiwan.tw/",
+                "img": "vtaiwan.png"
+            },
+            {
+                "name": "Jothon Online",
+                "link": "https://jothon.online/",
+                "img": "jothon-online.png"
             },
             {
                 "name": "台灣維基媒體協會 Wikimedia Taiwan",

@@ -41,10 +41,10 @@ html(lang="zh-Hant-TW")
           h3.pl-4.pt-4 活化紙本，知識在社群開放出來          
           p.px-4.py-1
             | g0v 社群的貢獻者們，曾經協作「<a href="https://www.moedict.tw/" target="_blank">萌典</a>」、「<a href="https://amis.moedict.tw/" target="_blank">阿美語萌典</a>」、「<a href="https://itaigi.tw/" target="_blank">iTaigi</a>」和「<a href="https://chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同，包括紙本資料數位化、資料格式化和宅宅文字辨識 OCR（Otaku Character Recognition）等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。(<a href="https://g0v.hackmd.io/@jothon/edu-list" target="_blank">參考更多教育專案</a>)
-          h3.pl-4.pt-4 Code for Sch001ing：g0v 源力增能營          
-          p.px-4.py-1
-            | 零時小學校全新企畫「Code for Sch001ing：g0v 源力增能營」將在 2021 年辦理六場，邀請 g0v 社群資深參與者來跟大家分享「自主學習」的經驗與「專案跨領域合作」的方法，不一定需要寫程式，零基礎也完全沒問題！只要你對 g0v 貢獻者如何運用協作工具、開放資料、開源專案成果，不斷自學與共學的方法有興趣，歡迎你一起來增加 g0v「開源力」的第一線協作知識，運用資訊科技、分析問題、協作分工，站上自學共學的起點，開啟專案參與的旅程！詳細營隊資訊，請見最新消息。 
-
+          h3.pl-4.pt-4 2021 線上源力增能營
+          p.px-4.pt-1
+            | 零時小學校「夏日源理」2021 線上源力增能營是 g0v 貢獻者與 g0v 揪松團協作推出的線上課程計畫，以「開源、協作、開放學習」為主軸，期盼以開放的方式，在線上陪伴所有學習者，不分年齡、不需要學籍，只要你想學習，我們隨時都在線上陪伴你。
+            a.btn.btn-outline-my.btn-block.my-2(role='button' href="/ssr") 了解更多
       hr
       #howto.container-md.p-4
         div(data-aos-offset="100" data-aos="") 
@@ -67,7 +67,7 @@ html(lang="zh-Hant-TW")
                 a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/howtojoinslackedu") 小學校平台一把抓
               .col-md-4.text-center(data-aos-offset="100" data-aos="fade-up" data-aos-delay="200")
                 .step-img(style="background-image: url(assets/img/step2_2021.jpg);")
-                h4.text-center 第二步：實體參加小學校活動，跟志同道合的夥伴一起討論專案！
+                h4.text-center 第二步：參加小學校活動，跟志同道合的夥伴一起討論專案！
                 p 小學校網站、共筆以及相關社群平台，都會發布最新活動訊息，只要你完成第零步和第一步，就可以無負擔參加小學校活動囉！
                 a.btn.btn-outline-my.btn-block(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/jothon2021") 零時小學校 2021 行事曆
 
@@ -109,18 +109,19 @@ html(lang="zh-Hant-TW")
           h3.text-center.py-2 啟蒙者夥伴
           .row.justify-content-center.text-center
             .col-md-4
-              .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/願景工程+努力讓台灣更好-1.png');")
-              //a 聯合報系願景工程
+              .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/partners/願景工程+努力讓台灣更好-1.png');")
+            .col-md-4
+              .partner-img(type="button" data-toggle="modal" data-target="" style="background-image: url('/assets/img/partners/晨星.jpg');")
           hr
 
           h3.text-center.py-2 源力夥伴
           - var delay = 0;
           mixin partners-block(_id)
-            .partners-block.col-md-3.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
+            .partners-block.col-md-4.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
               a(target="_blank" href=_partners['source'][_id].link)
-                .partner-img(style="background-image: url(/assets/partners/"+_partners['source'][_id].img+");")
+                .partner-img(style="background-image: url(/assets/img/partners/"+_partners['source'][_id].img+");")
                 a #{_partners['source'][_id].name}
-          .row.justify-content-center
+          .row.justify-content-center.px-4
             each val, index in _partners['source']
               if index%2 == 0
                 - delay = 0;
@@ -131,10 +132,10 @@ html(lang="zh-Hant-TW")
           mixin partners-block(_id)
             .partners-block.col-md-3.col-lg-2.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
               a(target="_blank" href=_partners['community'][_id].link)
-                .partner-img(style="background-image: url(/assets/partners/"+_partners['community'][_id].img+");")
+                .partner-img(style="background-image: url(/assets/img/partners/"+_partners['community'][_id].img+");")
                 a #{_partners['community'][_id].name}
 
-          .row.justify-content-center
+          .row.justify-content-center.px-4
             each val, index in _partners['community']
               if index%2 == 0
                 - delay = 0;

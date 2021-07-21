@@ -13,7 +13,8 @@ function deploy() {
     timestamp: build_time,
     index: require('./data/index.json'),
     index_old: require('./data/index2020.json'),
-    power: require('./data/power.json')
+    power: require('./data/power.json'),
+    ssr2021: require('./data/ssr2021.json')
   };
   gulp.src('src/**/index.pug')    
     .pipe(pug({

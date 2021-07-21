@@ -19,18 +19,20 @@ red {
   color: red;
 }
 
-
 a:link, a:visited {
 	color: #FC761B;
+  text-decoration: underline;
 }
 
-a[role=button] {  
-  color: white;
+a.nav-link, a.navbar-brand {
+  text-decoration: none;
 }
+
 a.btn-outline-my {
   color: #FC761B;
   background-color: rgba(0,0,0,0);
   border: 1.2px solid #FC761B;
+  text-decoration: none;
 }
 a.btn-outline-my:hover {
   color: #FFF;
@@ -75,6 +77,10 @@ a.btn-outline-my:hover {
 
 .part-light p, .part-light li {
   color: #444;
+}
+
+.part-light h1, .part-light h2, .part-light h3, .part-light h4, .part-light h5 {
+  color: #222;
 }
 
 #footer {

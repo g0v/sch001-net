@@ -159,10 +159,10 @@ html(lang="zh-Hant-TW")
           .container.text-center
             .row.justify-content-center            
               .col-lg-4
-                .partner-img(type="button" data-toggle="modal" data-target="#modal-kist" style="background-image: url('/assets/img/誠致教育基金會 logo.png');")
+                .partner-img(type="button" data-toggle="modal" data-target="#modal-kist" style="background-image: url('/assets/img/partners/誠致教育基金會 logo.png');")
                 a 財團法人誠致教育基金會
               .col-lg-4
-                .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/願景工程+努力讓台灣更好-1.png');")
+                .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/partners/願景工程+努力讓台灣更好-1.png');")
                 a 聯合報系願景工程
           hr
           h3.text-center 社群夥伴
@@ -170,7 +170,7 @@ html(lang="zh-Hant-TW")
           mixin partners-block(_id)
             .partners-block.col-lg-2.text-center.p-2.m-2(data-aos="fade-up", data-aos-delay= delay+=100)
               a(target="_blank" href=_partners[_id].link)
-                .partner-img(style="background-image: url(/assets/partners/"+_partners[_id].img+");")
+                .partner-img(style="background-image: url(/assets/img/partners/"+_partners[_id].img+");")
                 a #{_partners[_id].name}
                             
           .row.justify-content-center
