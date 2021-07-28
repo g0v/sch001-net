@@ -1,6 +1,6 @@
 body {
-  color: #F6EAB6;
-  background-color: #192A58;
+  color: #FCF0BA;
+  background-color: #13295E;
 	background-image: url(/assets/img/bg_new_simple.jpg);
   background-attachment: fixed;
 	background-position: center bottom;
@@ -21,7 +21,7 @@ red {
 }
 
 a:link, a:visited {
-	color: #B74C98;
+	color: #FF00E2;
   text-decoration: underline;
 }
 
@@ -30,14 +30,14 @@ a.nav-link, a.navbar-brand {
 }
 
 a.btn-outline-my {
-  color: #B74C98;
+  color: #FF00E2;
   background-color: rgba(0,0,0,0);
-  border: 1.2px solid #B74C98;
+  border: 1.2px solid #FF00E2;
   text-decoration: none;
 }
 a.btn-outline-my:hover {
   color: #FFF;
-  background-color: #B74C98;
+  background-color: #FF00E2;
 }
 
 .navbar .navbar-brand {
@@ -47,7 +47,7 @@ a.btn-outline-my:hover {
 .navbar .navbar-nav a.nav-link:hover {
   transition: 0.3s;
 	color: #f8f9fa;
-	background-color: #192A58;
+	background-color: #13295E;
 	border-radius: 3px;
 }
 
@@ -59,7 +59,7 @@ a.btn-outline-my:hover {
 
 .part-dark {
   background-color: rgba(8,33,48,0.5);
-  color: #F6EAB6;
+  color: #FCF0BA;
 }
 
 .part-dark p {
