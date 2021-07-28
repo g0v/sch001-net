@@ -1,7 +1,7 @@
 #header {
 	height: calc(100vh - 3em);
   overflow: hidden;
-  background-color: #192A58;
+  background-color: #13295E;
 	background-image: url(/assets/img/bg_new.jpg);
   background-attachment: fixed;
 	background-position: center bottom;
@@ -18,18 +18,42 @@
   background-repeat: no-repeat;
 }
 
+@keyframes go-create-keyframe {
+  0%   {bottom: 4rem;}
+  50% {bottom: 3rem;}
+}
+
+#go-create {
+  position: absolute;
+  left: calc(50% - 10rem);
+  width: 20rem;
+  bottom: 4rem;
+  animation-name: go-create-keyframe;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;  
+  animation-iteration-count: infinite;
+  background-color: #FF00E2;
+  color: white;
+  text-decoration: none;
+}
+
+#go-create:hover {
+  background-color: #FF97F3;  
+}
+
 #header .row {
   position: relative;
   bottom: 8em;
 }
 
 #about .quote-box {
-	background-image: url(/assets/img/bg.min.jpg);
+	background-image: url(/assets/img/bg_new.jpg);
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
   border-radius: 5px;
   color: white;
+  text-align: center;
 }
 
 #news .news-list p{
