@@ -1,13 +1,19 @@
 #header {
 	height: calc(100vh - 3em);
   overflow: hidden;
+  background-color: #192A58;
+	background-image: url(/assets/img/bg_new.jpg);
+  background-attachment: fixed;
+	background-position: center bottom;
+	background-size: cover;
+  background-repeat: no-repeat;
 }
 #header .inner {
   opacity: 0;
   display: flex;
   height: 100%;
-	background-image: url(/assets/img/main_1920x1080_f-01.svg);
-	background-position: center top;
+	background-image: url(/assets/img/main_new_f.svg);
+	background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -157,7 +163,10 @@ ul.timeline > li .timeline-details p {
 }
 
 @media (max-width: 767px) {
-  #header .row {
-    bottom: 10em;
+  #header {
+    background-size: cover;
+  }
+  #header .inner {
+    background-size: cover;
   }
 }

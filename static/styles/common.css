@@ -1,10 +1,11 @@
 body {
-  color: #FCD0D3;
-  background-color: #0B2E43;
-	background-image: url(/assets/img/bg.min.jpg);
+  color: #F6EAB6;
+  background-color: #192A58;
+	background-image: url(/assets/img/bg_new_simple.jpg);
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
+  background-repeat: no-repeat;
 }
 a, b, p, h1, h2, h3, h4, h5, h6, li{
 	font-family: 'Noto Sans TC', sans-serif;
@@ -20,7 +21,7 @@ red {
 }
 
 a:link, a:visited {
-	color: #FC761B;
+	color: #B74C98;
   text-decoration: underline;
 }
 
@@ -29,14 +30,14 @@ a.nav-link, a.navbar-brand {
 }
 
 a.btn-outline-my {
-  color: #FC761B;
+  color: #B74C98;
   background-color: rgba(0,0,0,0);
-  border: 1.2px solid #FC761B;
+  border: 1.2px solid #B74C98;
   text-decoration: none;
 }
 a.btn-outline-my:hover {
   color: #FFF;
-  background-color: #FC761B;
+  background-color: #B74C98;
 }
 
 .navbar .navbar-brand {
@@ -46,7 +47,7 @@ a.btn-outline-my:hover {
 .navbar .navbar-nav a.nav-link:hover {
   transition: 0.3s;
 	color: #f8f9fa;
-	background-color: #0b2e43;
+	background-color: #192A58;
 	border-radius: 3px;
 }
 
@@ -58,7 +59,7 @@ a.btn-outline-my:hover {
 
 .part-dark {
   background-color: rgba(8,33,48,0.5);
-  color: #FCD0D3;
+  color: #F6EAB6;
 }
 
 .part-dark p {
