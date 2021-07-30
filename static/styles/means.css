@@ -27,6 +27,10 @@ hr {
     color: #AAA;
 }
 
+#topics h5 svg, #topics h5 i {
+    width: 2rem;
+}
+
 .judge-details {
     flex: 1;
 }

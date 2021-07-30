@@ -52,8 +52,8 @@ block body
           .vertical-center
             .gd-prj-list-info
               h3 #{brd.name}
-              p.desc #{(brd.description || '').substring(0,100)} ...
-              a.btn(href="https://docs.google.com/document/d/1-rQYOzrpEx8BQtLE2IUIKUoZWJ5xrTuiZFbLjBh3tAE/edit",target="_blank") 實施細則
+              p.desc #{(brd.description || '')}
+              a.btn(href="/means") 實施細則
               a.btn.ml-2(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
         .gd-prj-list-ctrl
           div
