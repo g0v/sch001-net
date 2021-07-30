@@ -1,0 +1,129 @@
+{
+    "title": "sch001 零時小學校",
+    "team_members": [{
+            "name": "侯宜秀",
+            "en": "isabelhou",
+            "title": "揪松團輪值主席／法律顧問",
+            "disc": "g0v 社群長期參與者，1997 年起執業，專注科技創新及智慧財產法律，曾擔任多項政府大型科技補助計畫及 NGO 法律顧問，長期關注開源科技及社會議題。"
+        },
+        {
+            "name": "瞿筱葳",
+            "en": "ipa",
+            "title": "揪松團成員",
+            "disc": "g0v 零時政府共同發起人，作家／紀錄片工作者。近年關注開源文化與數位公民參與，推廣跨界開源協作模式。"
+        },
+        {
+            "name": "高嘉良",
+            "en": "clkao",
+            "title": "揪松團成員",
+            "disc": "g0v 零時政府共同發起人。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v 計畫。"
+        },
+        {
+            "name": "吳泰輝",
+            "en": "kirby",
+            "title": "揪松團成員",
+            "disc": "g0v 零時政府共同發起人，網路工程師，深度耕耘資料視覺化與新媒體實驗。"
+        },
+        {
+            "name": "王向榮",
+            "en": "ronnywang",
+            "title": "揪松團成員",
+            "disc": "李慕約公司共同創辦人，g0v 社群長期參與者，發起與參與過新聞小幫手、求職小幫手、台灣公司資料、開放政治獻金等專案，希望更透明的政府可以讓大家有更自由幸福的生活。"
+        },
+        {
+            "name": "劉哲瑋",
+            "en": "chewei",
+            "title": "揪松團成員",
+            "disc": "任職於空間規劃公司，並持續以社群志願者的身份，參與「公有地大行動」、「資料申請小幫手」、「都市農耕網」等民間倡議行動。"
+        },
+        {
+            "name": "李佳珊",
+            "en": "bess",
+            "title": "揪松團秘書長",
+            "disc": "g0v 揪松團秘書長，將近十年非營利組織工作經驗，領域橫跨藝術、環境與公民科技，在 g0v 社群推動跨界合作模式。"
+        },
+        {
+            "name": "陳以婕",
+            "en": "ichieh",
+            "title": "揪松團執行秘書",
+            "disc": "和g0v一樣從0開始，認識社群。比平凡更平凡的人，希望當一顆閃閃發亮的小螺絲，讓沒有接觸過社群的人知道，加入社群只需要空出一個星期六。"
+        },
+        {
+            "name": "高任翔",
+            "en": "seangau",
+            "title": "揪松團工程師",
+            "disc": "g0v 社群參與者，電機、藝術、環境、設計相關背景，為「大河小溪全民齊督工」共同發起人。"
+        }
+    ],
+    "partners": [{
+            "name": "開放文化基金會",
+            "link": "https://ocf.tw/",
+            "img": "OCF.png"
+        },
+        {
+            "name": "g0v-intl 國際交流小組",
+            "link": "https://g0v.hackmd.io/@chihao/rJmYFi0YS",
+            "img": "g0v-intl.png"
+        },
+        {
+            "name": "Code for Japan (CfJ)",
+            "link": "https://www.code4japan.org/",
+            "img": "cfj.png"
+        },
+        {
+            "name": "聯發科技教育基金會",
+            "link": "https://www.mediatekfoundation.org/",
+            "img": "MTK.png"
+        },
+        {
+            "name": "AppWorks School",
+            "link": "https://school.appworks.tw/",
+            "img": "appworksschool.jpg"
+        },
+        {
+            "name": "ChhoeTaigi 找台語",
+            "link": "https://chhoe.taigi.info/",
+            "img": "chhoetaigi.jpg"
+        },
+        {
+            "name": "Amis MoeDict 阿美語萌典",
+            "link": "https://amis.moedict.tw",
+            "img": "amis.jpg"
+        },
+        {
+            "name": "MoeDict 萌典",
+            "link": "https://www.moedict.tw/about.html",
+            "img": "moedict.png"
+        },
+        {
+            "name": "財團法人為台灣而教教育基金會 Teach for Taiwan",
+            "link": "https://www.teach4taiwan.org/",
+            "img": "teachfortaiwan.png"
+        },
+        {
+            "name": "Wikidata Taiwan 臺灣維基數據社群",
+            "link": "https://www.facebook.com/WikidataTW/",
+            "img": "wikidata.png"
+        },
+        {
+            "name": "MozTW (Mozilla 台灣社群)",
+            "link": "https://moztw.org/",
+            "img": "moztw.jpg"
+        },
+        {
+            "name": "好想工作室 Goodideas-Studio",
+            "link": "https://goodideas-studio.com/",
+            "img": "goodideas.png"
+        },
+        {
+            "name": "逆轉聯盟協會",
+            "link": "http://www.2home.org.tw/RWD01/default.aspx",
+            "img": "futuretransformer.png"
+        },
+        {
+            "name": "教育噗浪客",
+            "link": "http://tpet.ntct.edu.tw/",
+            "img": "tpet.png"
+        }
+    ]
+}

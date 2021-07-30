@@ -1,56 +1,65 @@
 h1::before {
-  content: "";
-  background-color: #FCD0D3;
-  display: inline-block;
-  width: 5px;
-  height: 0.75em;
-  margin: 0 0.3em 0 0;
+    content         : "";
+    background-color: #FCF0BA;
+    display         : inline-block;
+    width           : 5px;
+    height          : 0.75em;
+    margin          : 0 0.3em 0 0;
 }
+
 i {
-  color: #AAA;
-  width: 1em;
-  display: block;
-  margin-right: 0.5em;
+    color       : #AAA;
+    width       : 1em;
+    display     : block;
+    margin-right: 0.5em;
 }
+
 hr {
-  border-top: 3px solid rgba(0,0,0,0.1);
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
 }
+
 .part-dark {
-  background-color: rgba(8,33,48,0.5);
-  color: #FCD0D3;
+    background-color: rgba(0, 0, 0, 0.2);
+    color           : #FCF0BA;
 }
 
 .part-dark p {
-  color: #AAA;
+    color: #AAA;
+}
+
+#topics h5 svg, #topics h5 i {
+    width: 2rem;
 }
 
 .judge-details {
-  flex: 1;
+    flex: 1;
 }
+
 .judge-img {
-  width: 100px;
-  margin-right: 1rem;
+    width       : 100px;
+    margin-right: 1rem;
 }
 
 .judge-img img {
-  border-radius: 10px;  
-  width: 100%;
+    border-radius: 10px;
+    width        : 100%;
 }
 
 #opencallio {
-  width: 100%; 
-  background-color: rgba(8,33,48,0.5); 
-  padding: 3em; 
-  border-radius: 15px;
+    width           : 100%;
+    background-color: rgba(8, 33, 48, 0.5);
+    padding         : 3em;
+    border-radius   : 15px;
 }
+
 .card {
-  background-color: rgba(0,0,0,0);
-  border: 1px solid rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, 0);
+    border          : 1px solid rgba(0, 0, 0, .3);
 }
 
 
 @media (max-width: 992px) {
-  #opencallio {
-    padding: 1em;     
-  }
+    #opencallio {
+        padding: 1em;
+    }
 }

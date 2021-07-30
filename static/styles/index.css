@@ -1,13 +1,63 @@
 #header {
-	height: 95vh;
+	height: calc(100vh - 3em);
   overflow: hidden;
+  background-color: #13295E;
+	background-image: url(/assets/img/bg_new.jpg);
+  background-attachment: fixed;
+	background-position: center bottom;
+	background-size: cover;
+  background-repeat: no-repeat;
 }
 #header .inner {
+  opacity: 0;
+  display: flex;
   height: 100%;
-	background-image: url(/assets/img/main_1920x1080_f-01.svg);
-	background-position: center top;
+	background-image: url(/assets/img/main_new_f.svg);
+	background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@keyframes go-create-keyframe {
+  0%   {bottom: 4rem;}
+  50% {bottom: 3rem;}
+}
+
+#go-create {
+  position: absolute;
+  left: calc(50% - 10rem);
+  width: 20rem;
+  bottom: 4rem;
+  animation-name: go-create-keyframe;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;  
+  animation-iteration-count: infinite;
+  background-color: #FF00E2;
+  color: white;
+  text-decoration: none;
+}
+
+#go-create:hover {
+  background-color: #FF97F3;  
+}
+
+#header .row {
+  position: relative;
+  bottom: 8em;
+}
+
+#about .quote-box {
+	background-image: url(/assets/img/bg_new.jpg);
+  background-attachment: fixed;
+	background-position: center bottom;
+	background-size: cover;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+#news .news-list p{
+  font-size: 1.2em;
 }
 
 #howto-steps > div {
@@ -17,10 +67,6 @@
 #howto-steps div p {
 	padding: 0.5rem;
     text-align-last: center;
-}
-
-#howto-steps div a {
-	font-size: 0.9rem;
 }
 
 .step-img {
@@ -111,6 +157,11 @@ ul.timeline > li .timeline-details p {
   border-radius: 10px;
 }
 
+#partner {
+  background-color: #FFF;
+  border-radius: 1em;
+}
+
 .partner-img {
 	margin-bottom: 10px;
   width: 100%;
@@ -121,12 +172,12 @@ ul.timeline > li .timeline-details p {
 	background-size: contain;
 }
 
-.partners-block {
+.partners-block > div {
   transition: 0.5s;
   border-radius: 3px;
   border: 1px solid #CCC;
 }
-.partners-block:hover {
+.partners-block > div:hover {
 
   transition: 0.3s;
   border: 1px solid #888;
@@ -135,8 +186,11 @@ ul.timeline > li .timeline-details p {
 	margin-bottom: 0;
 }
 
-@media (max-width: 992px) {
-#header {
-  height: 100vh;
-}
+@media (max-width: 767px) {
+  #header {
+    background-size: cover;
+  }
+  #header .inner {
+    background-size: cover;
+  }
 }

@@ -11,8 +11,7 @@
     "url": "https://github.com/g0v/sch001-net"
   },
   "scripts": {
-    "start": "gulp server",
-    "build": "gulp build"
+    "start": "gulp server"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
@@ -20,9 +19,11 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "express": "^4.17.1",
+    "gulp-connect": "^5.7.0",
     "gulp-data": "^1.3.1",
-    "gulp-express": "^0.3.5",
     "gulp-pug": "^4.0.1",
+    "gulp-pug-i18n": "^1.0.2",
+    "gulp-sitemap": "^8.0.0",
     "qs": "^6.9.4"
   }
 }
