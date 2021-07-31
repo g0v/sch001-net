@@ -2,7 +2,7 @@
 	height: calc(100vh - 3em);
   overflow: hidden;
   background-color: #13295E;
-	background-image: url("/assets/img/bg_new.jpg");
+	background-image: url("/assets/img/bg_new.png");
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 #about .quote-box {
-	background-image: url("/assets/img/bg_new.jpg");
+	background-image: url("/assets/img/bg_new.png");
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
