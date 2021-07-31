@@ -4,7 +4,7 @@
 }
 #header .inner {
   height: 100%;
-	background-image: url(/assets/img/main_1920x1080_f-01.svg);
+	background-image: url("/assets/img/main_1920x1080_f-01.svg");
 	background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
