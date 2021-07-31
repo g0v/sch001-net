@@ -10,7 +10,7 @@ html(lang="zh-Hant-TW")
     include nav.pug
     .main-image.container-fluid.m-0.p-0
       .inner
-        a#go-create.btn.btn-lg(role='button' href="/dash/brd/sch001-2021/list") 我要提案
+      a#go-create.btn.btn-lg(role='button' href="/dash/brd/sch001-2021/list") 我要提案
       //.row.justify-content-center.p-4
         .col-md-6
           a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://g0v.hackmd.io/@jothon/Sch001_DontStopLearning" target="_blank") 停課不停學專區
@@ -21,7 +21,7 @@ html(lang="zh-Hant-TW")
         div(data-aos-offset="100" data-aos="") 
           h1.p-4 最新消息
           .news-list.px-4
-      hr
+        hr
       #about.container-md.p-4
         div(data-aos-offset="100" data-aos="fade-up")
           h1.p-4 #{$i18n.AboutSch001}
@@ -42,12 +42,12 @@ html(lang="zh-Hant-TW")
           h3.pl-4.pt-4 活化紙本，知識在社群開放出來          
           p.px-4.py-1
             | g0v 社群的貢獻者們，曾經協作「<a href="https://www.moedict.tw/" target="_blank">萌典</a>」、「<a href="https://amis.moedict.tw/" target="_blank">阿美語萌典</a>」、「<a href="https://itaigi.tw/" target="_blank">iTaigi</a>」和「<a href="https://chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同，包括紙本資料數位化、資料格式化和宅宅文字辨識 OCR（Otaku Character Recognition）等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。(<a href="https://g0v.hackmd.io/@jothon/edu-list" target="_blank">參考更多教育專案</a>)
-          
+
           .px-4.pt-4.row.align-items-center
             .col.d-md-none            
               h3 2021 線上源力增能營
             .col-md-5.py-2
-                img.w-100(src="assets/img/ssr2021.jpg")
+              img.w-100(src="assets/img/ssr2021.jpg")
             .col.h-100
               h3.d-none.d-md-block 2021 線上源力增能營
               p 零時小學校「夏日源理」2021 線上源力增能營是 g0v 貢獻者與 g0v 揪松團協作推出的線上課程計畫，以「開源、協作、開放學習」為主軸，期盼以開放的方式，在線上陪伴所有學習者，不分年齡、不需要學籍，只要你想學習，我們隨時都在線上陪伴你。
@@ -159,24 +159,22 @@ html(lang="zh-Hant-TW")
             |教育議題，尤其是偏鄉教育，一直是願景工程關切的主題，我們深信，有素質的公民才能打造出理想的民主社會。2013 年推出<a target="_blank" href="https://vision.udn.com/vision/cate/7618">《為青年尋路四部曲》</a>，探討產學落差、人才外流等問題；2016 <a target="_blank" href="https://vision.udn.com/vision/story/7657/2223700">《高教轉骨》</a>追蹤報導及 2017 <a target="_blank" href="https://vision.udn.com/vision/story/12004/3082490">《高教十字路》</a>，分別促使教育部推動 200 億元的技職再造計畫，訂定高教創新轉型方案，以及以「玉山計畫」、「高教深耕計畫」回應。<br/><br/>
             | <a target="_blank" href="https://vision.udn.com/vision/story/8251/3203523">《偏鄉教育》</a>更是願景工程心之所繫，教育部挹注三億元改善偏鄉學校宿舍等措施回應；2017 年，「偏鄉教育法」三讀。2019 年，<a target="_blank" href="https://vision.udn.com/vision/cate/120639">《新課綱．救科技》</a>解析「科技領域」作為 108 新課綱亮點，是教學現場的全新挑戰。<br/><br/>
             |願景工程也多年與<a target="_blank" href="https://vision.udn.com/vision/story/12425/4169478">《g0v 公民科技創新獎助金》</a>合作，贊助優秀團隊；我們深認同「零時小學校」的理念：好的科技工具能夠改變社會，好的科技工具也可以教育出更好的人，讓台灣變成更好的社會。
-
+    
     include footer.pug    
     script.
-      $(window).on("load",function() {
-        console.log("loaded");
+      window.onload = function() {
         $(".main-image .inner").animate({"opacity": 1},1000);
-      });
-
-      let news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
+      };
+      var news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
       //news_url = "../assets/test_news.json";
-
+      
       $.getJSON( news_url , function( data ) {
         console.log(data);
         if(data.length > 0) {
           $("#news").removeClass("d-none");
           data.forEach(element => {
             console.log(element);
-            let time = new Date(element['modifiedtime']);
+            var time = new Date(element['modifiedtime']);
             $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
           });
         }

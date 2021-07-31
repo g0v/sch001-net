@@ -1,12 +1,25 @@
 body {
   color: #FCF0BA;
   background-color: #13295E;
-	background-image: url("../assets/img/bg_new_simple.jpg");
-  background-attachment: fixed;
-	background-position: center bottom;
-	background-size: cover;
-  background-repeat: no-repeat;
 }
+
+body:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:-1;
+  height: 100vh;
+	background-image: url("../assets/img/bg_new.jpg");
+	background-position: center bottom;
+  background-repeat: no-repeat;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 a, b, p, h1, h2, h3, h4, h5, h6, li{
 	font-family: 'Noto Sans TC', sans-serif;
 }
