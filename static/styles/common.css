@@ -1,7 +1,7 @@
 body {
   color: #FCF0BA;
   background-color: #13295E;
-	background-image: url(/assets/img/bg_new_simple.jpg);
+	background-image: url("/assets/img/bg_new_simple.jpg");
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
