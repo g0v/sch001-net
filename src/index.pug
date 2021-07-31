@@ -8,7 +8,7 @@ html(lang="zh-Hant-TW")
   link(rel="stylesheet" href="styles/index.css?version="+timestamp)
   body(data-spy="scroll" data-target=".navbar" data-offset="100")
     include nav.pug
-    #header.container-fluid.m-0.p-0
+    .main-image.container-fluid.m-0.p-0
       .inner
         a#go-create.btn.btn-lg(role='button' href="/dash/brd/sch001-2021/list") 我要提案
       //.row.justify-content-center.p-4
@@ -164,7 +164,7 @@ html(lang="zh-Hant-TW")
     script.
       $(window).on("load",function() {
         console.log("loaded");
-        $("#header .inner").animate({"opacity": 1},1000);
+        $(".main-image .inner").animate({"opacity": 1},1000);
       });
 
       let news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
