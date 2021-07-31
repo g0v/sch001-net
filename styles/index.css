@@ -185,7 +185,7 @@ ul.timeline > li .timeline-details p {
 	margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .main-image {
     background-size: cover;
     background-attachment:scroll
