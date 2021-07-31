@@ -188,8 +188,10 @@ ul.timeline > li .timeline-details p {
 @media (max-width: 767px) {
   .main-image {
     background-size: cover;
+    background-attachment:scroll
   }
   .main-image .inner {
     background-size: cover;
+    background-attachment:scroll
   }
 }
