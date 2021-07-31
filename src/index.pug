@@ -85,14 +85,14 @@ html(lang="zh-Hant-TW")
           mixin team-block(_id)
             .team-block.col-md-6.p-3.d-flex.flex-row
               .team-avatar
-                img.team-img(src="/assets/avatar/"+_team_members[_id].en+".jpg")
+                img.team-img(src="../assets/avatar/"+_team_members[_id].en+".jpg")
               .team-detail
                 h5= _team_members[_id].name+"／"+_team_members[_id].en
                 h6= _team_members[_id].title
                 p.m-0= _team_members[_id].disc
           .container.text-left
             div(data-aos-offset="100" data-aos="flip-up")
-              .jothon-banner(style="background-image: url('/assets/img/jothon-bg-dark.svg');")
+              .jothon-banner(style="background-image: url(../assets/img/jothon-bg-dark.svg);")
 
             .container
               p.p-4
@@ -116,9 +116,9 @@ html(lang="zh-Hant-TW")
           h3.text-center.py-2 啟蒙者夥伴
           .row.justify-content-center.text-center
             .col-md-4
-              .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('/assets/img/partners/願景工程+努力讓台灣更好-1.png');")
+              .partner-img(type="button" data-toggle="modal" data-target="#modal-udn" style="background-image: url('../assets/img/partners/願景工程+努力讓台灣更好-1.png');")
             .col-md-4
-              .partner-img(type="button" data-toggle="modal" data-target="" style="background-image: url('/assets/img/partners/晨星.jpg');")
+              .partner-img(type="button" data-toggle="modal" data-target="" style="background-image: url('../assets/img/partners/晨星.jpg');")
           hr
 
           h3.text-center.py-2 源力夥伴
@@ -126,7 +126,7 @@ html(lang="zh-Hant-TW")
           mixin partners-block(_id)
             .partners-block.col-md-4.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
               a(target="_blank" href=_partners['source'][_id].link)
-                .partner-img(style="background-image: url(/assets/img/partners/"+_partners['source'][_id].img+");")
+                .partner-img(style="background-image: url(../assets/img/partners/"+_partners['source'][_id].img+");")
                 a #{_partners['source'][_id].name}
           .row.justify-content-center.px-4
             each val, index in _partners['source']
@@ -139,7 +139,7 @@ html(lang="zh-Hant-TW")
           mixin partners-block(_id)
             .partners-block.col-md-3.col-lg-2.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
               a(target="_blank" href=_partners['community'][_id].link)
-                .partner-img(style="background-image: url(/assets/img/partners/"+_partners['community'][_id].img+");")
+                .partner-img(style="background-image: url(../assets/img/partners/"+_partners['community'][_id].img+");")
                 a #{_partners['community'][_id].name}
 
           .row.justify-content-center.px-4
@@ -168,7 +168,7 @@ html(lang="zh-Hant-TW")
       });
 
       let news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
-      //news_url = "/assets/test_news.json";
+      //news_url = "../assets/test_news.json";
 
       $.getJSON( news_url , function( data ) {
         console.log(data);

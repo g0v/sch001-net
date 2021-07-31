@@ -1,8 +1,7 @@
 #header {
 	height: calc(100vh - 3em);
   overflow: hidden;
-  background-color: #13295E;
-	background-image: url("/assets/img/bg_new.jpg");
+	background-image: url("../assets/img/bg_new.jpg");
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
@@ -12,7 +11,7 @@
   opacity: 0;
   display: flex;
   height: 100%;
-	background-image: url("/assets/img/main_new_f.svg");
+	background-image: url("../assets/img/main_new_f.svg");
 	background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +46,7 @@
 }
 
 #about .quote-box {
-	background-image: url("/assets/img/bg_new.jpg");
+	background-image: url("../assets/img/bg_new.jpg");
   background-attachment: fixed;
 	background-position: center bottom;
 	background-size: cover;
