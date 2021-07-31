@@ -1,4 +1,4 @@
-#header {
+.main-image {
 	height: calc(100vh - 3em);
   overflow: hidden;
 	background-image: url("../assets/img/bg_new.jpg");
@@ -7,7 +7,7 @@
 	background-size: cover;
   background-repeat: no-repeat;
 }
-#header .inner {
+.main-image .inner {
   opacity: 0;
   display: flex;
   height: 100%;
@@ -40,7 +40,7 @@
   background-color: #FF97F3;  
 }
 
-#header .row {
+.main-image .row {
   position: relative;
   bottom: 8em;
 }
@@ -186,10 +186,10 @@ ul.timeline > li .timeline-details p {
 }
 
 @media (max-width: 767px) {
-  #header {
+  .main-image {
     background-size: cover;
   }
-  #header .inner {
+  .main-image .inner {
     background-size: cover;
   }
 }
