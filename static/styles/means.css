@@ -18,15 +18,6 @@ hr {
     border-top: 3px solid rgba(0, 0, 0, 0.1);
 }
 
-.part-dark {
-    background-color: rgba(0, 0, 0, 0.2);
-    color           : #FCF0BA;
-}
-
-.part-dark p {
-    color: #AAA;
-}
-
 #topics h5 svg, #topics h5 i {
     width: 2rem;
 }
@@ -53,7 +44,7 @@ hr {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.05);
     border          : 1px solid rgba(0, 0, 0, .3);
 }
 
