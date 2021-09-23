@@ -193,4 +193,11 @@ ul.timeline > li .timeline-details p {
 }
 
 @media (max-width: 1200px) {
+    #delay-info {
+        font-size: 1.25rem;
+        text-align: center;
+        width: 100%;;
+        left: 0;
+        bottom: 10rem;
+    }
 }
