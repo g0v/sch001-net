@@ -1,6 +1,13 @@
 body {
   color: #FCF0BA;
   background-color: #13295E;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.w-1024 {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body:after {
@@ -20,10 +27,6 @@ body:after {
   background-size: cover;
 }
 
-a, b, p, h1, h2, h3, h4, h5, h6, li{
-	font-family: 'Noto Sans TC', sans-serif;
-}
-
 p, li {
 	color: #FFF;
 	text-align: justify;
@@ -40,6 +43,17 @@ a:link, a:visited {
 
 a.nav-link, a.navbar-brand {
   text-decoration: none;
+}
+
+a.btn-my {
+  color: white;
+  background-color: #FF00E2;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+a.btn-my:hover {
+  color: white;
+  background-color: #FF97F3;
 }
 
 a.btn-outline-my {
@@ -75,10 +89,6 @@ a.btn-outline-my:hover {
   color: #FCF0BA;
 }
 
-.part-dark p {
-  color: #FFF;
-}
-
 .part-light-gradient {
   background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
   color: #666;
@@ -107,11 +117,11 @@ a.btn-outline-my:hover {
   margin: 0.5rem;
   border-radius: 5px;
 }
-#footer a:link {
-  color: #AAA;
+#footer a:link, #footer a:visited {
+  color: #CCC;
 }
-#footer a:visited {
-  color: #AAA;
+#footer a:link:hover, #footer a:visited:hover {
+  color: #DDD;
 }
 
 @media (max-width: 992px) {
