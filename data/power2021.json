@@ -30,7 +30,7 @@
         {
             "title": "有效率的尋找學習夥伴",
             "title_en": "Swipe for study buddies --PinTwo",
-            "img": "swipe.jpg",
+            "img": "Swipe.jpg",
             "brief": "相信很多人都有想透過網路學習卻踢到鐵板的經驗，無論是因為關鍵字過於冷門，還是因為害怕身為初學者而遭到他人的輕視，有各式各樣的因素成為學習之路上的絆腳石，於是我們決定運用科技的力量來破除這些阻礙。",
             "details": "相信很多人都有想透過網路學習卻踢到鐵板的經驗，無論是因為關鍵字過於冷門，還是因為害怕身為初學者而遭到他人的輕視，有各式各樣的因素成為學習之路上的絆腳石，於是我們決定運用科技的力量來破除這些阻礙。<br>PinTwo 是我們創立的 Discord 伺服器，透過標籤分類及評分系統為使用者篩選出適合的學伴並進行配對交流，分享資源，讓學習不再孤單。",
             "brief_en": "This project will mainly focus on matching people by a discord bot as UI to help users find study buddies faster without putting a lot of efforts doing research but not getting what you need.",
