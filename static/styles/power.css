@@ -1,154 +1,126 @@
 body {
-    font-family: 'Noto Sans TC', sans-serif;
-    color: #333;
-      background-image: url("/assets/img/bg.min.jpg");
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-}
-p {
-    color: #666;
-    text-align: justify;
-    word-break: break-all;
-}
-a, a:visited, a:hover {
-    color: #666;
-}
-a.btn {
-    color: #FC761B;
-}
-#lang-btn {
-    position: fixed;
-    right: 1em;
-    top: 1em;
-    z-index: 999;
-    font-size: 0.8em;
-}
-#header-img {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-.inner-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-}
-#header-img .inner-img.inner-1 {
-    background-size: 60%;
-    background-image: url("../assets/img/Sch001_2020_f2.png");
-}
-#header-img .inner-img.inner-2 {
-    background-size: 120%;
-    background-image: url("../assets/img/Sch001_2020_f1.png");
+    background-image     : url("/assets/img/bg_new.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-size      : cover;
 }
 
-#intros {
+.part-dark,
+.part-light {
+    border-radius: 5px;
+}
+
+.part-light {
     background-color: white;
 }
 
-.col-block {
-    border: 1px solid #AAA;
-    transition: 0.5s;
-}
-.col-block:hover {
-    border: 1px solid #666;
-}
-.team-img {
-    padding-top: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.team-img-inner {
-    padding-top: 75%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.media-img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 75%;
-}
-.carousel-img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 27vw;
+p strong {
+    color      : #FF00E2;
+    font-weight: bolder;
+    transform  : scale(1.2);
+    display    : inline-block;
+    padding    : 0 .5rem;
 }
 
-#courses {
-    min-height: 20em;
+.team-brief a {
+    text-decoration: none;
+}
+
+.team-brief .title {
+    color: #FCF0BA;
+}
+
+.team-img {
+    padding-top        : 100%;
+    background-position: center;
+    background-size    : cover;
+    transition         : filter .3s, transform .3s;
+    border-radius      : 5px;
+}
+
+.team-img::after {
+    content         : "獲選提案";
+    color           : white;
+    font-size       : .8rem;
+    padding         : 5px 10px;
+    top             : 5px;
+    margin-left     : -2rem;
+    position        : absolute;
+    background-color: #f40;
+    border-bottom   : 1px solid #c10;
+}
+
+.team-brief:hover .team-img {
+    filter   : brightness(1.2);
+    transform: translate(-2px, -2px);
+}
+
+.team-modal img {
+    width        : 100%;
+    border-radius: 5px;
+}
+
+.team-modal .team-members {
+    text-align: initial;
+}
+
+.swiperSlide {
+    cursor       : grab;
+    border-radius: 5px;
+    filter       : drop-shadow(2px 4px 6px black);
+}
+
+.carousel-img img {
+    height    : 300px;
+    width     : 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background: white;
+    opacity   : .5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FCF0BA;
+    opacity   : 1;
 }
 
 #courselist p {
-    color: #AAA;
-    font-size: 1.2em;
-}
-#courselist .animatenumbers {
-    color: #FDD;
-    font-size: 1.8em;
-    width: 1.8em;
-    display: inline-block;
+    font-size    : 1.5rem;
+    margin-bottom: .5rem;
 }
 
-#carouselPhotos {
-    outline: 5px solid #fff;
+#courselist p .animatenumbers {
+    font-weight: bolder;
+    font-size  : 2rem;
+    color      : #FF00E2;
 }
 
-#mediareports {
-    background-color: white;
+#mediareports a {
+    text-decoration: none;
 }
 
-#footer {
-  bottom: 0;
-padding: 1rem 0;
-background-color: rgba(0,0,0,0.6);
-}
-#footer a {
-  font-size: 1rem;
-  margin: 0.5rem;
-  border-radius: 5px;
-}
-#footer a:link {
-  color: #AAA;
-}
-#footer a:visited {
-  color: #AAA;
+#mediareports img {
+    border-radius: 5px;
+    overflow     : hidden;
+    filter       : drop-shadow(2px 4px 6px black);
 }
 
-.btn-outline-my {
-  color: #FC761B;
-  background-color: rgba(0,0,0,0);
-  border: 1.5px solid #FC761B;
-}
-.btn-outline-my:hover {
-  color: #FFF;
-  background-color: #FC761B;
+#mediareports a p {
+    transition: .3s;
+    outline: 2px solid transparent;
 }
 
-@media (max-width: 991px) {
-    body {
-        font-size: 1.2em;
+#mediareports a:hover p {
+}
+
+@media (max-width: 992px) {
+    .swiperSlide {
+        margin-bottom: 1rem;
     }
-    #header-img .inner-img {
-        display: none;
-    }
-    #header-img {
-        height: 30vh;
-        background-image: url("../assets/img/Sch001_2020.png");
-        background-attachment: local;
-    }
-    .carousel-img {
-        height: 60vw;
-    }
-    .media-img {
-        height: 200px;
+
+    .carousel-img img {
+        height: 50vw;
     }
 }

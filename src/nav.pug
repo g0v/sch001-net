@@ -1,12 +1,12 @@
-nav#navbar.navbar.navbar-expand-xl.navbar-light.bg-light.sticky-top
+nav#navbar.navbar.navbar-expand-xl.navbar-light.bg-light.sticky-top: .container-fluid
   a.navbar-brand(href="/") Sch001 零時小學校
-  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+  button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse
     mixin navli(_href, _title)
       li.nav-item
         a.nav-link(href=_href)= _title
-    ul.navbar-nav.ml-auto
+    ul.navbar-nav.ms-auto
       +navli("#news", "最新消息")
       +navli("#about", "關於")
       +navli("#howto", "如何參與")
@@ -16,7 +16,7 @@ nav#navbar.navbar.navbar-expand-xl.navbar-light.bg-light.sticky-top
       .d-lg-none: hr/
       li.nav-item
         a.btn.btn-outline-my.mx-1(role="button" href="/dash/brd/sch001-2021/list") 看提案
-        a.btn.btn-outline-my.mx-1(role="button" href="/power/") 看成果
+        a.btn.btn-outline-my.mx-1(role="button" href="power") 看成果
         a.btn.btn-outline-my.mx-1(role="button" href="https://g0v.hackmd.io/@jothon/Sch001-2021" target="_blank") 找共筆
-        a.btn.btn-outline-my.mx-1(role="button" data-toggle="modal" data-target="#modal-contact" href="#") 找窗口
+        a.btn.btn-outline-my.mx-1(role="button" data-bs-toggle="modal" data-bs-target="#modal-contact" href="#") 找窗口
         a.btn.btn-outline-my.mx-1(role='button' href="https://app.studyathome.jp/zh-tw" target="_blank") 在家學習時間表
