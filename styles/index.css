@@ -1,7 +1,12 @@
 .main-image {
 	height: calc(100vh - 3em);
+  background-image: url("/assets/img/ssr2022.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #ebebeb;
 }
-.main-image .inner {
+/*.main-image .inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +17,7 @@
 	background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
 
 #delay-info {
     font-size: 1.5rem;
@@ -26,15 +31,15 @@
 }
 
 @keyframes go-create-keyframe {
-  0%   {bottom: 4rem;}
-  50% {bottom: 3rem;}
+  0%   {bottom: 1rem;}
+  50% {bottom: 2rem;}
 }
 
 #go-create {
   position: absolute;
   left: calc(50% - 10rem);
   width: 20rem;
-  bottom: 4rem;
+  bottom: 1rem;
   animation-name: go-create-keyframe;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;  
@@ -60,6 +65,23 @@
   border-radius: 5px;
   color: white;
   text-align: center;
+}
+.echo .swiper-slide {
+  align-self: center;
+  cursor:grab;
+}
+.echo .swiper-button-next::after, .echo .swiper-button-prev::after {
+  font-size: 2rem;
+  color: #FF00E2;
+}
+.echo .row {
+  padding: 0 5rem;
+}
+.echo .avatar {
+  object-fit: cover;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 5px;
 }
 
 #news .news-list p{
@@ -192,12 +214,11 @@ ul.timeline > li .timeline-details p {
 	margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
-    #delay-info {
-        font-size: 1.25rem;
-        text-align: center;
-        width: 100%;;
-        left: 0;
-        bottom: 10rem;
-    }
+@media (max-width: 992px) {
+  .echo .row {
+    padding: 0 3rem;
+  }
+  .main-image { 
+    background-size: cover;
+  }
 }
