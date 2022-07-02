@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
     include ../header.pug    
-    link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
     link(rel="stylesheet" href="/styles/common.css?version="+timestamp)
     link(rel="stylesheet" href="/styles/power.css?version="+timestamp)
 body.w-100
@@ -108,15 +107,14 @@ body.w-100
             h3.mb-4 媒體報導
             a(href="https://sdgs.udn.com/sdgs/story/12425/6110605" target="_blank")
                 .row.g-0
-                    .col-5 
+                    .col-lg-5 
                         img.w-100(src="/assets/img/medias/2021/1.jpg", alt="")
-                    .col-7.d-flex.justify-content-center.flex-column.p-4
+                    .col-lg-7.d-flex.justify-content-center.flex-column.p-4
                         p: b 感謝聯合報系陽光行動報導零時小學校！
                         p
                             | 零時小學校給你靠 高中生寫「交學伴」軟體 線上學習不孤單<br>
                             | 寫程式可以改變社會？由愛好資訊科技的「宅宅」組成的「g0v零時政府」，前年開辦「g0v零時小學校」（Sch001），推廣教學用的社群協作工具、開放資料，促進線上自學與共學。在台灣疫情升溫、實施遠距教學的期間，零時小學校是全台師生最有力的後盾。
     include ../footer.pug
-    script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
     script.
         var swiper = new Swiper(".swiperSlide", {
             loop: true,

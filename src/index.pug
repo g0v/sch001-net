@@ -10,52 +10,55 @@ html(lang="zh-Hant-TW")
     include nav.pug
     .main-image.container-fluid.m-0.p-0
       .inner
-      a#go-create.btn.btn-lg(role='button' href="/power") 看成果
-      //#delay-info
-        | 2021-22 Demo Day 徵件延長到 11/30<br>
-        | 獎金加碼 14 萬，歡迎提案
-      //.row.justify-content-center.p-4
-        .col-md-6
-          a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://g0v.hackmd.io/@jothon/Sch001_DontStopLearning" target="_blank") 停課不停學專區
-        .col-md-6
-          a.btn.btn-primary.btn-block.btn-lg.mb-2(role='button' href="https://app.studyathome.jp/zh-tw" target="_blank") 在家學習時間表
+      a#go-create.btn.btn-lg(role='button' href="https://g0v-jothon.kktix.cc/events/sch001ssr2022" target="_blank") 點我立即報名
     .part-light    
-      #news.container-md.p-4.d-none
-        div(data-aos-offset="100" data-aos="") 
-          h1.p-4 最新消息
-          .news-list.px-4
+      #news.container-md.d-none
+        .p-4(data-aos-offset="100" data-aos="") 
+          h1.mb-4 最新消息
+          .news-list
         hr
-      #about.container-md.p-4
-        div(data-aos-offset="100" data-aos="fade-up")
-          h1.p-4 #{$i18n.AboutSch001}
-          p.px-4.py-1 
-            | 零時小學校是聚焦在教育的 g0v 專案，旨在推廣資訊科技、分析問題和協作分工的概念，只要是有心學習的人，都可以站上自學和共學的起點，開啟專案參與的旅程！
-          p.px-4.py-1
-            | 專案英文名稱「Sch001」將代表數位原生世代的「0」與「1」放入代表教育的「學校（School）」，期待可以此代表教育與數位社群的連結與協作，一起從零思考教育。
-          h3.ps-4.pt-4 g0v 社群與 g0v 黑客松
-          .container-fluid.p-4
-            p.p-4.m-0.font-italic.quote-box
-              |「教育：一種有關培植人才，訓練技能，以支應於國家建設、社會發展的事業。」<br/>
-              |「知識：認識的人、朋友；學問、所知道的事理。」<br/>
-              |––萌典
-          p.px-4.py-1
-            | g0v 零時政府社群是一個致力於推動開放協作的社群，社群參與者來自四方，有開發者、設計師、社運工作者、教育工作者，還有公民與鄉民。這些人聚在一起，以網路工具溝通協作，參與黑客松，各專案成果（包括但不限於文件、圖像、程式碼、運算資料、數據分析結果及過程執行方式）需以開放授權釋出，讓更多人能使用、改善、回饋，發揮最大效用。（引用自<a href="//g0v.tw/manifesto/" target="_blank">零時政府宣言</a>）
-          p.px-4.py-1 
-            | g0v 零時政府黑客松（簡稱 g0v 黑客松）是由 g0v 揪松團籌辦，兩個月一次的單天活動，百名與會者來自不同的城市、背景、專長與年紀，利用三分鐘的時間將自己想做的事快速發表，並在活動現場尋找志同道合的夥伴，發揮各自所長，同時透過線上與線下協作的方式，用弄髒雙手的精神來「讓事情發生」。（看更多關於 <a href="//jothon.g0v.tw/" target="_blank">g0v 黑客松</a>）
-          h3.ps-4.pt-4 活化紙本，知識在社群開放出來          
-          p.px-4.py-1
-            | g0v 社群的貢獻者們，曾經協作「<a href="//www.moedict.tw/" target="_blank">萌典</a>」、「<a href="//amis.moedict.tw/" target="_blank">阿美語萌典</a>」、「<a href="//itaigi.tw/" target="_blank">iTaigi</a>」和「<a href="//chhoe.taigi.info/" target="_blank">ChhoeTaigi 找台語</a>」等專案，協作的方法不盡相同，包括紙本資料數位化、資料格式化和宅宅文字辨識 OCR（Otaku Character Recognition）等等，這些專案讓知識開放在公共領域，成為開放知識資料的重要基礎建設。(<a href="//g0v.hackmd.io/@jothon/edu-list" target="_blank">參考更多教育專案</a>)
+      #about.container-md
+        .p-4.mb-4(data-aos-offset="100" data-aos="fade-up")
+          h1.mb-4 #{$i18n.AboutSch001}
+          p.py-1 
+            | 零時小學校（Sch001）是聚焦在教育的 g0v 專案，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的意涵，同時也代表教育與數位社群的連結與協作。
+          h3.pt-4 養一個孩子需要眾人之力：從社群孕育數位公民
+          p.py-1 
+            img.w-25.ps-4.pb-4.float-end(src="/assets/img/核心圖.png" alt="")
+            | g0v 社群十年來以「開源模式」、「行動主義」、「公民精神」，聚集 11,529+ 位跨域跨齡貢獻者，自發性提出的 818+ 件開源協作專案的經驗。因此，g0v 揪松團從 2019 年起，發起聚焦於教育的零時小學校專案，盼以橋樑角色，將 g0v 社群與教育利害關係人連結，將社群的豐富經驗轉化為「向社群學習，與社群共學」的學習模式及資源，鼓勵更多人一起從零思考教育，讓「自主 Ｘ 協作 Ｘ 跨界 Ｘ 行動」專案在教育現場發生，跳脫學校框架，讓人人都可以在社群中自發性協作，用行動改變社會。
+          h3.mt-4 人人都是「沒有人」，人人都可以改變教育
+          p.py-1 
+            | 在兩年的實踐歷程中，零時小學校舉辦了 14 場黑客松/工作坊/講座、10 場線上/實體營隊、2 場Demo day，兩年活動吸引超過千人。此外，兩年內我們收到 37 件教育科技專案，其中 8 件獲獎作品由高中生及大學生提出，令人驚艷。此外專案面向多元，涵蓋鄉村教育、學習資源整合與共享、地方學課程、教育資料庫建立、高中生課業與人際、教師協作等。
+        .swiper.echo(data-aos-offset="100" data-aos="fade-up")
+          .swiper-wrapper
+            .swiper-slide: .row
+              .col-auto: img.avatar(src="/assets/avatar/echo/劉姝言.jpg" alt="")
+              .col 
+                h5 「希望開源協作的精神與實踐可以在更多學校進行，這將讓教與學的內涵與方式產生影響與轉變。」
+                small.float-end - 劉姝言，台中女中教師，2021-22 零時小學校 Demo Day 評選委員
+            .swiper-slide: .row
+              .col-auto: img.avatar(src="/assets/avatar/echo/胡瑞原.jpg" alt="")
+              .col 
+                h5 「零時起點，揪團之地，圓夢來源。」
+                small.float-end - 胡瑞原，台南女中老師，南女人，2021-22 零時小學校 Demo Day 評選委員
+            .swiper-slide: .row
+              .col-auto: img.avatar(src="/assets/avatar/echo/曾憲立.jpg" alt="")
+              .col 
+                h5 「「行動參與帶來改變的契機。」
+                small.float-end - 曾憲立，國立臺南大學行政管理學系助理教授，2021-22 零時小學校 Demo Day 評選委員
+            .swiper-slide: .row
+              .col-auto: img.avatar(src="/assets/avatar/echo/蔡秀吉.jpg" alt="")
+              .col 
+                h5 「揪松團及社群中的所有人，讓我體會到『只要你有心，全世界都會來幫你！』」
+                small.float-end - 蔡秀吉，學生，2021-22 零時小學校 Demo Day 獲獎團隊
+            .swiper-slide: .row
+              .col-auto: img.avatar(src="/assets/avatar/echo/TonyChen.jpg" alt="")
+              .col 
+                h5 「感謝有這個機會，讓我認識公民議題，了解到原來程式的影響力是可以大量與生活結合的，也藉此認識黑客松跟程式的其他面向，以及許多厲害的人跟資源。」
+                small.float-end - Tony Chen，學生，2021-22 零時小學校 Demo Day 獲獎團隊
+          .swiper-button-next
+          .swiper-button-prev
 
-          .px-4.pt-4.row.align-items-center
-            .col.d-md-none            
-              h3 2021 線上源力增能營
-            .col-md-5.py-2
-              img.w-100(src="assets/img/ssr2021.jpg")
-            .col.h-100
-              h3.d-none.d-md-block 2021 線上源力增能營
-              p 零時小學校「夏日源理」2021 線上源力增能營是 g0v 貢獻者與 g0v 揪松團協作推出的線上課程計畫，以「開源、協作、開放學習」為主軸，期盼以開放的方式，在線上陪伴所有學習者，不分年齡、不需要學籍，只要你想學習，我們隨時都在線上陪伴你。
-                a.btn.btn-outline-my.btn-block.my-2(role='button' href="/ssr2021") 了解更多
-      hr
       #howto.container-md.p-4
         div(data-aos-offset="100" data-aos="") 
           h1.p-4 如何參與        
@@ -98,8 +101,8 @@ html(lang="zh-Hant-TW")
               .jothon-banner(style="background-image: url(/assets/img/jothon-bg-dark.svg);")
 
             .container
-              p.p-4
-                |「g0v 零時政府揪松團」係 g0v.tw 社群籌辦雙月黑客松的工作小組，除了籌畫每雙月的百人黑客松外，2016 年起亦積極推動社群基礎建設，並於同年底推出 g0v 公民科技創新獎助金計畫 。2020 年開辦「零時小學校」。<br/><br/>
+              p.p-4.mb-4
+                | g0v 揪松團是籌辦 g0v 社群雙月黑客松的工作小組，維護社群運作所需基礎建設，並以 g0v 零時小學校、g0v Underground 零時電台、協辦 g0v Summit 等專案，建立跨域連結，創造協作場域，推廣 g0v 「公民精神」、「行動主義」、「開源精神」的核心理念。
             .row.justify-content-center          
               each val, index in _team_members
                 +team-block(index)        
@@ -161,23 +164,35 @@ html(lang="zh-Hant-TW")
             |教育議題，尤其是偏鄉教育，一直是願景工程關切的主題，我們深信，有素質的公民才能打造出理想的民主社會。2013 年推出<a target="_blank" href="https://vision.udn.com/vision/cate/7618">《為青年尋路四部曲》</a>，探討產學落差、人才外流等問題；2016 <a target="_blank" href="https://vision.udn.com/vision/story/7657/2223700">《高教轉骨》</a>追蹤報導及 2017 <a target="_blank" href="https://vision.udn.com/vision/story/12004/3082490">《高教十字路》</a>，分別促使教育部推動 200 億元的技職再造計畫，訂定高教創新轉型方案，以及以「玉山計畫」、「高教深耕計畫」回應。<br/><br/>
             | <a target="_blank" href="https://vision.udn.com/vision/story/8251/3203523">《偏鄉教育》</a>更是願景工程心之所繫，教育部挹注三億元改善偏鄉學校宿舍等措施回應；2017 年，「偏鄉教育法」三讀。2019 年，<a target="_blank" href="https://vision.udn.com/vision/cate/120639">《新課綱．救科技》</a>解析「科技領域」作為 108 新課綱亮點，是教學現場的全新挑戰。<br/><br/>
             |願景工程也多年與<a target="_blank" href="https://vision.udn.com/vision/story/12425/4169478">《g0v 公民科技創新獎助金》</a>合作，贊助優秀團隊；我們深認同「零時小學校」的理念：好的科技工具能夠改變社會，好的科技工具也可以教育出更好的人，讓台灣變成更好的社會。
-    
+
     include footer.pug    
     script.
-      window.onload = function() {
-        $(".main-image .inner").animate({"opacity": 1},1000);
-      };
+      var swiper = new Swiper(".echo", {
+        loop: true,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
       var news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
       //news_url = "/assets/test_news.json";
-      
+
       $.getJSON( news_url , function( data ) {
         console.log(data);
+        const limit_date = new Date('2022-02-10');
         if(data.length > 0) {
-          $("#news").removeClass("d-none");
           data.forEach(element => {
             console.log(element);
             var time = new Date(element['modifiedtime']);
-            $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
+            if(time > limit_date) {
+              $("#news").removeClass("d-none");
+              $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
+            }
           });
         }
       });
