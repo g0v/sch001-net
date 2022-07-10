@@ -1,11 +1,10 @@
 {
-    "title": "sch001 零時小學校",
     "team_members": [
         {
-            "name": "侯宜秀",
-            "en": "isabelhou",
-            "title": "揪松團輪值主席／法律顧問",
-            "disc": "g0v 社群長期參與者，1997 年起執業，專注科技創新及智慧財產法律，曾擔任多項政府大型科技補助計畫及 NGO 法律顧問，長期關注開源科技及社會議題。"
+            "name": "高嘉良",
+            "en": "clkao",
+            "title": "揪松團成員",
+            "disc": "g0v 零時政府共同發起人。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v 計畫。"
         },
         {
             "name": "瞿筱葳",
@@ -14,10 +13,10 @@
             "disc": "g0v 零時政府共同發起人，作家／紀錄片工作者。近年關注開源文化與數位公民參與，推廣跨界開源協作模式。"
         },
         {
-            "name": "高嘉良",
-            "en": "clkao",
-            "title": "揪松團成員",
-            "disc": "g0v 零時政府共同發起人。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v 計畫。"
+            "name": "侯宜秀",
+            "en": "isabelhou",
+            "title": "揪松團輪值主席／法律顧問",
+            "disc": "g0v 社群長期參與者，1997 年起執業，專注科技創新及智慧財產法律，曾擔任多項政府大型科技補助計畫及 NGO 法律顧問，長期關注開源科技及社會議題。"
         },
         {
             "name": "吳泰輝",
@@ -38,16 +37,22 @@
             "disc": "任職於空間規劃公司，並持續以社群志願者的身份，參與「公有地大行動」、「資料申請小幫手」、「都市農耕網」等民間倡議行動。"
         },
         {
-            "name": "李佳珊",
-            "en": "bess",
-            "title": "揪松團秘書長",
-            "disc": "非營利組織工作經驗橫跨藝術、環境與公民科技領域，自 2017 年加入揪松團，籌辦社群活動、協助社群專案發展，關心「社群的人」。"
+            "name": "姚羽亭",
+            "en": "analeighyao",
+            "title": "揪松團 活動執行",
+            "disc": "g0v 社群新手。著迷於藝術、文化與人的連結力，未來期待再加入一點公民科技的元素，創造更多跨領域的可能性。"
         },
         {
-            "name": "陳以婕",
-            "en": "ichieh",
-            "title": "揪松團執行秘書",
-            "disc": "和g0v一樣從0開始，認識社群。比平凡更平凡的人，希望當一顆閃閃發亮的小螺絲，讓沒有接觸過社群的人知道，加入社群只需要空出一個星期六。"
+            "name": "應聿甯",
+            "en": "ying",
+            "title": "揪松團 執行秘書",
+            "disc": "踏出舒適圈跳進 g0v 社群，一邊嘖嘖稱奇社群夥伴們的強大，一邊在新手村練等，默默協助社群發展與連結，期待無求無畏的日子能和大神及各種專案一起前進、看到更好的公民社會。"
+        },
+        {
+            "name": "林怡廷",
+            "en": "tiff",
+            "title": "揪松團 零時小學校專案經理",
+            "disc": "從零時小學校參與者，轉而成為負責夥伴。熱衷於當「橋樑」，以支持不同個體為前提，串起萬物的連結，創造更多可能性。未來希望能繼續以教育為起點創造自由民主共好社群。"
         }
     ],
     "partners": {
@@ -88,6 +93,11 @@
                 "name": "開放文化基金會",
                 "link": "https://ocf.tw/",
                 "img": "OCF.png"
+            },
+            {
+                "name": "羽白群學實驗教育機構",
+                "link": "https://yubai.group/",
+                "img": "羽白群學實驗教育機構.png"
             },
             {
                 "name": "Code for Japan (CfJ)",
@@ -203,6 +213,71 @@
                 "name": "教育噗浪客",
                 "link": "http://tpet.ntct.edu.tw/",
                 "img": "tpet.png"
+            },
+            {
+                "name": "CourseAPI 開放式課程資訊匯流學院",
+                "link": "https://toedu.g0v.tw/",
+                "img": "CourseAPI.jpg"
+            },
+            {
+                "name": "Sync Slide - 萬人演講零延遲",
+                "link": "https://www.canva.com/design/DAE3xBmEZvM/AO7GLVUdctMJjCf_1qdp-w/view",
+                "img": "syncSlide.jpg"
+            },
+            {
+                "name": "眾生開眼 - 坪林尋怪地圖",
+                "link": "https://strangepinglin.collective.tw/",
+                "img": "strangePinglin.jpg"
+            },
+            {
+                "name": "高中生108課綱教育資源整合平台",
+                "link": "https://reurl.cc/EpOkq0",
+                "img": "twK12.jpg"
+            },
+            {
+                "name": "有效率的尋找學習夥伴",
+                "link": "https://discord.gg/Pv85ukzA",
+                "img": "Swipe.jpg"
+            },
+            {
+                "name": "鄉民都來開拓公民天文學家的地圖[0]：從互動式開源教材開始",
+                "link": "https://hackmd.io/@astrobackhacker/HJ1xEMrGW/HJ1xEMrGW?type=book",
+                "img": "astronomy.jpg"
+            },
+            {
+                "name": "COVID-19 Info 疫情資訊野生整合平台",
+                "link": "https://g0v.hackmd.io/@yitzu/covid-19/https%3A%2F%2Fg0v.hackmd.io%2F%40yitzu%2Fcovid-19%2Fedit%3Fedit",
+                "img": "COVID-19_Info.png"
+            },
+            {
+                "name": "Disfactory 農地違章工廠回報平台",
+                "link": "https://disfactory.tw/",
+                "img": "disfactory.png"
+            },
+            {
+                "name": "臺灣好植地-找地種樹",
+                "link": "https://g0v.hackmd.io/@chewei/patch-by-planting/",
+                "img": "臺灣好植地.png"
+            },
+            {
+                "name": "LASS 環境感測器網路系統",
+                "link": "https://lass-net.org/",
+                "img": "LASS_Logo.png"
+            },
+            {
+                "name": "水土保持局技術研發小組",
+                "link": "https://tech.swcb.gov.tw/",
+                "img": "水土保持局.png"
+            },
+            {
+                "name": "g0v slack channel #gis",
+                "link": "https://g0v.hackmd.io/@chewei/gis",
+                "img": "slackgis.png"
+            },
+            {
+                "name": "更多社群夥伴",
+                "link": "https://g0v.hackmd.io/@jothon/sch001morepartners",
+                "img": "more.png"
             }
         ]
     }
