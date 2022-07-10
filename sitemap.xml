@@ -2,26 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         
-        <loc>https://sch001.g0v.tw/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.535Z</lastmod>
-    
-    </url>
-    <url>
-        
         <loc>https://sch001.g0v.tw/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.555Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/2020/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.576Z</lastmod>
+        <lastmod>2022-07-10T07:33:19.396Z</lastmod>
     
     </url>
     <url>
@@ -29,15 +13,7 @@
         <loc>https://sch001.g0v.tw/2020/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.625Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/grant/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.641Z</lastmod>
+        <lastmod>2022-07-10T06:00:07.022Z</lastmod>
     
     </url>
     <url>
@@ -45,15 +21,7 @@
         <loc>https://sch001.g0v.tw/grant/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.687Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/means/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.690Z</lastmod>
+        <lastmod>2021-04-19T10:25:28.940Z</lastmod>
     
     </url>
     <url>
@@ -61,15 +29,7 @@
         <loc>https://sch001.g0v.tw/means/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.748Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/power/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.767Z</lastmod>
+        <lastmod>2022-06-20T03:46:54.961Z</lastmod>
     
     </url>
     <url>
@@ -77,15 +37,7 @@
         <loc>https://sch001.g0v.tw/power/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.832Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/ssr2021/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.853Z</lastmod>
+        <lastmod>2022-07-10T07:21:33.970Z</lastmod>
     
     </url>
     <url>
@@ -93,15 +45,7 @@
         <loc>https://sch001.g0v.tw/ssr2021/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.903Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/2020/means/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.926Z</lastmod>
+        <lastmod>2021-07-30T06:50:11.677Z</lastmod>
     
     </url>
     <url>
@@ -109,15 +53,7 @@
         <loc>https://sch001.g0v.tw/2020/means/</loc>
     
         
-        <lastmod>2022-07-02T04:57:53.980Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/2020/power/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:53.997Z</lastmod>
+        <lastmod>2022-06-20T03:46:54.966Z</lastmod>
     
     </url>
     <url>
@@ -125,15 +61,7 @@
         <loc>https://sch001.g0v.tw/2020/power/</loc>
     
         
-        <lastmod>2022-07-02T04:57:54.046Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/power/en/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:54.065Z</lastmod>
+        <lastmod>2022-06-22T04:14:14.811Z</lastmod>
     
     </url>
     <url>
@@ -141,15 +69,7 @@
         <loc>https://sch001.g0v.tw/power/en/</loc>
     
         
-        <lastmod>2022-07-02T04:57:54.085Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>https://sch001.g0v.tw/2020/power/en/index-en.html</loc>
-    
-        
-        <lastmod>2022-07-02T04:57:54.104Z</lastmod>
+        <lastmod>2022-07-10T07:50:13.484Z</lastmod>
     
     </url>
     <url>
@@ -157,7 +77,7 @@
         <loc>https://sch001.g0v.tw/2020/power/en/</loc>
     
         
-        <lastmod>2022-07-02T04:57:54.121Z</lastmod>
+        <lastmod>2022-06-22T06:58:58.945Z</lastmod>
     
     </url>
 </urlset>

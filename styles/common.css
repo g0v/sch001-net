@@ -1,6 +1,5 @@
 body {
   color: #FCF0BA;
-  background-color: #13295E;
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -34,6 +33,10 @@ p, li {
 }
 red {
   color: red;
+}
+
+black {
+  color: black;
 }
 
 a:link, a:visited {
@@ -84,6 +87,18 @@ a.btn-outline-my:hover {
 	margin: 0 0.5rem;
 }
 
+.navbar .dropdown {
+  display: inline;
+}
+
+.navbar .dropdown .dropdown-item {
+	color: #FF00E2;
+}
+
+.navbar .dropdown-menu[data-bs-popper] {
+  top: 150%;
+}
+
 .part-dark {
   background-color: rgba(8,33,48,0.5);
   color: #FCF0BA;
@@ -91,20 +106,20 @@ a.btn-outline-my:hover {
 
 .part-light-gradient {
   background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
-  color: #666;
+  color: #555;
 }
 
 .part-light {  
   background-color: rgba(255,255,255,0.9);
-  color: #666;
+  color: #555;
 }
 
 .part-light p, .part-light li {
-  color: #444;
+  color: #555;
 }
 
 .part-light h1, .part-light h2, .part-light h3, .part-light h4, .part-light h5, .part-light h6 {
-  color: #222;
+  color: #111;
 }
 
 #footer {
