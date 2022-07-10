@@ -94,6 +94,18 @@
   font-size: 1.2em;
 }
 
+#todo .todo-box {
+  padding: 1.5rem 1rem;
+  border: 1px solid #AAA;
+  border-radius: 5px;
+  height: 100%;
+  background-color: #FFF6;
+}
+
+#todo .todo-box ul {
+  margin: 0;
+}
+
 #howto-steps > div {
 	margin-bottom: 1rem;
 }
