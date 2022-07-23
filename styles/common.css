@@ -95,10 +95,6 @@ a.btn-outline-my:hover {
 	color: #FF00E2;
 }
 
-.navbar .dropdown-menu[data-bs-popper] {
-  top: 150%;
-}
-
 .part-dark {
   background-color: rgba(8,33,48,0.5);
   color: #FCF0BA;
