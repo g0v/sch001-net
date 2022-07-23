@@ -5,6 +5,7 @@ html(lang="zh-Hant-TW")
   include header.pug
   link(rel="stylesheet" href="/styles/common.css?version="+timestamp)
   link(rel="stylesheet" href="/styles/index.css?version="+timestamp)
+  link(rel="stylesheet" href="/styles/timeline.css?version="+timestamp)
   body(data-spy="scroll" data-bs-target=".navbar" data-offset="100")
     include nav.pug
     .main-image.container-fluid.m-0.p-0
@@ -61,6 +62,43 @@ html(lang="zh-Hant-TW")
                 small.float-end - Tony Chen，學生，2021-22 零時小學校 Demo Day 獲獎團隊
           .swiper-button-next
           .swiper-button-prev
+      #timeline-content: ul.timeline
+        li.event(data-date='2019')
+          h4 零時小學校籌備中
+        li.event(data-date='2020')
+          h4 2月｜「開學日」暨第一次工作坊
+          h4 4月｜第二次工作坊
+          h4 6月｜第三次工作坊
+          p 累積超過80人參與！
+        li.event(data-date='')
+          h4 8月｜Demo Day 競賽日
+          p 總計收到27件提案！
+        li.event(data-date='')
+          h4 12月｜Summit 峰會
+        li.event(data-date='2021')
+          h4 2月｜舉辦小學校松
+        li.event(data-date='')
+          h4 3月｜「開學日」：於台南女中舉辦「源力增能營」
+          p 超過90位台南跨校共學者
+        li.event(data-date='')
+          h4 4月｜於崑山科技大學舉辦「源力增能營」
+          p 共計100多位學生參與者
+        li.event(data-date='')
+          h4 7-8月｜舉辦「夏日原理」 2021 線上源力增能營 #SSR2021
+          p 超過500位線上參與者
+        li.event(data-date='')
+          h4 11月｜與 LASS 專案一同舉辦新竹小松
+          p 連結新竹地區高中地理教師
+        li.event(data-date='2022')
+          h4 1月｜Demo Day 提案決選會
+          p 收到10件教育專案
+        li.event(data-date='')
+          h4 2月｜g0v 第肆拾捌次大松舉辦 Demo Day
+          p 超過100人參與台日跨國發表！
+        li.event(data-date='')
+          h4 3月｜與臺中女中社會科班級合作，由公民科技專案推動者帶領同學熟悉協作工具、研擬自主專案雛形
+          p 已產出8件協作專案！
+
       #todo.container-md.mt-4
         .p-4(data-aos-offset="100" data-aos="") 
           h1.py-4 2022 年零時小學校會做些什麼事情呢？
@@ -119,7 +157,7 @@ html(lang="zh-Hant-TW")
               h4.text-center 第二步：參加小學校活動，跟志同道合的夥伴一起討論專案！
               p 小學校網站、共筆以及相關社群平台，都會發布最新活動訊息，只要你完成第一步，就可以無負擔參加小學校活動囉！活動沒有限制身份與年齡，只要你有心，我們都在！
               .d-grid: a.btn.btn-outline-my(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/jothon2022") 零時小學校行事曆
-
+      
     .part-dark
       #team.container-md
         .p-4(data-aos-offset="100" data-aos="")
@@ -216,7 +254,9 @@ html(lang="zh-Hant-TW")
       });
 
       var news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
-      //news_url = "/assets/test_news.json";
+      if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { // 測試用
+        news_url = "/assets/test_news.json";
+      }
 
       $.getJSON( news_url , function( data ) {
         console.log(data);

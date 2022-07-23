@@ -123,62 +123,6 @@
 	background-size: cover;
 }
 
-ul.timeline {
-    list-style-type: none;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #AAA;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: calc(100% - 4rem);
-	margin-top: 1.2rem;
-    z-index: 400;
-}
-ul.timeline > li {
-  border: 1px solid #AAA;
-  border-radius: 3px;
-  margin: 0.5rem 0;
-  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-}
-ul.timeline > li:hover {
-  border-color: #DDD;
-  transition-duration: 300ms;
-}
-
-ul.timeline > li:before {
-    content: ' ';
-    background: #AAA;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    margin: 0.6rem 0;
-    left: 25px;
-    width: 10px;
-    height: 10px;
-    z-index: 400;
-}
-ul.timeline .timeline-title {
-	font-size: 1.2rem;
-}
-ul.timeline .timeline-date {
-	color: #DDD;
-	font-size: 0.8rem;
-	margin: 0 1rem;
-}
-ul.timeline .timeline-details {
-	line-height: 1rem;
-	padding: 1rem 0;
-}
-ul.timeline > li .timeline-details a {
-  margin: 0 0.5rem 0.5rem 0;
-}
-ul.timeline > li .timeline-details p {
-  line-height: 1.5rem;
-}
-
 .jothon-banner {
   width: 100%;
   min-height: 150px;
