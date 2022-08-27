@@ -63,7 +63,7 @@ body.w-100
       
     mixin modals(_id)
       .modal.fade.team-modal(id="teamModal"+_id tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true")
-        .modal-dialog.modal-lg(role="document")
+        .modal-dialog.modal-dialog-centered.modal-lg(role="document")
           .modal-content
             .modal-body: .part-light
               button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")

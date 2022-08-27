@@ -193,6 +193,7 @@ html(lang="zh-Hant-TW")
               each val, index in _team_members
                 +team-block(index)        
               .team-block.col-md-6.px-3
+              p.text-center: a.btn.btn-outline-my.btn-lg.col-12.col-md-4(role="button" data-bs-toggle="modal" data-bs-target="#modal-contact" href="#") 找窗口
 
     .part-light.py-4
       #partner.container-md
@@ -241,7 +242,7 @@ html(lang="zh-Hant-TW")
                 - delay = 0;
               +partners-block(index)
 
-      #modal-udn.modal.fade(tabindex="-1" role="dialog" aria-labelledby="udn-title" aria-hidden="true"): .modal-dialog(role="document"): .modal-content
+      #modal-udn.modal.fade(tabindex="-1" role="dialog" aria-labelledby="udn-title" aria-hidden="true"): .modal-dialog.modal-dialog-centered(role="document"): .modal-content
         .modal-header
           h5#udn-title.modal-title 聯合報系願景工程
           button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
