@@ -74,6 +74,10 @@ a.btn-outline-my:hover {
 	font-weight: bold;
 }
 
+.navbar .btn {
+  height: 40px;
+}
+
 .navbar .navbar-nav a.nav-link {
 	border-radius: 4px;
 }
