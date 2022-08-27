@@ -1,4 +1,4 @@
-h1::before {
+h3::before {
     content         : "";
     background-color: #FCF0BA;
     display         : inline-block;
@@ -6,7 +6,10 @@ h1::before {
     height          : 0.75em;
     margin          : 0 0.3em 0 0;
 }
-
+h5 {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
 i {
     color       : #AAA;
     width       : 1em;
@@ -18,39 +21,17 @@ hr {
     border-top: 3px solid rgba(0, 0, 0, 0.1);
 }
 
-#topics h5 svg, #topics h5 i {
-    width: 2rem;
+#topics li span {
+    color: #f45336;
+    font-weight: bolder;
 }
 
-.judge-details {
-    flex: 1;
-}
-
-.judge-img {
-    width       : 100px;
-    margin-right: 1rem;
-}
-
-.judge-img img {
-    border-radius: 10px;
-    width        : 100%;
-}
-
-#opencallio {
-    width           : 100%;
-    background-color: rgba(8, 33, 48, 0.5);
-    padding         : 3em;
-    border-radius   : 15px;
+#schedule h5 {
+    color: #f45336;
+    font-weight: bolder;
 }
 
 .card {
     background-color: rgba(0, 0, 0, 0.05);
     border          : 1px solid rgba(0, 0, 0, .3);
-}
-
-
-@media (max-width: 992px) {
-    #opencallio {
-        padding: 1em;
-    }
 }

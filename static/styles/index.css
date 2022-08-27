@@ -1,10 +1,10 @@
 .main-image {
 	height: calc(100vh - 3em);
-  background-image: url("/assets/img/ssr2022.jpg");
+  background-image: url("/assets/img/main_2022.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #ebebeb;
+  background-color: #111A39;
 }
 /*.main-image .inner {
   position: absolute;
@@ -44,13 +44,7 @@
   animation-duration: 2s;
   animation-timing-function: ease-in-out;  
   animation-iteration-count: infinite;
-  background-color: #FF00E2;
-  color: white;
   text-decoration: none;
-}
-
-#go-create:hover {
-  background-color: #FF97F3;  
 }
 
 .main-image .row {
@@ -76,7 +70,7 @@
 }
 .echo .swiper-button-next::after, .echo .swiper-button-prev::after {
   font-size: 2rem;
-  color: #FF00E2;
+  color: #F7B04B;
 }
 .echo .row {
   padding: 0 5rem;

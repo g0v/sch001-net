@@ -17,7 +17,7 @@ body:after {
   right: 0;
   z-index:-1;
   height: 100vh;
-	background-image: url("../assets/img/bg_new.jpg");
+	background-image: url("../assets/img/bg_2022_simple.png");
 	background-position: center bottom;
   background-repeat: no-repeat;  
   -webkit-background-size: cover;
@@ -40,7 +40,7 @@ black {
 }
 
 a:link, a:visited {
-	color: #FF00E2;
+	color: #F7B04B;
   text-decoration: underline;
 }
 
@@ -50,24 +50,24 @@ a.nav-link, a.navbar-brand {
 
 a.btn-my {
   color: white;
-  background-color: #FF00E2;
+  background-color: #F7B04B;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: filter .3s;
 }
 a.btn-my:hover {
   color: white;
-  background-color: #FF97F3;
+  filter: brightness(1.2);
 }
 
 a.btn-outline-my {
-  color: #FF00E2;
+  color: #F7B04B;
   background-color: rgba(0,0,0,0);
-  border: 1.2px solid #FF00E2;
+  border: 1.2px solid #F7B04B;
   text-decoration: none;
 }
 a.btn-outline-my:hover {
   color: #FFF;
-  background-color: #FF00E2;
+  background-color: #F7B04B;
 }
 
 .navbar .navbar-brand {
@@ -92,7 +92,7 @@ a.btn-outline-my:hover {
 }
 
 .navbar .dropdown .dropdown-item {
-	color: #FF00E2;
+	color: #F7B04B;
 }
 
 .part-dark {

@@ -10,13 +10,26 @@ html(lang="zh-Hant-TW")
     include nav.pug
     .main-image.container-fluid.m-0.p-0
       .inner
-      a#go-create.btn.btn-lg(role='button' href="https://g0v-jothon.kktix.cc/events/sch001ssr2022" target="_blank") 點我立即報名
+      a#go-create.btn.btn-my.btn-lg(role='button' href="/means" target="") 競賽辦法
     .part-light    
       #news.container-md.d-none
         .p-4(data-aos-offset="100" data-aos="") 
           h1.mb-4 最新消息
           .news-list
         hr
+      .container-md
+        .p-4(data-aos-offset="100" data-aos="fade-up")
+          h1.py-4
+            span.me-2 專案孵化競賽
+            .btn-group(role="group")
+              a.btn.btn-my(role='button' href="/means") 競賽辦法
+              a.btn.btn-my(role='button' href="https://sch001.g0v.tw/dash/brd/sch001-2022/list") 我要提案
+          p 面對生活中大大小小的怪事，有沒有想過只要一些勇氣動起來，就有機會「挖坑、找到隊友、用數位工具」組隊打怪，進而豐富學習與生命歷程，並用專案改變社會！
+          p 在 g0v 零時政府社群中，有著一群老師、學生，以及各行各業熱血的數位公民，正在下班下課之餘，運用自身所長與一群人用行動改變社會，這群人共創 836 件以上的公民科技專案，像是 Cofacts 真的假的、Disfactory 農地違章工廠舉報、萌典、投票指南、口罩地圖、島島阿學...
+          p 我們相信你也可以，我們也願意陪你一起。g0v 零時小學校希望邀請學生、老師，以及任何「想用行動解決生活／社會需求」的行動家，一起用開源協作的方式做專案，把想像變成可能！
+          p 人人都有不同的生活及社會關注，每個需求也都需要被照顧。故徵件主題不設限，任何與符合聯合國永續指標 SDGs 或社會創新、教育、公共議題，且符合開源協作的精神都歡迎提案。而 22 歲以下青年提案將有保障名額的機會唷！
+          p 計畫包含 g0v 公民科技專案資深參與者的一對一輔導、提案優化工作坊、資源媒合、入選獎金，專業評審也將從初選到決選 Demo Day 給予回饋。我們希望藉由多元的支持，陪伴各團隊不斷優化專案，我們也相信 「release early, release often」，不怕試錯將帶來更好的收穫。
+          p 現在，話不多說，開坑！組隊打怪吧！
       #about.container-md
         .p-4.mb-4(data-aos-offset="100" data-aos="fade-up")
           h1.py-4 關於小學校
@@ -157,7 +170,7 @@ html(lang="zh-Hant-TW")
               h4.text-center 第二步：參加小學校活動，跟志同道合的夥伴一起討論專案！
               p 小學校網站、共筆以及相關社群平台，都會發布最新活動訊息，只要你完成第一步，就可以無負擔參加小學校活動囉！活動沒有限制身份與年齡，只要你有心，我們都在！
               .d-grid: a.btn.btn-outline-my(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/jothon2022") 零時小學校行事曆
-      
+
     .part-dark
       #team.container-md
         .p-4(data-aos-offset="100" data-aos="")
@@ -241,7 +254,7 @@ html(lang="zh-Hant-TW")
 
     include footer.pug    
     script.
-      var swiper = new Swiper(".echo", {
+      let swiper = new Swiper(".echo", {
         loop: true,
         spaceBetween: 10,
         autoplay: {
@@ -253,22 +266,25 @@ html(lang="zh-Hant-TW")
         },
       });
 
-      var news_url = "https://sch001.g0v.tw/dash/api/brd/sch001-2021/post";
-      if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { // 測試用
-        news_url = "/assets/test_news.json";
+      let getNews = (url) => {
+        $.getJSON( url , function( data ) {
+          console.log(data);
+          const limit_date = new Date('2022-02-10');
+          if(data.length > 0) {
+            data.forEach(element => {
+              console.log(element);
+              var time = new Date(element['modifiedtime']);
+              if(time > limit_date) {
+                $("#news").removeClass("d-none");
+                $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
+              }
+            });
+          }
+        });
       }
-
-      $.getJSON( news_url , function( data ) {
-        console.log(data);
-        const limit_date = new Date('2022-02-10');
-        if(data.length > 0) {
-          data.forEach(element => {
-            console.log(element);
-            var time = new Date(element['modifiedtime']);
-            if(time > limit_date) {
-              $("#news").removeClass("d-none");
-              $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
-            }
-          });
-        }
-      });
+      if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { // 測試用
+        getNews("/assets/test_news.json");
+      } else {
+        getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2021/post");
+        //getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2022/post");
+      }
