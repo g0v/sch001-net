@@ -74,17 +74,13 @@ a.btn-outline-my:hover {
 	font-weight: bold;
 }
 
+.navbar .navbar-nav a.nav-link {
+	border-radius: 4px;
+}
 .navbar .navbar-nav a.nav-link:hover {
   transition: 0.3s;
 	color: #f8f9fa;
-	background-color: #13295E;
-	border-radius: 3px;
-}
-
-.navbar .navbar-nav a.nav-dash {
-	border-radius: 3px;
-	border: 1px solid #AAA;
-	margin: 0 0.5rem;
+	background-color: #f45336;
 }
 
 .navbar .dropdown {
@@ -96,7 +92,7 @@ a.btn-outline-my:hover {
 }
 
 .part-dark {
-  background-color: rgba(8,33,48,0.5);
+  background-color: #111A39BB;
   color: #FCF0BA;
 }
 
