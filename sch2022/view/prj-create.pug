@@ -1,0 +1,13 @@
+extends /base.pug
+block vars
+  - ctrl.navtop.placeholder = false
+block body
+  .w-100.h-100.vertical-center: .text-center.w-100(style="padding:60px 0")
+    +scope("prj-create").w-480.mx-auto.rwd
+      include prj-create-module.pug
+block script
+  +script("/dash/js/util/sdb-adapter.js")
+  +script("/dash/js/util/hub.js")
+  +script("/dash/js/util/stage.js")
+  +script("/dash/js/admin/info.js")
+  +script("/dash/js/prj/create.js")
