@@ -89,8 +89,8 @@ html(lang="zh-Hant-TW")
                     h5 書審＆初選：11 月  - 12 月
                     .ps-1: ul
                         li: p 書審：11 月 1 日（二）至 11 月 11 日（五）。主辦單位 g0v 揪松團將會在初選之前進行提案檢核，提案若有缺件或資格不符情形，將不會被列入初選名單。
-                        li: p 初選評選時間：11 月 14 日（一）00:00 至 12 月 9 日（五）00:00。通過初選檢核之提案，將由 g0v 揪松團邀請之評選委員會，選出 10 組初選入圍提案。入圍者提供 6,000 元獎勵金。
-                        li: p 公告初選入圍團隊：12 月 12 日（一） 
+                        li: p 初選評選作業時間：11 月 14 日（一）00:00 至 12 月 9 日（五）00:00。
+                        li: p 公告初選入圍團隊：12 月 12 日（一）。通過初選檢核之提案，將由 g0v 揪松團邀請之評選委員會，選出 10 組初選入圍提案。入圍者提供 6,000 元獎勵金。
                         li: p 【初選入圍團隊】提案優化工作坊：12 月 17 日（六）。工作坊搭配 g0v 黑客松。初選入圍團隊皆需參與本次工作坊，優化本次提案內容。
                     
                     h5 決選 專案孵化競賽 Demo Day：2023 年 2 月 11 日
@@ -137,7 +137,7 @@ html(lang="zh-Hant-TW")
                 h3.p-4 審查
                 #chk-accordion
                     .card
-                        +cardmaker("chk","q1","預計獎勵幾個專案？","獲獎 5 組專案。今年將保障 1 組 U-22（22 歲以下）專案，不佔前者 5 組名額。")
+                        +cardmaker("chk","q1","預計獎勵幾個專案？","預計初選獎勵 10 組專案，決選 3~5 組。今年將保障 1 組 U-22（22 歲以下）專案。")
                         +cardmaker("chk","q2","不同主題的專案分開競爭？各主題只有一個名額嗎？","專案審查不依照主題分類，只要是指定主題所涵蓋的公民科技專案皆可申請，委員會將評估所有專案。")
                 h3.p-4 成果
                 #rs-accordion
@@ -150,11 +150,9 @@ html(lang="zh-Hant-TW")
                 h3.p-4 獎勵
                 #rw-accordion
                     .card
-                        +cardmaker("rw","q1","我什麼時候會拿到獎勵？","獲獎團隊須與主辦單位確認已將專案開源釋出，方可領取獎勵。")
+                        +cardmaker("rw","q1","我什麼時候會拿到獎勵？","不論初選或決選獲獎團隊，皆需完整參與 12/17 提案優化工作坊以及決選日，並與主辦單位確認已將專案開源釋出，方可領取獎勵。")
                         +cardmaker("rw","q2","我想贊助零時小學校！","非常感謝！請寄信到 jothon-organizers {at} g0v.tw")
-                        +cardmaker("rw","q3","我要如何聯絡主辦單位？","請寄信到 jothon-organizers {at} g0v.tw") 
-                        .card-header(id="head-rw-q4"): a(data-toggle="collapse" href="#rw-q4" role="button" aria-expanded="false" aria-controls="#rw-q4" ) 我收到獎金需要繳稅嗎？
-                        .collapse(id="rw-q4" aria-labelledby="head-rw-q4" data-parent="#rw-accordion"): .card-body
-                            p 要，依「<a href="//www.etax.nat.gov.tw/etwmain/front/ETW118W/CON/471/9164759166372525521?tagCode=" target="_blank">競技競賽及機會中獎</a>」獎金課稅。
+                        +cardmaker("rw","q3","我要如何聯絡主辦單位？","請寄信到 jothon-organizers {at} g0v.tw")
+                        +cardmaker("rw","q4","我收到獎金需要繳稅嗎？","將依實際領獎金額而定。")
 
         include ../footer.pug
