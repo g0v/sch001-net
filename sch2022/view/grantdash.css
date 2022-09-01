@@ -58,7 +58,7 @@ body {
     margin-bottom: 1.5em;
     max-width: 400px;
     max-height: 10rem;
-    overflow-y: hidden;
+    overflow-y: auto;
     opacity: 0.85;
   }
   .gd-prj-list-ctrl {
