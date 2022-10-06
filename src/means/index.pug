@@ -21,7 +21,18 @@ html(lang="zh-Hant-TW")
                 p （2022/08/26 實施細則 v.01.1 修訂完成 2022 版本，詳情請點擊上方「競賽細則」按鈕。）
                 h3.py-3 徵件主題
                 .ps-3#topics                   
-                    p 本次競賽不限題目，任何與符合聯合國永續指標 <span>SDG</span>s 或社會創新、教育、公共議題，且符合開源協作的精神都歡迎提案。
+                    p 本次競賽不限題目，任何與符合聯合國永續指標 <span>SDG</span>s 或社會創新、教育、公共議題，且符合「開源協作」的精神都歡迎提案。
+                    p
+                        h5 如何符合開源協作的精神：
+                        ul
+                            li 開源（Open Source）：將專案內容與成果（可能是程式碼、文字、圖檔、討論等）以<a href="https://opensource.org/licenses" target="_blank">開源授權</a>或<a href="https://tw.creativecommons.net/home-page/" target="_blank">創用CC 授權</a>等方式公開出來，讓其他人能夠再次利用或直接參與該專案內容。
+                            li 協作：可一人提案，但需多人一起做專案，運用集體智慧解決問題。
+                        h5 更多歡迎參考：
+                        ul
+                            li: a(href="https://g0v.hackmd.io/@jothon/g0v-cowork-guideline/%2FvzpxgXrlQrCWHa_TiqiRuA" target="_blank") 什麼是開源（Open Source）與開源精神？
+                            li: a(href="https://www.youtube.com/watch?v=w2K68HSxoO0&list=PLdwQWxpS513AKM0J3gdffV1hR3rOrYVJg" target="_blank") 科技與社會議題的交會：g0v 如何協作
+                            li: a(href="https://www.youtube.com/watch?v=wjiEfD7jEUo&list=PLdwQWxpS513AKM0J3gdffV1hR3rOrYVJg&index=2" target="_blank") 開源概論
+                            li: a(href="https://www.youtube.com/watch?v=wQ_DVuZ30nM&list=PLdwQWxpS513AKM0J3gdffV1hR3rOrYVJg&index=3" target="_blank") 我們與專案的距離
                     p 若沒有明確提案方向，以下提供參考：
                     h5: a(href="/power") 2021 獲獎團隊
                     ul    
@@ -127,14 +138,15 @@ html(lang="zh-Hant-TW")
                 h3.py-3 申請資格
                 #qlfy-accordion
                     .card
-                        +cardmaker("qlfy","q1","團隊是否可以報名？","可以，即使只有一個人，也視為一個團隊。團隊內部分工與獎勵分配與主辦單位無涉。主辦單位將以提案代表人作為主要溝通窗口。")
+                        +cardmaker("qlfy","q1","團隊是否可以報名？","可以，即使只有一個人，也視為一個團隊。提案可一人提案，但需由一人以上共同協作專案。而團隊內部分工與獎勵分配與主辦單位無涉。主辦單位將以提案代表人作為主要溝通窗口。")
                         +cardmaker("qlfy","q2","如果我們是一個團隊的話，所有人都會被列在專案網站、報導上面嗎？","團隊須在提案申請表說明團隊的成員與工作分配，後續若有報導，則會希望涵蓋各團隊成員貢獻。")
-                        +cardmaker("qlfy","q3","我不會寫程式，但有個點子，可以提案嗎？","可以，但需要在提案申請表註明如何達成專案目標，或者擬定具體的解決方案，例如：我的想法可以透過怎麼樣的作法去實現？專案團隊現在有什麼人才？還需要什麼人才？或可到 零時小學校許願池 貢獻點子。")
+                        +cardmaker("qlfy","q3","我不會寫程式，但有個點子，可以提案嗎？","可以，但需要在提案申請表註明如何達成專案目標，或者擬定具體的解決方案，例如：我的想法可以透過怎麼樣的作法去實現？專案團隊現在有什麼人才？還需要什麼人才？")
                         +cardmaker("qlfy","q4","現有專案是否能申請？","我們歡迎基於擴充現有專案的計畫申請，只要專案能夠在獲獎之後能夠開源釋出即可。")
                         +cardmaker("qlfy","q5","我可以一次提很多專案嗎？","當然可以！不過每個團隊在當屆最多只會收到一次獎勵。")
                         +cardmaker("qlfy","q6","我想幫助非台灣的議題可以來申請嗎？ ( e.g., 敘利亞難民 )","開源無國界，只要符合開源與公民科技的精神，任何提案都歡迎。")
                         +cardmaker("qlfy","q7","你們接受英語或其它語系的專案嗎？","我們僅接受正體華文提案申請表，專案內容需可以至少以正體華文呈現。")
                         +cardmaker("qlfy","q8","若還有下屆小學校徵件計畫，同一專案或同一個團隊是否可以申請第二次？","可以。歡迎在公民科技領域持續努力！")
+                        +cardmaker("qlfy","q9","提案送出後還可以修改嗎？","10/31 23:59 徵件截止前仍可持續修改，若需修改請點選「我要提案」->「右上方帳號」->「個人頁面」->「選擇你想編輯的提案」。我們鼓勵 release early, release often，越早把提案放上來，就更有機會獲得更多人的回饋，進而優化專案。")
                 h3.p-4 審查
                 #chk-accordion
                     .card
@@ -152,8 +164,8 @@ html(lang="zh-Hant-TW")
                 #rw-accordion
                     .card
                         +cardmaker("rw","q1","我什麼時候會拿到獎勵？","不論初選或決選獲獎團隊，皆需完整參與 12/17 提案優化工作坊以及決選日，並與主辦單位確認已將專案開源釋出，方可領取獎勵。")
-                        +cardmaker("rw","q2","我想贊助零時小學校！","非常感謝！請寄信到 jothon-organizers {at} g0v.tw")
-                        +cardmaker("rw","q3","我要如何聯絡主辦單位？","請寄信到 jothon-organizers {at} g0v.tw")
+                        +cardmaker("rw","q2","我想贊助零時小學校！","非常感謝！請寄信到 jothon-organizers@g0v.tw")
+                        +cardmaker("rw","q3","我要如何聯絡主辦單位？","請寄信到 jothon-organizers@g0v.tw")
                         +cardmaker("rw","q4","我收到獎金需要繳稅嗎？","將依實際領獎金額而定。")
 
         include ../footer.pug

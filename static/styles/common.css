@@ -43,6 +43,10 @@ a:link, a:visited {
 	color: #F7B04B;
   text-decoration: underline;
 }
+a:link:hover, a:visited:hover {
+  transition: .3s;
+  filter: opacity(.8);
+} 
 
 a.nav-link, a.navbar-brand {
   text-decoration: none;
@@ -68,6 +72,7 @@ a.btn-outline-my {
 a.btn-outline-my:hover {
   color: #FFF;
   background-color: #F7B04B;
+  filter: none;
 }
 
 .navbar .navbar-brand {
