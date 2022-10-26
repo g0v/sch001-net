@@ -1,6 +1,6 @@
 .main-image {
 	height: calc(100vh - 3em);
-  background-image: url("/assets/img/main_2022.png");
+  background-image: url("/assets/img/main_2022.jpg");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
