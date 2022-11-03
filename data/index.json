@@ -63,6 +63,16 @@
                 "img": "NTGSHS.JPG"
             },
             {
+                "name": "臺中市立臺中女子高級中學",
+                "link": "https://tcgs.tc.edu.tw/",
+                "img": "台中女中-校徽校名@72x.png"
+            },
+            {
+                "name": "國立竹東高級中學",
+                "link": "https://www.ctsh.hcc.edu.tw/",
+                "img": "竹東高中.png"
+            },
+            {
                 "name": "崑山科技大學",
                 "link": "https://www.ksu.edu.tw/",
                 "img": "KSU.JPG"
@@ -76,16 +86,6 @@
                 "name": "臺南青年志工中心",
                 "link": "https://youthvolunteer.yda.gov.tw/promote_area.php?pid=19",
                 "img": "台南青年志工中心.jpg"
-            },
-            {
-                "name": "國立竹北高級中學",
-                "link": "https://www.cpshs.hcc.edu.tw/",
-                "img": "竹北高中.png"
-            },
-            {
-                "name": "臺中市立臺中女子高級中學",
-                "link": "https://tcgs.tc.edu.tw/",
-                "img": "台中女中-校徽校名@72x.png"
             }
         ],
         "community": [

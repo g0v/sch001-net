@@ -10,8 +10,8 @@ nav#navbar.navbar.navbar-expand-xl.navbar-light.bg-light.sticky-top: .container-
       +navli("/#news", "最新消息")
       +navli("/#about", "關於")
       +navli("/#howto", "如何參與")
-      +navli("/#team", "主辦單位")
-      +navli("/#partner", "合作夥伴")
+      //+navli("/#team", "主辦單位")
+      //+navli("/#partner", "合作夥伴")
       //+navli("/means","競賽辦法")
       .d-lg-none: hr/
       li.nav-item.d-flex
@@ -26,13 +26,14 @@ nav#navbar.navbar.navbar-expand-xl.navbar-light.bg-light.sticky-top: .container-
           ul.dropdown-menu 
             li: a.dropdown-item(href="/2020/power") 2020 成果頁面
             li: a.dropdown-item(href="/power") 2021-22 成果頁面
+            li: a.dropdown-item(href="//app.studyathome.jp/zh-tw" target="_blank") 在家學習時間表
       li.nav-item.d-flex
         //a.btn.btn-outline-my.mx-1(role="button" data-bs-toggle="modal" data-bs-target="#modal-contact" href="#") 找窗口
-        a.btn.btn-outline-my.mx-1(role="button" target="_blank" href="https://g0v.hackmd.io/@jothon/jothon2022") 找活動
+        a.btn.btn-outline-my.mx-1(role="button" target="_blank" href="//g0v.hackmd.io/@jothon/jothon2022") 找活動
+        a.btn.btn-outline-my.mx-1(role="button" target="_blank" href="//g0v.hackmd.io/@jothon/B1NIQnmXs") 找課程
         .dropdown
           a.btn.btn-outline-my.mx-1.dropdown-toggle(role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false") 專案孵化競賽
           ul.dropdown-menu 
             li: a.dropdown-item(href="/means") 競賽辦法
             li: a.dropdown-item(href="//sch001.g0v.tw/dash/brd/sch001-2022/list") 提案列表
             li: a.dropdown-item(href="//sch001.g0v.tw/dash/brd/sch001-2022/prj/create") 我要提案
-        a.btn.btn-outline-my.mx-1(role='button' href="https://app.studyathome.jp/zh-tw" target="_blank") 在家學習時間表
