@@ -15,6 +15,7 @@ block body
   - var ghash = {};
   - (grps || []).map(function(d,i) { ghash[d.key] = d; });
   mixin card(opt)
+    - var tags = ((opt.detail || {}).info || {}).tag || [];
     - var badge = (opt.system && opt.system.badge) || {};
     -
       var type =
@@ -30,6 +31,8 @@ block body
           .gd-prj-card-thumb.aspect-ratio.ratio-3by2(style=`background-image:${thumb}`)
           if type
             .gd-prj-card-badge(data-type=type) #{typename}
+          each tag in tags
+            .gd-prj-card-badge(data-type="tag",data-name=tag)= tag
         .gd-prj-card-name.text-truncate(style="font-weight:500;font-size:1.25em") #{opt.name || '未命名的提案'}
       .gd-prj-card-owner.mb-2 By #[a(href=`/dash/user/${opt.owner}`) #{opt.ownername || '未具名'}]
       .gd-prj-card-description.mb-2.flex-grow-1 #{(opt.description || '').substring(0,50)} ...
@@ -58,12 +61,17 @@ block body
           p.desc #{(brd.description || '')}
         .gd-prj-list-ctrl
           div
-            .btn-group
+            .btn-group.mr-2
               //-.btn.btn-outline-secondary 許願池
               //-.btn.btn-outline-secondary 得獎提案
               .btn(ld="badge-btn",data-name="all") 全部提案
               .btn(ld="badge-btn",data-name="shortlist") 入圍提案
               .btn(ld="badge-btn",data-name="winner")  獲選提案
+            .d-inline-block.mr-2: .d-none(ld="tags")
+              .btn.btn-text.border-0.text-dark 標籤
+              .btn-group.mr-2
+                .btn(ld="all-tag") 全部標籤
+                .btn(ld-each="tag-btn")
           div
             .gd-prj-list-search-box.input-group
               input.form-control(ld="search-input",placeholder="搜尋提案...")
