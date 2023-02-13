@@ -1,0 +1,77 @@
+//- view
+extends /base.pug
+block vars
+  - ctrl.navtop.placeholder = true;
+  - ctrl.navtop.shown = true;
+  - ctrl.navtop.className = ""
+block head
+  if pageInfo && pageInfo.cssUrl
+    +css(pageInfo.cssUrl)
+  else
+    +css("/dash/css/custom/index.css")
+block body
+  include /modules/mixins/index.pug
+
+  - var ghash = {};
+  - (grps || []).map(function(d,i) { ghash[d.key] = d; });
+  mixin card(opt)
+    - var badge = (opt.system && opt.system.badge) || {};
+    -
+      var type =
+        badge.special ? "special" :
+          badge.winner ? "winner" :
+          badge.finalist ? "final" :
+          badge.shortlist  ? "short" : null
+    - var typename = {winner: "獲選提案", final: "決選提案", short: "入圍提案", special: "特別獎"}[type]
+    .gd-prj-card&attributes(attributes)
+      a(href=`/dash/prj/${opt.slug}`)
+        - var thumb = opt.thumb ? `url(/dash/org/${brd.org}/prj/${opt.slug}/upload/${opt.thumb})` : 'none';
+        .w-100.position-relative
+          .gd-prj-card-thumb.aspect-ratio.ratio-3by2(style=`background-image:${thumb}`)
+          if type
+            .gd-prj-card-badge(data-type=type) #{typename}
+        .gd-prj-card-name.text-truncate(style="font-weight:500;font-size:1.25em") #{opt.name || '未命名的提案'}
+      .gd-prj-card-owner.mb-2 By #[a(href=`/dash/user/${opt.owner}`) #{opt.ownername || '未具名'}]
+      .gd-prj-card-description.mb-2.flex-grow-1 #{(opt.description || '').substring(0,50)} ...
+
+  mixin list
+    .w-1024.rwd.mx-auto.d-flex.flex-wrap.justify-content-between
+      if !(prjs && prjs.length)
+        .text-center.text-muted.w-100.text-muted.p-4.m-4 目前尚無任何案件 ...
+      each prj in prjs
+        +card(prj)
+      +card({}).flex-placeholder
+    .gd-prj-list-pagination.w-1024.rwd.mx-auto.text-center.my-4.py-4
+      .btn-group.mx-auto: a.btn(ld-each="pagination")
+
+  +scope("project-list")
+    .d-block(ld="panel side")
+      .gd-prj-list-head.mx-auto.pt-4
+        - var banner = (pageInfo.banner?`url(/dash/org/${brd.org}/brd/${brd.slug}/upload/${pageInfo.banner})`:'none');
+        .gd-prj-list-banner(style=`background-image:${banner}`)
+          .vertical-center
+            .gd-prj-list-info
+              h3 #{brd.name}
+              a.btn(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
+              a.btn.ml-2(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
+        .gd-prj-list-desc
+          p.desc #{(brd.description || '')}
+        .gd-prj-list-ctrl
+          div
+            .btn-group
+              //-.btn.btn-outline-secondary 許願池
+              //-.btn.btn-outline-secondary 得獎提案
+              .btn(ld="badge-btn",data-name="all") 全部提案
+              .btn(ld="badge-btn",data-name="shortlist") 入圍提案
+              .btn(ld="badge-btn",data-name="winner")  獲選提案
+          div
+            .gd-prj-list-search-box.input-group
+              input.form-control(ld="search-input",placeholder="搜尋提案...")
+              .input-group-append
+                .btn(ld="search") 搜尋 #[i.i-search]
+
+      +list
+
+block script
+  +register-locals("prjs")
+  +script("/dash/js/prj/list.js")
