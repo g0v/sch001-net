@@ -62,13 +62,10 @@ block body
         .gd-prj-list-ctrl
           div
             .btn-group.mr-2
-              //-.btn.btn-outline-secondary 許願池
-              //-.btn.btn-outline-secondary 得獎提案
               .btn(ld="badge-btn",data-name="all") 全部提案
               .btn(ld="badge-btn",data-name="shortlist") 入圍提案
               .btn(ld="badge-btn",data-name="winner")  獲選提案
             .d-inline-block.mr-2: .d-none(ld="tags")
-              .btn.btn-text.border-0.text-dark 標籤
               .btn-group.mr-2
                 .btn(ld="all-tag") 全部標籤
                 .btn(ld-each="tag-btn")
@@ -77,7 +74,6 @@ block body
               input.form-control(ld="search-input",placeholder="搜尋提案...")
               .input-group-append
                 .btn(ld="search") 搜尋 #[i.i-search]
-
       +list
 
 block script
