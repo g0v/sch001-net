@@ -55,12 +55,10 @@ body {
   .gd-prj-list-desc p.desc {
     color: #eee;
     white-space: pre-wrap;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 1.5em;
-    max-width: 400px;
-    max-height: 10rem;
     overflow-y: auto;
-    opacity: 0.85;
+    opacity: 1;
   }
   .gd-prj-list-ctrl {
     display: flex;
