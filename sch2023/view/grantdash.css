@@ -22,6 +22,7 @@ body {
   .gd-prj-list-topbar {
     display: flex;
     padding: 1.5rem 3rem;
+    align-items: center;
   }
   .gd-prj-list-topbar > img {
     height: 5rem;
