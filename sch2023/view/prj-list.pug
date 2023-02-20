@@ -49,25 +49,25 @@ block body
 
   +scope("project-list")
     .d-block(ld="panel side")
+      .gd-prj-list-topbar
+        h3 #{brd.name}
+        .ms-auto
+          a.btn(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
+          a.btn.ml-2(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
+      - var banner = (pageInfo.banner?`url(/dash/org/${brd.org}/brd/${brd.slug}/upload/${pageInfo.banner})`:'none');
+      .gd-prj-list-banner(style=`background-image:${banner}`)
       .gd-prj-list-head.mx-auto.pt-4
-        - var banner = (pageInfo.banner?`url(/dash/org/${brd.org}/brd/${brd.slug}/upload/${pageInfo.banner})`:'none');
-        .gd-prj-list-banner(style=`background-image:${banner}`)
-          .vertical-center
-            .gd-prj-list-info
-              h3 #{brd.name}
-              a.btn(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
-              a.btn.ml-2(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
         .gd-prj-list-desc
           p.desc #{(brd.description || '')}
         .gd-prj-list-ctrl
           div
-            .btn-group.mr-2
+            .btn-group.mr-2.d-none
               .btn(ld="badge-btn",data-name="all") 全部提案
               .btn(ld="badge-btn",data-name="shortlist") 入圍提案
               .btn(ld="badge-btn",data-name="winner")  獲選提案
             .d-inline-block.mr-2: .d-none(ld="tags")
               .btn-group.mr-2
-                .btn(ld="all-tag") 全部標籤
+                .btn(ld="all-tag") 全部提案
                 .btn(ld-each="tag-btn")
           div
             .gd-prj-list-search-box.input-group
