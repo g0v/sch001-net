@@ -1,5 +1,5 @@
 body {
-    background: #111A39 url("https://sch001.g0v.dev/assets/img/bg_2022_simple.png") center top fixed;
+    background: #F87E08;
     background-size: cover;
   }
   #nav-top nav.navbar {
@@ -19,27 +19,19 @@ body {
     padding-top: 1.5em;
   }
   .gd-prj-list-banner {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    color: #eee;
     background-color: #343a40;
     margin-bottom: 1.5em;
-    border-radius: 0.5em;
-    text-shadow: 0 0.125em 0.25em rgba(0,0,0,0.1);
     width: 100%;
-    height: 300px;
+    height: 360px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .gd-prj-list-banner > div {
-    border-radius: 0.5em;
-    background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.1));
-  }
-  .gd-prj-list-banner .btn {
+  .gd-prj-list-topbar .btn {
     border: 1px solid #fff;
     color: #fff;
   }
-  .gd-prj-list-banner .btn:hover {
+  .gd-prj-list-topbar .btn:hover {
     background: #fff;
     color: #000;
   }
