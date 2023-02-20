@@ -1,6 +1,7 @@
 body {
     background: #F87E08;
     background-size: cover;
+    color: #fff;
   }
   #nav-top nav.navbar {
     padding: 0.5rem 0;
@@ -18,14 +19,13 @@ body {
     margin: auto;
     padding-top: 1.5em;
   }
-  .gd-prj-list-banner {
-    background-color: #343a40;
-    margin-bottom: 1.5em;
-    width: 100%;
-    height: 360px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .gd-prj-list-topbar {
+    display: flex;
+    padding: 1.5rem 3rem;
+    align-items: center;
+  }
+  .gd-prj-list-topbar > img {
+    height: 5rem;
   }
   .gd-prj-list-topbar .btn {
     border: 1px solid #fff;
@@ -35,20 +35,19 @@ body {
     background: #fff;
     color: #000;
   }
-  .gd-prj-list-info {
-    width: 60%;
-    text-align: left;
-    margin-left: 1.5em;
-    padding: 1.5em;
-  }
-  .gd-prj-list-info h3 {
-    font-weight: 300;
+  .gd-prj-list-banner {
+    background-color: #343a40;
+    width: 100%;
+    height: 46vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .gd-prj-list-desc p.desc {
     color: #eee;
     white-space: pre-wrap;
     font-size: 1em;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
     overflow-y: auto;
     opacity: 1;
   }

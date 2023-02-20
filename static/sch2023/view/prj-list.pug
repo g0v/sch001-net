@@ -50,13 +50,13 @@ block body
   +scope("project-list")
     .d-block(ld="panel side")
       .gd-prj-list-topbar
-        h3 #{brd.name}
-        .ms-auto
-          a.btn(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
-          a.btn.ml-2(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
+        img(src="https://sch001.g0v.tw/assets/img/sch001_logo_only.svg", alt="")
+        .ml-auto
+          a.btn(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
+          a.btn.ml-2(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
       - var banner = (pageInfo.banner?`url(/dash/org/${brd.org}/brd/${brd.slug}/upload/${pageInfo.banner})`:'none');
       .gd-prj-list-banner(style=`background-image:${banner}`)
-      .gd-prj-list-head.mx-auto.pt-4
+      .gd-prj-list-head.mx-auto.pt-5
         .gd-prj-list-desc
           p.desc #{(brd.description || '')}
         .gd-prj-list-ctrl
