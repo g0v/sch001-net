@@ -52,14 +52,14 @@ block body
       .gd-prj-list-topbar
         img(src="https://sch001.g0v.tw/assets/img/sch001_logo_only.svg", alt="")
         .d-flex.ml-auto
-          a.btn(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
+          a.btn.btn-lg(href=`/dash/brd/${brd.slug}/prj/create`) 我要提案
           .dropdown
-            a.btn.ml-2.dropdown-toggle(role="button" href="#" data-toggle="dropdown" aria-expanded="false") 歷屆提案
+            a.btn.btn-lg.ml-2.dropdown-toggle(role="button" href="#" data-toggle="dropdown" aria-expanded="false") 歷屆提案
             ul.dropdown-menu 
               li: a.dropdown-item(href="//sch001.g0v.tw/dash/brd/sch001-2022/list") 2022 專案孵化競賽
               li: a.dropdown-item(href="//sch001.g0v.tw/dash/brd/sch001-2021/list") 2021 專案孵化競賽
               li: a.dropdown-item(href="//sch001.g0v.tw/dash/brd/sch001/list") 2020 專案孵化競賽
-          a.btn.ml-2(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
+          a.btn.btn-lg.ml-2(href="//g0v.hackmd.io/@jothon/sch001pr0jectcourseplan",target="_blank") 課程介紹
       - var banner = (pageInfo.banner?`url(/dash/org/${brd.org}/brd/${brd.slug}/upload/${pageInfo.banner})`:'none');
       .gd-prj-list-banner(style=`background-image:${banner}`)
       .gd-prj-list-head.mx-auto.pt-5
