@@ -19,6 +19,7 @@ block vars
     }
 
 block head
+  title #{brd.name}
   include /modules/meta.pug
   if pageInfo && pageInfo.cssUrl
     +css(pageInfo.cssUrl)
