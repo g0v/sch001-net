@@ -15,7 +15,7 @@ body {
 }
 
 p strong {
-    color      : #F7B04B;
+    color      : #F87E08;
     font-weight: bolder;
     transform  : scale(1.2);
     display    : inline-block;
@@ -94,7 +94,7 @@ p strong {
 #courselist p .animatenumbers {
     font-weight: bolder;
     font-size  : 2rem;
-    color      : #F7B04B;
+    color      : #F87E08;
 }
 
 #mediareports a {
