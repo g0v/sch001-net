@@ -5,6 +5,7 @@ block vars
   - ctrl.navtop.shown = true;
   - ctrl.navtop.className = ""
 block head
+  title #{brd.name}
   if pageInfo && pageInfo.cssUrl
     +css(pageInfo.cssUrl)
   else
