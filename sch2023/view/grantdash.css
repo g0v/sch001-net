@@ -1,7 +1,6 @@
 body {
     background: #F87E08;
     background-size: cover;
-    color: #fff;
   }
   #nav-top nav.navbar {
     padding: 0.5rem 0;
@@ -18,11 +17,13 @@ body {
     width: 1024px;
     margin: auto;
     padding-top: 1.5em;
+    color: #fff;
   }
   .gd-prj-list-topbar {
     display: flex;
     padding: 1.5rem 3rem;
     align-items: center;
+    color: #fff;
   }
   .gd-prj-list-topbar > img {
     height: 5rem;
