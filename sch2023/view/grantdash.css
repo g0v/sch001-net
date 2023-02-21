@@ -154,9 +154,8 @@ body {
     position: relative;
     margin: 0;
     padding: 6em 0 1.5em;
-    background-color: #012e44;
-    background-image: url("https://sch001.g0v.tw/assets/img/bg.min.jpg");
-    background-position: center bottom;
+    background-image: url("https://sch001.g0v.tw/assets/img/bg2023.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
