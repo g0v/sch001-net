@@ -5,7 +5,7 @@
 
 /* Timeline */
 .timeline {
-    border-left               : 5px solid #F7B04B;
+    border-left               : 5px solid #F87E08;
     border-bottom-right-radius: 5px;
     border-top-right-radius   : 5px;
     background                : rgba(0, 0, 0, 0.03);
@@ -53,7 +53,7 @@
 
 .timeline .event:before {
     left       : -217.5px;
-    color      : #F7B04B;
+    color      : #F87E08;
     font-size  : 1.5rem;
     font-weight: bold;
     content    : attr(data-date);
@@ -62,7 +62,7 @@
 }
 
 .timeline .event:after {
-    box-shadow   : 0 0 0 4px #F7B04B;
+    box-shadow   : 0 0 0 4px #F87E08;
     left         : -57.85px;
     background   : #FFF;
     border-radius: 50%;
