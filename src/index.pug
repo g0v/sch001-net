@@ -298,7 +298,7 @@ html(lang="zh-Hant-TW")
         allnews.sort((a,b) => {
           let ta = new Date(a['modifiedtime'])
           let tb = new Date(b['modifiedtime'])
-          return a > b
+          return ta > tb
         });
         allnews.forEach(element => {
           console.log(element);
