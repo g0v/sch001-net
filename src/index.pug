@@ -270,19 +270,17 @@ html(lang="zh-Hant-TW")
         },
       });
 
+      const limit_date = new Date('2022-02-10');
+      let allnews = [];
+
       function getNews(url) {
         return new Promise(resolve => {
           $.getJSON( url , function( data ) {
             console.log(data);
-            const limit_date = new Date('2022-02-10');
             if(data.length > 0) {
               data.forEach(element => {
                 console.log(element);
-                var time = new Date(element['modifiedtime']);
-                if(time > limit_date) {
-                  $("#news").removeClass("d-none");
-                  $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
-                }
+                allnews.push(element);
               });
             }
             resolve();
@@ -293,8 +291,21 @@ html(lang="zh-Hant-TW")
         if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { // 測試用
           await getNews("/assets/test_news.json");
         } else {
+          await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2023-prjs/post");
           await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2022/post");
           await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2021/post");
         }
+        allnews.sort((a,b) => {
+          return a['modifiedtime'] > b['modifiedtime']
+        });
+        allnews.forEach(element => {
+          console.log(element);
+          allnews.push(element);
+          var time = new Date(element['modifiedtime']);
+          if(time > limit_date) {
+            $("#news").removeClass("d-none");
+            $("#news .news-list").append(`<p><a href="/dash/post/${element['slug']}" target="_blank">[${time.toLocaleDateString('zh-TW')}] ${element['title']}</a></p>`);
+          }
+        });
       }
       startGetNews();
