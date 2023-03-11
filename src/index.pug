@@ -296,7 +296,9 @@ html(lang="zh-Hant-TW")
           await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2021/post");
         }
         allnews.sort((a,b) => {
-          return a['modifiedtime'] > b['modifiedtime']
+          let ta = new Date(a['modifiedtime'])
+          let tb = new Date(b['modifiedtime'])
+          return a > b
         });
         allnews.forEach(element => {
           console.log(element);
