@@ -275,6 +275,31 @@
                 "img": "slackgis.png"
             },
             {
+                "name": "Lipoic 來品一課",
+                "link": "https://lipoic.org/",
+                "img": "來品一課.png"
+            },
+            {
+                "name": "UniCourse 大學課程搜尋資料庫",
+                "link": "https://unicourse.tw/",
+                "img": "Unicourse.png"
+            },
+            {
+                "name": "平安走路許願帳戶–行人空間改善",
+                "link": "http://bit.ly/40KNZCe",
+                "img": "平安走路許願帳戶.jpg"
+            },
+            {
+                "name": "長租剛好 - 永續租屋模式的市場研究",
+                "link": "http://bit.ly/3jPE2CN",
+                "img": "長租剛好.png"
+            },
+            {
+                "name": "參考書推薦平台",
+                "link": "https://study-guides.dstw.dev/",
+                "img": "參考書推薦平台.jpg"
+            },
+            {
                 "name": "更多社群夥伴",
                 "link": "https://g0v.hackmd.io/@jothon/sch001morepartners",
                 "img": "more.png"
