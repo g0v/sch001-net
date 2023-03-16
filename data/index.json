@@ -60,22 +60,61 @@
             {
                 "name": "國立臺南女子高級中學",
                 "link": "http://www.tngs.tn.edu.tw/tngs/",
-                "img": "NTGSHS.JPG"
+                "img": "NTGSHS.JPG",
+                "otherlinks": [
+                    {"title": "g0v 2021 源力增能營第一場", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2FvcCn5QHmQyWVXqiasqx4Cg"}
+                ]
             },
             {
                 "name": "臺中市立臺中女子高級中學",
                 "link": "https://tcgs.tc.edu.tw/",
-                "img": "台中女中-校徽校名@72x.png"
+                "img": "台中女中-校徽校名@72x.png",
+                "otherlinks": [
+                    {"title": "110學年度探究與實作課程 - 行動萌芽系列演講課程", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2FQceIyh1ASY6zwrINWxzfzA"},
+                    {"title": "111學年度多元選修課 - 臭皮匠來打怪", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2F%40jothon%2Fsch001Xtcgscourse2023"}
+                ]
+            },
+            {
+                "name": "臺北市立內湖高級中學",
+                "link": "https://www.nhsh.tp.edu.tw/",
+                "img": "內湖高中.png",
+                "otherlinks": [
+                    {"title": "111學年度微課程 - 用科技改變社會專案實作課", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2F%40jothon%2F2022NHSH%2Fhttps%253A%252F%252Fg0v.hackmd.io%252F%2540jothon%252F2022NHSH"}
+                ]
             },
             {
                 "name": "國立竹東高級中學",
                 "link": "https://www.ctsh.hcc.edu.tw/",
-                "img": "竹東高中.png"
+                "img": "竹東高中.png",
+                "otherlinks": [
+                    {"title": "［新竹源力增能工作坊］2022 公民科技探究與實作課程設計（師培）", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2FIeDStzhbQDW0c9hcY7E6LA"}
+                ]
+            },
+            {
+                "name": "東吳大學政治學系",
+                "link": "https://web-ch.scu.edu.tw/politics",
+                "img": "東吳政治.jpg",
+                "otherlinks": [
+                    {"title": "參與式民主課程", "link": "https://g0v.hackmd.io/@jothon/sch001Xscups2023"}
+                ]
             },
             {
                 "name": "崑山科技大學",
                 "link": "https://www.ksu.edu.tw/",
-                "img": "KSU.JPG"
+                "img": "KSU.JPG",
+                "otherlinks": [
+                    {"title": "g0v 2021 源力增能營第二場", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2FkLe20HTQS1u-KiCkKbD4BA"}
+                ]
+            },
+            {
+                "otherlinks": [
+                    {"title": "【The Good Class 3.0】 去中心化應用程式之設計實務", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2F%40jothon%2Fntuweb3%2Fhttps%253A%252F%252Fg0v.hackmd.io%252F%2540jothon%252Fntuweb3"}
+                ]
+            },
+            {
+                "name": "台灣放伴教育協會",
+                "link": "https://pangphuann.tw/",
+                "img": "放伴.png"
             },
             {
                 "name": "教育部偏鄉數位創新服務計畫",

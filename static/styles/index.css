@@ -158,6 +158,8 @@
   transition: 0.5s;
   border-radius: 3px;
   border: 1px solid #CCC;
+  display: flex;
+  flex-direction: column;
 }
 .partners-block > div:hover {
 
@@ -166,6 +168,12 @@
 }
 .partners-block .partner-img {
 	margin-bottom: 0;
+}
+.partners-block .source-other-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 992px) {

@@ -226,10 +226,17 @@ html(lang="zh-Hant-TW")
           h3.text-center.py-2 源力夥伴
           - var delay = 0;
           mixin partners-block(_id)
-            .partners-block.col-md-4.text-center.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
-              a(target="_blank" href=_partners['source'][_id].link)
-                .partner-img(style="background-image: url(/assets/img/partners/"+_partners['source'][_id].img+");")
-                a #{_partners['source'][_id].name}
+            .partners-block.col-md-4.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
+              if _partners['source'][_id].name
+                a(target="_blank" href=_partners['source'][_id].link)
+                  .partner-img(style="background-image: url(/assets/img/partners/"+_partners['source'][_id].img+");")
+                h6.text-center #{_partners['source'][_id].name}
+              if _partners['source'][_id].name && _partners['source'][_id].otherlinks
+                hr
+              if _partners['source'][_id].otherlinks
+                .source-other-links.p-2
+                  each val, index in _partners['source'][_id].otherlinks
+                    a.mb-2(target="_blank" href=val.link) #{val.title}
           .row.justify-content-center.px-4
             each val, index in _partners['source']
               if index%2 == 0
