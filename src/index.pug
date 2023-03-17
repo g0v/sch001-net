@@ -212,7 +212,7 @@ html(lang="zh-Hant-TW")
               a(href='mailto:jothon-organizers@g0v.tw' target='_blank') jothon-organizers@g0v.tw
             //p.text-center.mb-5
               a.btn.btn-lg.btn-outline-my.me-1(href="https://drive.google.com/file/d/1gy3VNxXrjT5E6X6Sbra3Q5fNSIS4OIGS/view?usp=sharing" role="button" target="_blank") 零時小學校 2021 企畫書
-          
+
           h3.text-center.py-2 啟蒙者夥伴
           .row.justify-content-center.text-center
             .col-md-4
@@ -227,13 +227,12 @@ html(lang="zh-Hant-TW")
           - var delay = 0;
           mixin partners-block(_id)
             .partners-block.col-md-4.p-2(data-aos-offset="100" data-aos="fade-up", data-aos-delay= delay+=100): .p-2.h-100
+              a(target="_blank" href=_partners['source'][_id].link)
+                .partner-img(style="background-image: url(/assets/img/partners/"+_partners['source'][_id].img+");")
               if _partners['source'][_id].name
-                a(target="_blank" href=_partners['source'][_id].link)
-                  .partner-img(style="background-image: url(/assets/img/partners/"+_partners['source'][_id].img+");")
                 h6.text-center #{_partners['source'][_id].name}
-              if _partners['source'][_id].name && _partners['source'][_id].otherlinks
-                hr
               if _partners['source'][_id].otherlinks
+                hr
                 .source-other-links.p-2
                   each val, index in _partners['source'][_id].otherlinks
                     a.mb-2(target="_blank" href=val.link) #{val.title}
