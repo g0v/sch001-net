@@ -3,10 +3,8 @@ body>div {
 }
 
 #nav-top nav.navbar {
-  padding: 0.5rem 0;
-  width: 1024px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  background: none;
+  background: #F87E08;
 }
 
 #nav-top nav.navbar a.nav-link,
