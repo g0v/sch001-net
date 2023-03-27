@@ -107,6 +107,14 @@
                 ]
             },
             {
+                "name": "屏東大學新媒體創意應用碩士學位學程",
+                "link": "https://nm.nptu.edu.tw/",
+                "img": "屏東大學.png",
+                "otherlinks": [
+                    {"title": "【The Good Class 3.0】NFT虛擬貨幣與數位媒體系列講座", "link": "https://g0v.hackmd.io/@jothon/SyPpuv9ln"}
+                ]
+            },
+            {
                 "img": "the_good_class.jpg",
                 "otherlinks": [
                     {"title": "【The Good Class 3.0】 去中心化應用程式之設計實務", "link": "https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan/https%3A%2F%2Fg0v.hackmd.io%2F%40jothon%2Fntuweb3%2Fhttps%253A%252F%252Fg0v.hackmd.io%252F%2540jothon%252Fntuweb3"}
@@ -338,6 +346,11 @@
                 "name": "參考書推薦平台",
                 "link": "https://study-guides.dstw.dev/",
                 "img": "參考書推薦平台.jpg"
+            },
+            {
+                "name": "da0",
+                "link": "https://da0.g0v.tw/",
+                "img": "da0-logo.jpg"
             },
             {
                 "name": "更多社群夥伴",
