@@ -29,7 +29,7 @@ block body
       a(href=`/dash/prj/${opt.slug}`)
         - var thumb = opt.thumb ? `url(/dash/org/${brd.org}/prj/${opt.slug}/upload/${opt.thumb})` : 'none';
         .w-100.position-relative
-          .gd-prj-card-thumb.aspect-ratio.ratio-3by2(style=`background-image:${thumb}`)
+          .gd-prj-card-thumb.aspect-ratio.ratio-1x1(style=`background-image:${thumb}`)
           if type
             .gd-prj-card-badge(data-type=type) #{typename}
           each tag in tags
