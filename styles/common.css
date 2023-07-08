@@ -1,3 +1,8 @@
+:root {
+  --color-my-y: #f7bf4d;
+  --color-my-o: #ff5933;
+}
+
 body {
   color: #FCF0BA;
 	font-family: 'Noto Sans TC', sans-serif;
@@ -40,7 +45,7 @@ black {
 }
 
 a:link, a:visited {
-	color: #F87E08;
+	color: var(--color-my-o);
   text-decoration: underline;
 }
 a:link:hover, a:visited:hover {
@@ -54,7 +59,7 @@ a.nav-link, a.navbar-brand {
 
 a.btn-my {
   color: white;
-  background-color: #F87E08;
+  background-color: var(--color-my-o);
   text-decoration: none;
   transition: filter .3s;
 }
@@ -64,14 +69,14 @@ a.btn-my:hover {
 }
 
 a.btn-outline-my {
-  color: #F87E08;
+  color: var(--color-my-o);
   background-color: rgba(0,0,0,0);
-  border: 1.2px solid #F87E08;
+  border: 1.2px solid var(--color-my-o);
   text-decoration: none;
 }
 a.btn-outline-my:hover {
   color: #FFF;
-  background-color: #F87E08;
+  background-color: var(--color-my-o);
   filter: none;
 }
 
@@ -97,7 +102,7 @@ a.btn-outline-my:hover {
 }
 
 .navbar .dropdown .dropdown-item {
-	color: #F87E08;
+	color: var(--color-my-o);
 }
 
 .part-dark {
