@@ -183,9 +183,12 @@ html(lang="zh-Hant-TW")
           mixin team-block(_id)
             .team-block.col-md-6.p-3.d-flex.flex-row
               .team-avatar
-                img.team-img(src="/assets/avatar/"+_team_members[_id].en+".jpg")
+                img.team-img(src="/assets/avatar/"+_team_members[_id].en.toLowerCase()+".jpg")
               .team-detail
-                h5= _team_members[_id].name+"／"+_team_members[_id].en
+                h5
+                  if _team_members[_id].name
+                    | #{_team_members[_id].name} ／ 
+                  | #{_team_members[_id].en}
                 h6= _team_members[_id].title
                 p.m-0= _team_members[_id].disc
           .container.text-left
