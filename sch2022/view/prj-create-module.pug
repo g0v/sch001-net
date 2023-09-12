@@ -1,0 +1,35 @@
+//- module
+.ldcv.ldcvmgr(data-name="prj-create-no-grp",data-lock="true"): .w-640.base: .inner.card: .card-body: .p-4
+  h4 尚未完成設定
+  p 這個活動還有一些設定未完成 ( 包含提案表、分組等設定 )，請聯繫活動管理員設定完成後再進行提案。
+  br
+  a.btn.btn-primary(href="/") 回首頁
+
+
+.text-left
+  h3 建立提案：#[span.text-sm 第一步]
+  hr
+  form
+    .form-group
+      label 提案名稱
+      input.form-control(name="name",placeholder="請輸入您的提案名稱 ...")
+    .form-group
+      label 簡單介紹您的提案
+      textarea.form-control(name="description",rows="4",placeholder="")
+      .invalid-feedback 字數應介於 1 ~ 500 字之間
+    .form-group(ld="show-grp")
+      label 選擇分組
+      select.form-control(ld="grp",name="grp")
+        option(ld-each="grp-option",value="") 無
+    .my-4.invisible(ld="inited")
+      span 您的提案將建立在
+      b.mx-2(ld="brd-name") 這個活動
+      span(ld="show-grp") 的#[b.mx-2(ld="grp-name") 這個分組]
+      span 之中。
+      input(name="brd",type="hidden",value="")
+    .mb-4: .btn.btn-primary.btn-block.disabled.ld-ext-right(ld="submit") 建立提案 #[.ld.ld-spinner.ld-spin]
+    //-.row.mt-4
+      .col-md.mb-3: a.btn.btn-outline-secondary.btn-block(href="/") 先不要
+      .col-md.mb-3: .btn.btn-primary.btn-block.disabled.ld-ext-right(ld="submit") 建立提案 #[.ld.ld-spinner.ld-spin]
+  p.text-muted.text-sm 提案建立後，我們會將您引導至更詳細的表單頁面，您可以在那裡繼續完成您的提案內容。
+  //-p.text-muted.text-sm 別擔心！建立提案後，您可以再慢慢將提案內容補完。提案建立後並不會立刻發布，而是待您填完相關欄位並確認發表後，才會正式發布。
