@@ -1,16 +1,23 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
+const sass = require('gulp-sass')(require('sass'));
+const data = require('gulp-data');
 const connect = require('gulp-connect');
 const sitemap = require('gulp-sitemap');
-const data = require('gulp-data');
-const fs = require('fs');
 
+function buildScss() {
+  gulp.src('src/scss/**/*.scss')
+    .pipe(data((file) => {
+      console.log("[build] " + file['history']);
+    }))
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(gulp.dest('./static/styles'))
+    .pipe(connect.reload());
+}
 
-
-function deploy() {
+function buildPug() {
   let build_time = new Date().getTime();
-  console.log(build_time);
-  gulp.src('src/**/index.pug')    
+  gulp.src('src/pug/**/index.pug')
     .pipe(data((file) => {
       console.log("[build] " + file['history']);
       const result = {
@@ -19,29 +26,42 @@ function deploy() {
         index_old: require('./data/index2020.json'),
         power2020: require('./data/power2020.json'),
         power2021: require('./data/power2021.json'),
+        power2022: require('./data/power2022.json'),
         ssr2021: require('./data/ssr2021.json')
       };
       return result;
     }))
-    .pipe(pug({
-    }))
+    .pipe(pug())
     .pipe(gulp.dest('./static/'))
-    .pipe(sitemap({ siteUrl: 'https://sch001.g0v.tw' }))
+    .pipe(sitemap({
+      siteUrl: 'https://sch001.g0v.tw',
+      images: true
+    }))
     .pipe(gulp.dest('./static/'))
     .pipe(connect.reload());
 }
 
+gulp.task('build', async() => {
+  await buildScss();
+  await buildPug();
+});
+
 gulp.task('server', function () {
   connect.server({
     port: 3000,
-    host: '0.0.0.0',
     livereload: true,
+    host: '::',
     root: 'static'
-  })
-  deploy();
+  });
+  buildScss();
+  buildPug();
 
-  gulp.watch(['src/**/*.pug', 'data/*.json'], function (event) {
-    deploy();
-    event();
+  gulp.watch(['src/**/*.scss'], function (cb) {
+    buildScss();
+    cb();
+  });
+  gulp.watch(['src/**/*.pug', 'src/**/*.scss', 'static/assets/js/*.js', 'data/*.json'], function (cb) {
+    buildPug();
+    cb();
   });
 });

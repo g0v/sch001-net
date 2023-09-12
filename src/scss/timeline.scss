@@ -1,0 +1,97 @@
+#timeline-content {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/* Timeline */
+.timeline {
+    border-left               : 5px solid #F87E08;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius   : 5px;
+    background                : rgba(0, 0, 0, 0.03);
+    color                     : rgba(0, 0, 0, 0.8);
+    margin                    : 50px auto;
+    padding                   : 50px;
+    letter-spacing            : 0.5px;
+    position                  : relative;
+    line-height               : 1.4em;
+    font-size                 : 1.03em;
+    list-style                : none;
+    text-align                : left;
+    max-width                 : 55%;
+    left                      : 4em;
+}
+
+.timeline p {
+    font-weight: normal;
+    color      : #f45336;
+    border     : 2px solid #f45336;
+    display    : inline-block;
+    padding    : 5px;
+    margin     : 5px 0;
+}
+
+.timeline .event {
+    border-bottom : 1px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    margin-bottom : 20px;
+    position      : relative;
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom : 0;
+    border        : none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display : block;
+    top     : 0;
+}
+
+.timeline .event:before {
+    left       : -217.5px;
+    color      : #F87E08;
+    font-size  : 1.5rem;
+    font-weight: bold;
+    content    : attr(data-date);
+    text-align : right;
+    min-width  : 120px;
+}
+
+.timeline .event:after {
+    box-shadow   : 0 0 0 4px #F87E08;
+    left         : -57.85px;
+    background   : #FFF;
+    border-radius: 50%;
+    height       : 11px;
+    width        : 11px;
+    content      : "";
+    top          : 9px;
+}
+
+@media (max-width: 992px) {
+    .timeline {
+        max-width: 85%;
+        margin   : 20px auto;
+        padding  : 20px;
+        left     : 0;
+    }
+
+    .timeline .event:not([data-date='']) {
+        margin-top: 8rem;
+    }
+
+    .timeline .event:before {
+        text-align: left;
+        left      : 0;
+        top       : -5rem;
+        font-size : 3rem;
+    }
+
+    .timeline .event:after {
+        left: -28px;
+    }
+}
