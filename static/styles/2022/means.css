@@ -1,0 +1,39 @@
+h3::before {
+  content: "";
+  background-color: #FCF0BA;
+  display: inline-block;
+  width: 5px;
+  height: 0.75em;
+  margin: 0 0.3em 0 0;
+}
+
+h5 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+i {
+  color: #AAA;
+  width: 1em;
+  display: block;
+  margin-right: 0.5em;
+}
+
+hr {
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+#topics li span {
+  color: #f45336;
+  font-weight: bolder;
+}
+
+#schedule h5 {
+  color: #f45336;
+  font-weight: bolder;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}

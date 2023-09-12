@@ -1,0 +1,42 @@
+#footer.container-fluid.m-0
+  p.text-center.m-0.p-0 <a href="//jothon.g0v.tw/" target="_blank">揪松網</a><a href="//g0v.tw/" target="_blank">g0v.tw</a><a href="//github.com/g0v/sch001-net" target="_blank">github</a>
+.part-light
+  #modal-contact.modal.fade(tabindex="-1" role="dialog" aria-labelledby="contact-title" aria-hidden="true"): .modal-dialog.modal-dialog-centered.modal-lg(role="document"): .modal-content
+    .modal-header
+      h5#contact-title.modal-title 如何聯繫零時小學校的主辦單位（g0v-揪松團）？
+      button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+    .modal-body
+      .container.p-4
+        h4 網站
+        p
+          | 主網站：
+          a(href='//sch001.g0v.tw' target='_blank') https://sch001.g0v.tw
+        h4 電子郵件
+        p 
+          | g0v 零時政府揪松團 Email： 
+          a(href='mailto:jothon-organizers@g0v.tw' target='_blank') jothon-organizers@g0v.tw
+        h4 線上社群平台
+        a(href='//g0v-tw.slack.com' target='_blank') g0v Slack
+        |  | 
+        a(href='//join.g0v.tw' target='_blank') 如何加入 g0v Slack 請看這裡
+        ul
+          li
+            | 公開討論頻道：
+            ul
+              li 零時小學校 #edu
+              li 營隊相關 #edu-sch001ing
+          li 直接私訊給專案窗口： @tiff
+
+script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
+script(defer src='https://use.fontawesome.com/releases/v5.15.3/js/all.js' integrity='sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f' crossorigin='anonymous')
+script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+script.
+  AOS.init();
+  $('.nav-link').click(function(event){
+    var scroll_target = $(event.target).attr("href").replace("/","");
+    //console.log(scroll_target);
+    $('html,body').animate({scrollTop:$(scroll_target).offset().top-$('#navbar').height()},300);
+  });
+  

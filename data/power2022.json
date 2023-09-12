@@ -1,0 +1,232 @@
+{
+  "feedback": [
+    {
+      "title": "柚子（零時小學校專案孵化競賽決選獲獎團隊：參考書推薦平台開發團隊成員／大學生）",
+      "avatar": "柚子.png",
+      "content": "很開心當初有參加專案孵化競賽，不但認識了很多厲害的新朋友，我們的參考書推薦平台也有了活下去的希望。"
+    },
+    {
+      "title": "蓋蓋（零時小學校專案孵化競賽決選獲獎團隊：UniCourse 計畫發起人／大學生）",
+      "avatar": "蓋蓋.png",
+      "content": "因為零時小學校的專案孵化競賽，讓我把成為學生一直以來想做的事鼓起勇氣做下去，回頭看真的是非常讚的體驗！謝謝 g0v 和零時小學校！"
+    },
+    {
+      "title": "May（零時小學校專案孵化競賽決選獲獎團隊：平安走路許願帳戶發起人／竹東高中教師）",
+      "avatar": "may.png",
+      "content": "沒有零時小學校就沒有平安走路許願帳戶，充滿鼓勵與機會，根本最佳專案孵化場域！"
+    },
+    {
+      "title": "Peter（g0v 參與者、零時小學校講師）",
+      "avatar": "peter.png",
+      "content": "零時可以代表無時無刻，也可以代表隨時隨地。希望零時小學校專案能夠成為讓大家無時無刻、隨時隨地上來學習數位公民素養與公民科技的地方。"
+    },
+    {
+      "title": "比鄰（Cofacts 真的假的共同發起人、零時小學校講師）",
+      "avatar": "比鄰.png",
+      "content": "可以認識各種認真又有創意的靈魂覺得太讓人開心了！"
+    }
+  ],
+  "classes": [
+    {
+      "title": "【台南青年志工中心】 數位探索多元學習工作坊",
+      "img": "台南青年志工中心.jpg",
+      "content": "零時小學校受邀前往台南進行遠距教學志工培育的兩天課程，提供了遠距教學和線上活動籌備的實際經驗，希望讓具有熱忱的教學志工可以將所學應用在實際教學現場。",
+      "link": ""
+    },
+    {
+      "title": "【2022 台中女中】 高二公民探究與實作課： 行動萌芽系列演講",
+      "img": "2022台中女中.jpg",
+      "content": "零時小學校進入高中，與台中女中的劉姝言老師合作指導探究實作課程，並邀請社群專案實踐者擔任課堂講師，分享分享 g0v 社群的協作模式、專案管理經驗，搭配老師的引導陪伴學生一起做專案。",
+      "link": "https://g0v.hackmd.io/@jothon/SJKFhq315"
+    },
+    {
+      "title": "【內湖高中】微課程「用科技改變社會專案實作課」",
+      "img": "內湖高中.jpg",
+      "content": "零時小學校在內湖高中開設為期六週的微課程，邀請了設計思考教練囧囧，將 g0v 專案協作模式結合設計思考，引導大家實作專案，進而培養內湖高中學生的數位公民素養。",
+      "link": "https://g0v.hackmd.io/@jothon/2022NHSH"
+    },
+    {
+      "title": "【2023 台中女中】高一多元選修課程「臭皮匠來打怪」",
+      "img": "2023台中女中.jpg",
+      "content": "零時小學校再次與台中女中劉姝言老師合作開設多元選修課程，我們從假訊息亂象出發，邀請放伴教育協會、Cofacts真的假的、台灣資訊環境研究中心前來分享，一起來解決假訊息所造成的社會問題。",
+      "link": "https://g0v.hackmd.io/@jothon/sch001Xtcgscourse2023/"
+    },
+    {
+      "title": "【台大資工所與網媒所】The Good Class 3.0 去中心化應用程式之設計實務",
+      "img": "台大資工所與網媒所.jpg",
+      "content": "零時小學校與 da0 、電通合作，於台大資工所與網媒所開設為期一學期的課程。為切合當代社會趨勢和產業概況，本次課程邀請各領域專家及業界人士分享去中心化之應用實務，並引導學生做專案。",
+      "link": "https://g0v.hackmd.io/@jothon/ntuweb3/"
+    },
+    {
+      "title": "【東吳大學政治系】參與式民主課程",
+      "img": "東吳大學政治系.jpg",
+      "content": "零時小學校與東吳大學 Ellen 老師合作，於本學年「參與式民主」課程中開設兩堂關於「公民如何自發性協作公民科技專案、解決社會問題」的課程，並引導學生做專案。",
+      "link": "https://g0v.hackmd.io/@jothon/sch001Xscups2023"
+    },
+    {
+      "title": "師資培育工作坊",
+      "img": "師資培育工作坊.jpg",
+      "content": "零時小學校透過整理過往專案實作課程之經驗、模式與教案，形成可複製的教學／學習模式，並將具體教學產出及開源。而在教學經驗擬定後，將積極進行「師資培育」，藉由培育教師影響更多學生。",
+      "link": ""
+    },
+    {
+      "title": "教學設計線上工作坊",
+      "img": "教學設計線上工作坊.jpg",
+      "content": "零時小學校邀請了貍想教育創辦人大貍，舉辦了共三堂的教學設計線上工作坊，與 g0v 社群夥伴一同探討該如何將數位開源專案經驗轉化成學習模式和資源，讓富含 g0v 精神的課程實際在教育現場發生。",
+      "link": "https://g0v.hackmd.io/@jothon/SJIiO_vUc"
+    },
+    {
+      "title": "【LASS & 竹東高中】新竹源力增能工作坊－公民科技探究與實作課程設計",
+      "img": "LASS_竹東高中.jpg",
+      "content": "零時小學校與 LASS 以及新竹竹東高中合作籌備工作坊，由 LASS 創辦人哈爸以及擅長跨領域教學的竹東高中韓中梅老師擔任講師，以「群眾標註」為主題，分享如何把公民科技專案融入探究與實作課程。",
+      "link": "https://g0v.hackmd.io/@jothon/SkEQzp0Qi"
+    },
+    {
+      "title": "數位公民增能課",
+      "img": "夏日源力增能營_開幕式.jpg",
+      "content": "零時小學校每年邀請 g0v 社群講師以及公民科技單位，協助將公民科技實踐者的經驗轉化為數位公民課程，並整理成線上開放課程影片。課程內容包含專案協作心法與實作、公民科技專案經驗與技術、開源、科技趨勢、公民科技職涯等。並於每年暑假舉辦「夏日線上源力增能營」，邀請學員線上自主共學數位公民課程影片，為了因應科技趨勢、時事，也不定期籌辦各式數位公民增能講座。",
+      "link": "https://g0v.hackmd.io/@jothon/Sch001courses/"
+    },
+    {
+      "title": "2022 夏日線上源力增能營",
+      "img": "夏日源力增能營_主視覺.jpg",
+      "content": "零時小學校於暑假籌備「夏日源力線上增能營」，邀請到 19 位 g0v 社群貢獻者，將 g0v 社群十年來的精神與各領域專案經驗轉為 22 堂線上課程，並由 g0v 長期參與者陪伴大家在自主學習課程影片之餘，學以致用直接實作專案。",
+      "link": "https://g0v.hackmd.io/@jothon/Sch001SSR2022/"
+    },
+    {
+      "title": "【飛地書店】人工智慧系列讀書會",
+      "img": "飛地讀書會.jpg",
+      "content": "飛地書店與 g0v 零時小學校共同策劃「人工智慧」主題書展，並舉辦一系列讀書會，並邀請重磅嘉賓擔任導讀。用五個晚上，我們齊聚飛地一起讀書、聆聽、反饋、討論，在見證時代變化的同時，激發更多對於人類自身的思考。",
+      "link": "https://g0v.hackmd.io/@jothon/rkkMhzuR3"
+    }
+  ],
+  "final_teams": [
+    {
+      "title": "UniCourse 大學課程搜尋資料庫",
+      "img": "UniCourse.jpg",
+      "proposal_page": "https://sch001.g0v.tw/dash/prj/PHfxJKR2hpg7f9rt58i9g6WZ_ZRo08",
+      "project_website": "https://unicourse.tw",
+      "open_source_content": "https://github.com/UniCourse-TW",
+      "team_interview": "https://g0v.hackmd.io/@jothon/HJ1lMKuAh",
+      "description": "UniCourse 為一群師大資工的學生主導的大學課程資訊交流平臺，專注於建立大學課程搜尋資料庫，期望能整合並有效利用來自不同大學的課程。",
+      "team_members": [
+        "洪軾凱（Sky Hong）",
+        "林振可（JacobLinCool）",
+        "于子緯（TzuWei）",
+        "莊博傑（Bogay）",
+        "趙安庭（antingchao）",
+        "邱可菡（DWtb）"
+      ],
+      "open_source_license": "MIT License"
+    },
+    {
+      "title": "參考書推薦平台",
+      "img": "參考書推薦平台.jpg",
+      "proposal_page": "https://sch001.g0v.tw/dash/prj/PHgdJOD1HArYW7ZN5jXCLjAp4jwEab",
+      "project_website": "http://study-guides.dstw.dev/",
+      "open_source_content": "https://github.com/Today-Asked/Study-Guides-Recommendation",
+      "team_interview": "https://g0v.hackmd.io/@jothon/BJNGntOC3",
+      "description": "建立一個供學長姐新增評論和評分的參考書推薦平台，讓學弟妹在挑選參考書時能得到更全面的資訊。",
+      "team_members": [
+        "玉米",
+        "糖粉"
+      ],
+      "open_source_license": "MIT License"
+    },
+    {
+      "title": "Lipoic 來品一課",
+      "img": "Lipoic.jpg",
+      "proposal_page": "https://sch001.g0v.tw/dash/prj/PCaVPhn4zx6ZqFJ85eGA92fECxUsZW",
+      "project_website": "https://lipoic.org",
+      "open_source_content": "https://github.com/Lipoic",
+      "team_interview": "https://g0v.hackmd.io/@jothon/SJ4R0FuCh",
+      "description": "Lipoic 為線上教育整合平台，旨在提供簡易操作的介面，讓學生與老師能更快的進入教學狀態，以提供高品質的教育。",
+      "team_members": [
+        "菘菘",
+        "蕉哥",
+        "afan",
+        "Anonymous-AAAA",
+        "Brian",
+        "ChAoS",
+        "Homo",
+        "justdo",
+        "Kevin",
+        "Luminous 露米諾斯",
+        "noah wen",
+        "SimplyKyle",
+        "Ted 顥天",
+        "TNB",
+        "小喵",
+        "小西瓜",
+        "西瓜",
+        "芒果",
+        "亨哥",
+        "阿明",
+        "紅茶",
+        "雪",
+        "麻糬",
+        "凱歐",
+        "猴貓",
+        "廢言"
+      ],
+      "open_source_license": "程式碼：GNU General Public License v3.0 (GPL3)、文件資料：CC BY-NC-ND 4.0"
+    },
+    {
+      "title": "平安走路許願帳戶--行人空間改善",
+      "img": "平安走路許願帳戶.jpg",
+      "proposal_page": "https://sch001.g0v.tw/dash/prj/PHZMwFp26wXoKCwO5K.CWPrqfMfVI0",
+      "project_website": "https://commutag.agawork.tw/dataset?id=63528cc34f042e88cc951433",
+      "open_source_content": "https://docs.google.com/document/d/1b_00BjDMkuyZISHzfEKU9DDw32BqmQ95k-O-bshxBQ0/edit?usp=sharing",
+      "team_interview": "https://g0v.hackmd.io/@jothon/r13xe9_C2",
+      "description": "使用群眾標記平台集結公民評比各地保護行人措施，提升用路平權，共創所有人都安全的交通空間。",
+      "team_members": [
+        "韓中梅",
+        "許佳蒨",
+        "哈爸",
+        "吳鎮添",
+        "禹翔",
+        "Jyun",
+        "TsìHō",
+        "劉祐任",
+        "Timmy",
+        "Ansel",
+        "藍中璟",
+        "吳明清",
+        "余曉倫",
+        "Ginger",
+        "詣琦",
+        "Hana瑙希",
+        "AJ",
+        "Abby",
+        "黃隆偉",
+        "小小小丸子",
+        "薯餅",
+        "viga",
+        "何恭佑",
+        "莫崢",
+        "牛一",
+        "廖郁賢",
+        "ziv"
+      ],
+      "open_source_license": "資料集版權：CC0/文件版權： CC by Name 4.0 /程式碼： MIT"
+    },
+    {
+      "title": "長租剛好 - 永續租屋模式的市場研究",
+      "img": "長租剛好.jpg",
+      "proposal_page": "https://sch001.g0v.tw/dash/prj/PHqhb4R4G7fnt3c75VeAEy7fGXdWsv",
+      "project_website": "https://g0v.hackmd.io/@ddio/appropriate-rental-housing",
+      "open_source_content": "https://medium.com/rentea-tuesday/appropriate-rental-housing-0-ce7bce64f43e",
+      "team_interview": "https://g0v.hackmd.io/@jothon/r1R1bc_C3",
+      "description": "探索房客可負擔、可長租，兼顧房東權益、老屋維護的現實基礎，過程開放參與，成果開源，作為發展居住服務的基礎公共資產。",
+      "team_members": [
+        "ddio",
+        "PN",
+        "aniii",
+        "Peace",
+        "stella",
+        "Le0n"
+      ],
+      "open_source_license": "CC-BY 4.0"
+    }
+  ]
+}
