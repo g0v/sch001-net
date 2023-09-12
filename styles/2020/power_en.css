@@ -1,8 +1,8 @@
 p {
-    text-align: left;
-    word-break: initial;
+  text-align: left;
+  word-break: initial;
 }
 
 #intros .container p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }

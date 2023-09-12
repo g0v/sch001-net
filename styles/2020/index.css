@@ -1,90 +1,99 @@
 #header {
-	height: 95vh;
+  height: 95vh;
   overflow: hidden;
 }
+
 #header .inner {
   height: 100%;
-	background-image: url("/assets/img/main_1920x1080_f-01.svg");
-	background-position: center top;
+  background-image: url("/assets/img/main_1920x1080_f-01.svg");
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #howto-steps > div {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #howto-steps div p {
-	padding: 0.5rem;
-    text-align-last: center;
+  padding: 0.5rem;
+  text-align-last: center;
 }
 
 #howto-steps div a {
-	font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .step-img {
-  border: 1px solid rgba(8,33,48,1);
+  border: 1px solid rgb(8, 33, 48);
   margin-bottom: 10px;
   width: 100%;
   min-height: 200px;
   border-radius: 3px;
-	background-position: center center;
-	background-size: cover;
+  background-position: center center;
+  background-size: cover;
 }
 
 ul.timeline {
-    list-style-type: none;
+  list-style-type: none;
 }
+
 ul.timeline:before {
-    content: ' ';
-    background: #AAA;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: calc(100% - 4rem);
-	margin-top: 1.2rem;
-    z-index: 400;
+  content: " ";
+  background: #AAA;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: calc(100% - 4rem);
+  margin-top: 1.2rem;
+  z-index: 400;
 }
+
 ul.timeline > li {
   border: 1px solid #AAA;
   border-radius: 3px;
   margin: 0.5rem 0;
   padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 }
+
 ul.timeline > li:hover {
   border-color: #DDD;
   transition-duration: 300ms;
 }
 
 ul.timeline > li:before {
-    content: ' ';
-    background: #AAA;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    margin: 0.6rem 0;
-    left: 25px;
-    width: 10px;
-    height: 10px;
-    z-index: 400;
+  content: " ";
+  background: #AAA;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  margin: 0.6rem 0;
+  left: 25px;
+  width: 10px;
+  height: 10px;
+  z-index: 400;
 }
+
 ul.timeline .timeline-title {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
+
 ul.timeline .timeline-date {
-	color: #DDD;
-	font-size: 0.8rem;
-	margin: 0 1rem;
+  color: #DDD;
+  font-size: 0.8rem;
+  margin: 0 1rem;
 }
+
 ul.timeline .timeline-details {
-	line-height: 1rem;
-	padding: 1rem 0;
+  line-height: 1rem;
+  padding: 1rem 0;
 }
+
 ul.timeline > li .timeline-details a {
   margin: 0 0.5rem 0.5rem 0;
 }
+
 ul.timeline > li .timeline-details p {
   line-height: 1.5rem;
 }
@@ -93,18 +102,20 @@ ul.timeline > li .timeline-details p {
   width: 100%;
   min-height: 150px;
   display: inline-block;
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .team-block .team-avatar {
   width: 100px;
   margin-right: 1rem;
 }
+
 .team-block .team-detail {
   flex: 1;
 }
+
 .team-img {
   width: 100%;
   height: auto;
@@ -112,13 +123,13 @@ ul.timeline > li .timeline-details p {
 }
 
 .partner-img {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
   width: 100%;
   min-height: 150px;
   border-radius: 3px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .partners-block {
@@ -126,17 +137,18 @@ ul.timeline > li .timeline-details p {
   border-radius: 3px;
   border: 1px solid #CCC;
 }
-.partners-block:hover {
 
+.partners-block:hover {
   transition: 0.3s;
   border: 1px solid #888;
 }
+
 .partners-block .partner-img {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
-#header {
-  height: 100vh;
-}
+  #header {
+    height: 100vh;
+  }
 }

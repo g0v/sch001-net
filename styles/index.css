@@ -1,11 +1,12 @@
 .main-image {
-	height: calc(100vh - 3em);
+  height: calc(100vh - 3em);
   background-image: url("/assets/img/main2023_2.jpg?v=1");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #0A88F8;
 }
+
 /*.main-image .inner {
   position: absolute;
   top: 0;
@@ -18,23 +19,25 @@
   background-size: cover;
   background-repeat: no-repeat;
 }*/
-
 #delay-info {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: right;
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    background-color: rgba(0,0,0,.5);
-    padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
 }
 
 @keyframes go-create-keyframe {
-  0%   {bottom: 1rem;}
-  50% {bottom: 2rem;}
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 2rem;
+  }
 }
-
 #go-create {
   position: absolute;
   right: 1rem;
@@ -42,7 +45,7 @@
   bottom: 1rem;
   animation-name: go-create-keyframe;
   animation-duration: 2s;
-  animation-timing-function: ease-in-out;  
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   text-decoration: none;
 }
@@ -53,28 +56,33 @@
 }
 
 #about .quote-box {
-	background-image: url("../assets/img/bg_new.jpg");
-	background-position: center bottom;
-	background-size: cover;
+  background-image: url("../assets/img/bg_new.jpg");
+  background-position: center bottom;
+  background-size: cover;
   border-radius: 5px;
   color: white;
   text-align: center;
 }
+
 #about .core {
-  padding: 1.75rem 0 2rem 2rem;  
+  padding: 1.75rem 0 2rem 2rem;
   width: 100%;
 }
+
 .echo .swiper-slide {
   align-self: center;
-  cursor:grab;
+  cursor: grab;
 }
+
 .echo .swiper-button-next::after, .echo .swiper-button-prev::after {
   font-size: 2rem;
   color: var(--color-my-o);
 }
+
 .echo .row {
   padding: 0 5rem;
 }
+
 .echo .avatar {
   object-fit: cover;
   height: 6rem;
@@ -82,7 +90,7 @@
   border-radius: 5px;
 }
 
-#news .news-list p{
+#news .news-list p {
   font-size: 1.2em;
 }
 
@@ -91,7 +99,7 @@
   border: 1px solid #AAA;
   border-radius: 5px;
   height: 100%;
-  background-color: #FFF6;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 #todo .todo-box ul {
@@ -99,40 +107,42 @@
 }
 
 #howto-steps > div {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #howto-steps div p {
-	padding: 0.5rem;
-    text-align-last: center;
+  padding: 0.5rem;
+  text-align-last: center;
 }
 
 .step-img {
-  border: 1px solid rgba(8,33,48,1);
+  border: 1px solid rgb(8, 33, 48);
   margin-bottom: 10px;
   width: 100%;
   min-height: 200px;
   border-radius: 3px;
-	background-position: center center;
-	background-size: cover;
+  background-position: center center;
+  background-size: cover;
 }
 
 .jothon-banner {
   width: 100%;
   min-height: 150px;
   display: inline-block;
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .team-block .team-avatar {
   width: 100px;
   margin-right: 1rem;
 }
+
 .team-block .team-detail {
   flex: 1;
 }
+
 .team-img {
   width: 100%;
   height: auto;
@@ -145,13 +155,13 @@
 }
 
 .partner-img {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
   width: 100%;
   min-height: 150px;
   border-radius: 3px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .partners-block > div {
@@ -161,14 +171,16 @@
   display: flex;
   flex-direction: column;
 }
-.partners-block > div:hover {
 
+.partners-block > div:hover {
   transition: 0.3s;
   border: 1px solid #888;
 }
+
 .partners-block .partner-img {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
+
 .partners-block .source-other-links {
   flex: 1;
   display: flex;
@@ -184,7 +196,7 @@
   .echo .row {
     padding: 0 3rem;
   }
-  .main-image { 
+  .main-image {
     background-size: cover;
   }
 }

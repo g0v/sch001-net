@@ -1,0 +1,100 @@
+@charset "UTF-8";
+:root {
+  --power-color-br: #c36d2d;
+  --power-color-o: #ff914c;
+  --power-color-r: #f24056;
+  --power-color-b: #1c0a57;
+  --power-color-y: #f3c953;
+  --power-color-g: #a4be81;
+}
+
+body {
+  color: var(--bs-light);
+  background-image: unset;
+  background-color: #1c0a57;
+  font-size: 1.1rem;
+}
+
+body:after {
+  content: unset;
+}
+
+.text-dark p,
+.text-dark li {
+  color: var(--bs-dark);
+}
+
+.swiper {
+  --swiper-navigation-color: var(--bs-light);
+}
+
+.text-o {
+  color: var(--power-color-o);
+}
+
+.text-br {
+  color: var(--power-color-br);
+}
+
+.text-b {
+  color: var(--power-color-b);
+}
+
+.text-lg {
+  font-size: 1.25em;
+}
+
+a.btn-o {
+  color: white;
+  background-color: var(--power-color-o);
+  text-decoration: none;
+  transition: filter 0.3s;
+}
+
+a.btn-o:hover {
+  color: white;
+  filter: brightness(1.2);
+}
+
+#feedback {
+  border: 3px solid var(--power-color-o);
+}
+
+#counters .number {
+  width: 5rem;
+  text-align: center;
+  color: var(--power-color-br);
+  font-weight: bold;
+}
+
+#charts .row {
+  background-color: var(--bs-light);
+  border-radius: 3rem;
+}
+#charts .row h3 {
+  color: var(--power-color-br);
+  margin-bottom: 1rem;
+}
+
+#classes .class-box img {
+  object-fit: cover;
+}
+
+#projects .team-box {
+  position: relative;
+}
+#projects .team-box::after {
+  content: "獲選提案";
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  top: 5px;
+  margin-left: -0.25rem;
+  position: absolute;
+  background-color: #f40;
+  border-bottom: 1px solid #c10;
+}
+
+#community .list span {
+  color: var(--power-color-br);
+}

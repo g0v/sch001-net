@@ -5,7 +5,7 @@
 
 body {
   color: #FCF0BA;
-	font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .w-1024 {
@@ -20,11 +20,11 @@ body:after {
   top: 0;
   left: 0;
   right: 0;
-  z-index:-1;
+  z-index: -1;
   height: 100vh;
-	background-image: url("../assets/img/bg_2022_simple.png");
-	background-position: center bottom;
-  background-repeat: no-repeat;  
+  background-image: url("../assets/img/bg_2022_simple.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,10 +32,11 @@ body:after {
 }
 
 p, li {
-	color: #FFF;
-	text-align: justify;
-	text-justify:inter-ideograph;
+  color: #FFF;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
+
 red {
   color: red;
 }
@@ -44,14 +45,19 @@ black {
   color: black;
 }
 
+.bg-gray-300 {
+  background-color: var(--bs-gray-300);
+}
+
 a:link, a:visited {
-	color: var(--color-my-o);
+  color: var(--color-my-o);
   text-decoration: underline;
 }
+
 a:link:hover, a:visited:hover {
-  transition: .3s;
-  filter: opacity(.8);
-} 
+  transition: 0.3s;
+  filter: opacity(0.8);
+}
 
 a.nav-link, a.navbar-brand {
   text-decoration: none;
@@ -61,8 +67,9 @@ a.btn-my {
   color: white;
   background-color: var(--color-my-o);
   text-decoration: none;
-  transition: filter .3s;
+  transition: filter 0.3s;
 }
+
 a.btn-my:hover {
   color: white;
   filter: brightness(1.2);
@@ -70,10 +77,11 @@ a.btn-my:hover {
 
 a.btn-outline-my {
   color: var(--color-my-o);
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: 1.2px solid var(--color-my-o);
   text-decoration: none;
 }
+
 a.btn-outline-my:hover {
   color: #FFF;
   background-color: var(--color-my-o);
@@ -81,7 +89,7 @@ a.btn-outline-my:hover {
 }
 
 .navbar .navbar-brand {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .navbar .btn {
@@ -89,12 +97,13 @@ a.btn-outline-my:hover {
 }
 
 .navbar .navbar-nav a.nav-link {
-	border-radius: 4px;
+  border-radius: 4px;
 }
+
 .navbar .navbar-nav a.nav-link:hover {
   transition: 0.3s;
-	color: #f8f9fa;
-	background-color: #f45336;
+  color: #f8f9fa;
+  background-color: #f45336;
 }
 
 .navbar .dropdown {
@@ -102,21 +111,21 @@ a.btn-outline-my:hover {
 }
 
 .navbar .dropdown .dropdown-item {
-	color: var(--color-my-o);
+  color: var(--color-my-o);
 }
 
 .part-dark {
-  background-color: #111A39BB;
+  background-color: rgba(17, 26, 57, 0.7333333333);
   color: #FCF0BA;
 }
 
 .part-light-gradient {
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.5) 100%);
+  background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.5) 100%);
   color: #555;
 }
 
-.part-light {  
-  background-color: rgba(255,255,255,0.9);
+.part-light {
+  background-color: rgba(255, 255, 255, 0.9);
   color: #555;
 }
 
@@ -130,17 +139,20 @@ a.btn-outline-my:hover {
 
 #footer {
   bottom: 0;
-	padding: 1rem 0;
-	background-color: rgba(0,0,0,0.6);
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
 #footer a {
   font-size: 1rem;
   margin: 0.5rem;
   border-radius: 5px;
 }
+
 #footer a:link, #footer a:visited {
   color: #CCC;
 }
+
 #footer a:link:hover, #footer a:visited:hover {
   color: #DDD;
 }

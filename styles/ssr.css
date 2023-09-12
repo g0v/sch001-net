@@ -1,13 +1,13 @@
 a.text-mark {
-    font-size: 0.9em;
-    opacity: 0.9;
+  font-size: 0.9em;
+  opacity: 0.9;
 }
 
 .teacher-avatar {
-    border-radius: 50%;
-    width: 6rem;
-    height: 6rem;
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
