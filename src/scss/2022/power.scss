@@ -74,11 +74,9 @@ a.btn-o:hover {
 #charts {
   .row {
     background-color: var(--bs-light);
-    border-radius: 3rem;
 
     h3 {
       color: var(--power-color-br);
-      margin-bottom: 1rem;
     }
   }
 }
@@ -112,6 +110,14 @@ a.btn-o:hover {
   .list {
     span {
       color: var(--power-color-br);
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  #charts {
+    .row {
+      border-radius: 3rem;
     }
   }
 }
