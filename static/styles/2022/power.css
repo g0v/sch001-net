@@ -56,6 +56,17 @@ a.btn-o:hover {
   filter: brightness(1.2);
 }
 
+#main-desc #link-box .col-auto:nth-child(1) {
+  border-left: 2px solid var(--color-my-o);
+}
+#main-desc #link-box .col-auto {
+  border-right: 2px solid var(--color-my-o);
+  padding: 0 0.5rem;
+}
+#main-desc #link-box .col-auto a {
+  text-decoration: none;
+}
+
 #feedback {
   border: 3px solid var(--power-color-o);
 }
@@ -74,7 +85,7 @@ a.btn-o:hover {
   color: var(--power-color-br);
 }
 
-#classes .class-box img {
+#classes .class-box img, #classes-teacher .class-box img, #classes-citizen .class-box img {
   object-fit: cover;
 }
 

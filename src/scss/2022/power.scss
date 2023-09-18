@@ -58,6 +58,19 @@ a.btn-o:hover {
   filter: brightness(1.2);
 }
 
+#main-desc #link-box {
+  .col-auto:nth-child(1) {
+    border-left: 2px solid var(--color-my-o);
+  }
+  .col-auto {
+    border-right: 2px solid var(--color-my-o);
+    padding: 0 .5rem;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 #feedback {
   border: 3px solid var(--power-color-o);
 }
@@ -81,7 +94,7 @@ a.btn-o:hover {
   }
 }
 
-#classes {
+#classes, #classes-teacher, #classes-citizen {
   .class-box {
     img {
       object-fit: cover;

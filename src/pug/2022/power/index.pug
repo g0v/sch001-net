@@ -1,5 +1,7 @@
 - var _feedback = power2022['feedback'];
 - var _classes = power2022['classes'];
+- var _classes_teacher = power2022['classes_1'];
+- var _classes_citizen = power2022['classes_2'];
 - var _final_teams = power2022['final_teams'];
 <!DOCTYPE html>
 html(lang="zh-Hant-TW")
@@ -8,7 +10,7 @@ html(lang="zh-Hant-TW")
   link(rel="stylesheet" href="/styles/2022/power.css?version="+timestamp)
 body.w-100
   include ../../nav.pug
-  .container.px-lg-5.py-5
+  #main-desc.container.px-4.px-lg-5.py-5
     .row.align-items-center.g-4
       .col-md-5
         .pe-md-4: img.w-100.h-auto.border-light(src="/assets/img/power2022/首頁封面.jpg", alt="首頁封面", style="border: 3px solid;")
@@ -24,10 +26,21 @@ body.w-100
         .mt-4
           a.btn.btn-o.px-4(href="https://drive.google.com/file/d/1fAVvQlNdlrwA6YlZZcy_fRSWoifVhkd6/view?usp=drive_link", target="_blank") 2022 成果手冊
           a.btn.btn-o.px-4.ms-3(href="https://g0v.hackmd.io/@jothon/sch001pr0jectcourseplan", target="_blank") 我要合作
-        .mt-4.text-o.text-lg.
-          ｜歷年成果｜影響力調查｜學校合作課程｜師培課程<span class="d-none d-md-inline">｜<br></span>
-          ｜數位公民增能課｜專案孵化競賽｜社群連結<span class="d-none d-md-inline">｜<br></span>
-          ｜國際交流｜實習生專訪｜未來展望｜
+        #link-box.mt-4.text-o.text-lg
+          .row.g-2
+            .col-auto: a(href='#counters') 歷年成果
+            .col-auto: a(href='#charts') 影響力調查
+            .col-auto: a(href='#classes') 學校合作課程
+          .row.g-2.mt-1
+            .col-auto: a(href='#classes-teacher') 師培課程
+            .col-auto: a(href='#classes-citizen') 數位公民增能課
+            .col-auto: a(href='#projects') 專案孵化競賽
+          .row.g-2.mt-1
+            .col-auto: a(href='#community') 社群連結
+            .col-auto: a(href='#intl') 國際交流
+            .col-auto: a(href='#intern') 實習生專訪
+          .row.g-2.mt-1
+            .col-auto: a(href='#future') 未來展望
     mixin feedback_slide(val)
       .swiper-slide.px-4.px-md-5
         .row.align-items-center.g-3
@@ -44,7 +57,7 @@ body.w-100
         .swiper-button-next
         .swiper-button-prev
 
-  .bg-light.text-dark: .container.px-lg-5.py-5
+  .bg-light.text-dark: .container.px-4.px-lg-5.py-5
     #counters.row.align-items-center.g-4
       .col-md-2
         .text-center.d-none.d-md-block
@@ -81,7 +94,7 @@ body.w-100
           .title 位參與者
       .col
         img.w-100.rounded-1(src="/assets/img/power2022/歷年成果.jpg", alt="")
-  .bg-gray-300.text-dark: #charts.container.px-lg-5.py-5
+  .bg-gray-300.text-dark: #charts.container.px-4.px-lg-5.py-5
     h2.text-b 影響力調查
     .row.align-items-center.mt-4.p-2.p-md-5.gy-4
       .col-md-7
@@ -119,7 +132,7 @@ body.w-100
       .col-12
         img.w-100(src="/assets/img/power2022/charts/6.png", alt="")
   
-  #classes.container.px-lg-5.py-5
+  #classes.container.px-4.px-lg-5.py-5
     .row.align-items-center.g-4
       .col-md-6
         h2.text-o 學校合作課程
@@ -140,6 +153,44 @@ body.w-100
         .col-md-4.class-box: +classes(val)
   
   hr
+  #classes-teacher.container.px-4.px-lg-5.py-5
+    .row.align-items-center.g-4
+      .col-md-6
+        h2.text-o 師資培育工作坊
+        .d-block.d-md-none: img.mt-3.w-100.rounded-1(src="/assets/img/power2022/師資培育工作坊.jpg", alt="")
+        p.mt-4.mb-0 零時小學校透過整理過往專案實作課程之經驗、模式與教案，形成可複製的教學／學習模式，並將具體教學產出及開源。而在教學經驗擬定後，將積極進行「師資培育」，藉由培育教師影響更多學生。
+      .col-md-6.d-none.d-md-block
+        img.w-100.rounded-1(src="/assets/img/power2022/師資培育工作坊.jpg", alt="")
+    hr.my-5
+    .row.g-4
+      mixin classes_teacher(val)
+        a(href=val['link'], target='_blank'): .ratio.ratio-4x3
+          img.w-100.rounded-1(src="/assets/img/power2022/classes/"+val['img'], alt="")
+        h5.text-center.px-2.mb-0.mt-3 #{val['title']}
+      each val, index in _classes_teacher
+        .col-md-4.class-box: +classes_teacher(val)
+  
+  hr
+  #classes-citizen.container.px-4.px-lg-5.py-5
+    .row.align-items-center.g-4
+      .col-md-6
+        h2.text-o 數位公民增能課
+        .d-block.d-md-none: img.mt-3.w-100.rounded-1(src="/assets/img/power2022/夏日源力增能營_開幕式.jpg", alt="")
+        p.mt-4.mb-0 零時小學校每年邀請 g0v 社群講師以及公民科技單位，協助將公民科技實踐者的經驗轉化為數位公民課程，並整理成線上開放課程影片。課程內容包含專案協作心法與實作、公民科技專案經驗與技術、開源、科技趨勢、公民科技職涯等。並於每年暑假舉辦「夏日線上源力增能營」，邀請學員線上自主共學數位公民課程影片，為了因應科技趨勢、時事，也不定期籌辦各式數位公民增能講座。
+        .mt-4
+          a.btn.btn-o.px-5(href="https://g0v.hackmd.io/@jothon/Sch001courses/", target="_blank") 課程列表
+      .col-md-6.d-none.d-md-block
+        img.w-100.rounded-1(src="/assets/img/power2022/夏日源力增能營_開幕式.jpg", alt="")
+    hr.my-5
+    .row.g-4
+      mixin classes_citizen(val)
+        a(href=val['link'], target='_blank'): .ratio.ratio-4x3
+          img.w-100.rounded-1(src="/assets/img/power2022/classes/"+val['img'], alt="")
+        h5.text-center.px-2.mb-0.mt-3 #{val['title']}
+      each val, index in _classes_citizen
+        .col-md-4.class-box: +classes_citizen(val)
+  
+  hr
 
   mixin team_modal(index, val)
     .modal.fade(tabindex='-1' aria-hidden='true' id='teamModal'+index)
@@ -154,11 +205,11 @@ body.w-100
               .col
                 h3 #{val['title']}
                 .mt-4 #{val['description']}
-                .mt-4
-                  a.btn.btn-o(href=val["proposal_page"], target="_blank") 提案頁面
-                  a.btn.btn-o.ms-2(href=val["project_website"], target="_blank") 專案網站
-                  a.btn.btn-o.ms-2(href=val["open_source_content"], target="_blank") 開源內容
-                  a.btn.btn-o.ms-2(href=val["team_interview"], target="_blank") 採訪文章
+                .mt-4.row.g-2
+                  .col-auto: a.btn.btn-o(href=val["proposal_page"], target="_blank") 提案頁面
+                  .col-auto: a.btn.btn-o(href=val["project_website"], target="_blank") 專案網站
+                  .col-auto: a.btn.btn-o(href=val["open_source_content"], target="_blank") 開源內容
+                  .col-auto: a.btn.btn-o(href=val["team_interview"], target="_blank") 採訪文章
             hr.my-4
             .row
               .col-6
@@ -173,7 +224,7 @@ body.w-100
                 div #{val['open_source_license']}
   each val, index in _final_teams
     +team_modal(index, val)
-  #projects.container.px-lg-5.py-5
+  #projects.container.px-4.px-lg-5.py-5
     .row.align-items-center.g-4
       .col-md-6
         h2.text-o 專案孵化競賽
@@ -196,7 +247,7 @@ body.w-100
         .col-md-4.team-box: +team(index, val)
 
   .bg-gray-300.text-dark
-    #community.container.px-lg-5.py-5
+    #community.container.px-4.px-lg-5.py-5
       .row.justify-content-center.align-items-center.g-4
         .col-md-6
           h2.text-br 社群連結
@@ -210,18 +261,18 @@ body.w-100
         .col-md-5
             img.w-100.rounded-1(src="/assets/img/power2022/社群連結.jpg", alt="")
 
-    #intl.container.px-lg-5.py-5
+    #intl.container.px-4.px-lg-5.py-5
       .row.justify-content-center.align-items-center.g-4
         .col-md-5.order-md-1
           h2.text-br 國際交流
           p.mt-4.mb-0 2023 年六月，零時小學校及 g0v 社群夥伴前往韓國濟州島參加面海松，與日韓的公民科技社群們進行交流。揪松團也提出「Civic Tech Project Handbook」專案，以工作坊形式邀請大家分享各國公民科技社群、專案經驗，其中特別談到公民科技與政府關係的拿捏，揪松團也將彙整所有經驗並於 2023年底發布。
           .mt-4
             a.btn.btn-o.px-4(href="https://g0v.hackmd.io/@chihao/Sk8llvPmh", target="_blank") 2023 面海松
-            a.btn.btn-o.px-4.ms-4(href="https://g0v.hackmd.io/@jothon/ctpbook/", target="_blank") 公民科技手冊
+            a.btn.btn-o.px-4.ms-3(href="https://g0v.hackmd.io/@jothon/ctpbook/", target="_blank") 公民科技手冊
         .col-md-6
             img.w-100.rounded-1(src="/assets/img/power2022/國際交流.jpg", alt="")
 
-    #intern.container.px-lg-5.py-5
+    #intern.container.px-4.px-lg-5.py-5
       .row.justify-content-center.align-items-center.g-4
         .col-md-6
           h2.text-br 實習生專訪
@@ -231,7 +282,7 @@ body.w-100
         .col-md-5
             img.w-100.rounded-1(src="/assets/img/power2022/實習生專訪.jpg", alt="")
 
-  #future.container.px-lg-5.py-5
+  #future.container.px-4.px-lg-5.py-5
     .row.justify-content-center.align-items-center.g-4
       .col-md-6
         h2.text-o 未來展望
@@ -283,21 +334,3 @@ body.w-100
         $(target).text(targetNum);
       }
     }
-
-    $(window).scroll(function(){
-      if($(window).scrollTop() + window.innerHeight > $("#courses").offset().top + $("#courses").height()/2 && $("#courses").data("showed") == false){
-        $("#courses").data("showed", true);
-        let animNumDoms = $(".animatenumbers");
-        animNumDoms.each(function(index){
-          let targetNum = $(this).data("targetnum");
-          $(this).addClass("running");
-          randNums(`.animatenumbers[data-targetnum=${targetNum}]`, targetNum);
-          setTimeout(function() {
-            $(`.animatenumbers[data-targetnum=${targetNum}]`).removeClass("running");
-          }, 1500 + index*500)
-        });
-      }
-    });
-
-    $(window).scroll();
-    $(window).resize();
