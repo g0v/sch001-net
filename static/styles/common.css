@@ -31,7 +31,16 @@ body:after {
   background-size: cover;
 }
 
-p, li {
+p {
+  margin-bottom: 0.75rem;
+}
+
+li:not(.nav-item) {
+  margin-bottom: 0.25rem;
+}
+
+p, li:not(.nav-item) {
+  line-height: 2;
   color: #FFF;
   text-align: justify;
   text-justify: inter-ideograph;
@@ -49,12 +58,11 @@ black {
   background-color: var(--bs-gray-300);
 }
 
-a:link, a:visited {
+a:link:not(.btn, .nav-link, .navbar-brand), a:visited:not(.btn, .nav-link, .navbar-brand) {
   color: var(--color-my-o);
   text-decoration: underline;
 }
-
-a:link:hover, a:visited:hover {
+a:link:not(.btn, .nav-link, .navbar-brand):hover, a:visited:not(.btn, .nav-link, .navbar-brand):hover {
   transition: 0.3s;
   filter: opacity(0.8);
 }

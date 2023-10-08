@@ -1,39 +1,17 @@
-h3::before {
-  content: "";
-  background-color: #FCF0BA;
-  display: inline-block;
-  width: 5px;
-  height: 0.75em;
-  margin: 0 0.3em 0 0;
+body:after {
+  background-image: url("../assets/img/bg_2023_simple.png");
 }
 
-h5 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+#means {
+  color: white;
+  font-size: 1.1rem;
 }
-
-i {
-  color: #AAA;
-  width: 1em;
-  display: block;
-  margin-right: 0.5em;
+#means .text-yellow,
+#means hl,
+#means b {
+  color: #ffff68;
 }
-
-hr {
-  border-top: 3px solid rgba(0, 0, 0, 0.1);
-}
-
-#topics li span {
-  color: #f45336;
-  font-weight: bolder;
-}
-
-#schedule h5 {
-  color: #f45336;
-  font-weight: bolder;
-}
-
-.card {
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.3);
+#means a:link:not(.btn, .nav-link, .navbar-brand),
+#means a:visited:not(.btn, .nav-link, .navbar-brand) {
+  color: #ffff95;
 }

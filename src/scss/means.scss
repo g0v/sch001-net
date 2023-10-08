@@ -1,37 +1,21 @@
-h3::before {
-    content         : "";
-    background-color: #FCF0BA;
-    display         : inline-block;
-    width           : 5px;
-    height          : 0.75em;
-    margin          : 0 0.3em 0 0;
-}
-h5 {
-    margin-top: .75rem;
-    margin-bottom: .75rem;
-}
-i {
-    color       : #AAA;
-    width       : 1em;
-    display     : block;
-    margin-right: 0.5em;
+body:after {
+    background-image: url("../assets/img/bg_2023_simple.png")
 }
 
-hr {
-    border-top: 3px solid rgba(0, 0, 0, 0.1);
-}
+#means {
+    color: white;
+    font-size: 1.1rem;
 
-#topics li span {
-    color: #f45336;
-    font-weight: bolder;
-}
+    .text-yellow,
+    hl,
+    b {
+        color: #ffff68;
+    }
 
-#schedule h5 {
-    color: #f45336;
-    font-weight: bolder;
-}
-
-.card {
-    background-color: rgba(0, 0, 0, 0.05);
-    border          : 1px solid rgba(0, 0, 0, .3);
+    a:link,
+    a:visited {
+        &:not(.btn, .nav-link, .navbar-brand) {
+            color: #ffff95;
+        }
+    }
 }
