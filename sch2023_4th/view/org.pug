@@ -1,0 +1,25 @@
+//- view
+extends /base.pug
+block vars
+  - ctrl.navtop.shown = true
+  - ctrl.navtop.placeholder = true
+  - ctrl.navtop.className="bg-none navbar-light"
+  - ctrl.foot.shown = false
+block body
+  .w-768.rwd.mx-auto.typeset.heading-contrast
+    h3 #{org.name}
+    p #{(org.description || '').substring(0,100)} ...
+    .py-2
+      //-.btn.btn-sm.btn-outline-secondary.mr-2(onclick="lda.general.admin()") 主控台
+      .btn.btn-sm.btn-outline-secondary.mr-2(onclick="lda.general.profile()") 我的案件
+    +nbr(1)
+    h4 最新動態
+    hr
+    each brd in brds
+      .d-flex.align-items-center
+        .flex-grow-1
+          h5.my-0 #{brd.name}
+          p.my-0 #{(brd.description || '').substring(0,32)} ...
+        .ml-2
+          a.btn.btn-outline-secondary.text-nowrap(href=`/brd/${brd.slug}`) 詳情
+      hr
