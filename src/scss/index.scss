@@ -1,6 +1,6 @@
 .main-image {
 	height: calc(100vh - 3em);
-  background-image: url("/assets/img/main_2023_book.jpg?v=1");
+  background-image: url("/assets/img/main_2023_3.jpg?v=1");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
 #go-create {
   position: absolute;
-  left: calc(50% - 10rem);
+  right: 1rem;
   width: 20rem;
   bottom: 1rem;
   animation-name: go-create-keyframe;
@@ -186,5 +186,8 @@
   }
   .main-image { 
     background-size: cover;
+    #go-create {
+      right: calc(50% - 10rem);
+    }
   }
 }
