@@ -27,7 +27,7 @@ block body
       a(href=`/dash/prj/${opt.slug}`)
         - var thumb = opt.thumb ? `url(/dash/org/${brd.org}/prj/${opt.slug}/upload/${opt.thumb})` : 'none';
         .w-100.position-relative
-          .gd-prj-card-thumb.aspect-ratio.ratio-3by2(style=`background-image:${thumb}`)
+          .gd-prj-card-thumb.aspect-ratio.ratio-1by1(style=`background-image:${thumb}`)
           if type
             .gd-prj-card-badge(data-type=type) #{typename}
         .gd-prj-card-name.text-truncate(style="font-weight:500;font-size:1.25em") #{opt.name || '未命名的提案'}
