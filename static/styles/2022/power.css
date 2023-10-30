@@ -56,10 +56,9 @@ a.btn-o:hover {
   filter: brightness(1.2);
 }
 
-#main-desc #link-box .col-auto:nth-child(1) {
-  border-left: 2px solid var(--color-my-o);
-}
 #main-desc #link-box .col-auto {
+  margin-right: -1.5px;
+  border-left: 2px solid var(--color-my-o);
   border-right: 2px solid var(--color-my-o);
   padding: 0 0.5rem;
 }
@@ -102,6 +101,9 @@ a.btn-o:hover {
   position: absolute;
   background-color: #f40;
   border-bottom: 1px solid #c10;
+}
+#projects .team-box.en::after {
+  content: "Chosen";
 }
 
 #community .list span {
