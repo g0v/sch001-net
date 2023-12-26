@@ -22,7 +22,7 @@ body:after {
   right: 0;
   z-index: -1;
   height: 100vh;
-  background-image: url("../assets/img/bg_2022_simple.png");
+  background-image: url("../assets/img/bg_2024AI_simple.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -123,7 +123,7 @@ a.btn-outline-my:hover {
 }
 
 .part-dark {
-  background-color: rgba(17, 26, 57, 0.7333333333);
+  background-color: rgba(38, 64, 64, 0.7333333333);
   color: #FCF0BA;
 }
 
