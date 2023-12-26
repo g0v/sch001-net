@@ -301,6 +301,7 @@ html(lang="zh-Hant-TW")
         if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { // 測試用
           await getNews("/assets/test_news.json");
         } else {
+          await getNews("https://sch001.g0v.tw/dash/api/brd/2024TC-AI-OS-Grant/post");
           await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2023/post");
           await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2023-prjs/post");
           await getNews("https://sch001.g0v.tw/dash/api/brd/sch001-2022/post");
