@@ -15,6 +15,7 @@ block body
   - var ghash = {};
   - (grps || []).map(function(d,i) { ghash[d.key] = d; });
   mixin card(opt)
+    - var tags = opt.tag;
     - var badge = (opt.system && opt.system.badge) || {};
     -
       var type =
@@ -30,6 +31,14 @@ block body
           .gd-prj-card-thumb.aspect-ratio.ratio-1by1(style=`background-image:${thumb}`)
           if type
             .gd-prj-card-badge(data-type=type) #{typename}
+          each tag in (tags || [])
+            .gd-prj-card-badge(data-type="tag",data-name=tag)= tag
+          .position-absolute.d-flex.flex-column(style="gap:.5em;top:.66em;left:-.25em")
+            if type
+              .gd-prj-card-badge.position-static.d-inline-block(data-type=type) #{typename}
+            each tag in (tags || [])
+              .gd-prj-card-badge.position-static.d-inline-block(data-type="tag",data-name=tag)= tag
+
         .gd-prj-card-name.text-truncate(style="font-weight:500;font-size:1.25em") #{opt.name || '未命名的提案'}
       .gd-prj-card-owner.mb-2 By #[a(href=`/dash/user/${opt.owner}`) #{opt.ownername || '未具名'}]
       .gd-prj-card-description.mb-2.flex-grow-1 #{(opt.description || '').substring(0,50)} ...
