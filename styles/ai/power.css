@@ -1,0 +1,54 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.part-dark {
+  background-color: #254344 !important;
+}
+
+.part-medium {
+  background-color: #3a5e5f !important;
+}
+
+.part-light {
+  background-color: #f8f5f3 !important;
+}
+
+.text-color-medium {
+  color: #3a5e5f !important;
+}
+
+.text-color-1 {
+  color: #e7995b !important;
+}
+
+.text-color-2 {
+  color: #ffd270 !important;
+}
+
+.text-color-3 {
+  color: #37978e !important;
+}
+
+.btn-my {
+  background-color: #e7995b !important;
+  color: #fff !important;
+  transition: filter 0.3s ease;
+}
+.btn-my:hover {
+  filter: brightness(1.1);
+}
+
+.btn-outline-my {
+  border-color: #e7685b !important;
+  color: #e7685b !important;
+  transition: 0.3s ease;
+}
+.btn-outline-my:hover {
+  background-color: #e7685b !important;
+  color: #fff !important;
+}
