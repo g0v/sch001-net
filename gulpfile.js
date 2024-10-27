@@ -27,6 +27,7 @@ function buildPug() {
         power2020: require('./data/power2020.json'),
         power2021: require('./data/power2021.json'),
         power2022: require('./data/power2022.json'),
+        power_ai: require('./data/power_ai.json'),
         ssr2021: require('./data/ssr2021.json')
       };
       return result;

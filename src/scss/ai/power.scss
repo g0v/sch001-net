@@ -1,0 +1,63 @@
+$dark-bg-color: #254344;
+$medium-bg-color: #3a5e5f;
+$light-bg-color: #f8f5f3;
+$text-color-1: #e7995b;
+$text-color-2: #ffd270;
+$text-color-3: #37978e;
+$text-color-4: #e7685b;
+
+
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.part-dark {
+  background-color: $dark-bg-color !important;
+}
+
+.part-medium {
+  background-color: $medium-bg-color !important;
+}
+
+.part-light {
+  background-color: $light-bg-color !important;
+}
+
+.text-color-medium {
+  color: $medium-bg-color !important;
+}
+
+.text-color-1 {
+  color: $text-color-1 !important ;
+}
+
+.text-color-2 {
+  color: $text-color-2 !important;
+}
+
+.text-color-3 {
+  color: $text-color-3 !important;
+}
+
+.btn-my {
+  background-color: $text-color-1 !important;
+  color: #fff !important;
+  transition: filter 0.3s ease;
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.btn-outline-my {
+  border-color: $text-color-4 !important;
+  color: $text-color-4 !important;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: $text-color-4 !important;
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,235 @@
+- var _final_data = power_ai['final_data'];
+<!DOCTYPE html>
+html(lang="zh-Hant-TW")
+  include ../../header.pug  
+  link(rel="stylesheet" href="/styles/footer.css?version="+timestamp)
+  link(rel="stylesheet" href="/styles/ai/power.css?version="+timestamp)
+body.w-100
+  .w-100.sticky-top.bg-light: .container.d-flex.px-4.py-3.align-items-center
+    .me-auto
+      a.fs-5.text-dark.text-decoration-none.fw-bold(href="/") Sch001 零時小學校
+    .d-none.d-md-flex.gap-2
+      a.btn.btn-outline-my(href="#result") 計畫成果
+      a.btn.btn-outline-my(href="#team") 團隊介紹
+      a.btn.btn-outline-my(href="#forum") 活動回顧
+
+  .w-100.position-relative.part-dark
+    img.w-100(src="/assets/img/power_ai/ai_grant_main.jpg")
+    .position-absolute(style="bottom: 10%; left: 5%;")
+      a.btn.btn-my(href="https://huggingface.co/aigrant", target="_blank") 開源成果(Hugging Face)
+  .w-100.part-dark
+    .container.px-4.px-lg-5.py-5
+      h2.text-color-1.text-center.mb-3 開放資料，共創未來<br>支持繁體中文 Gen AI 的永續發展
+      h3.text-light.text-center 支持具有高度透明度、重用性與永續性的 Gen AI，專注於整理與蒐集高品質開源資料集，以期能夠為現在與未來繁體中文模型的建構作出更多貢獻。
+  .w-100.part-light#result
+    .container.px-4.px-lg-5.py-5
+      h1.text-color-1.text-center.mb-5 計畫成果      
+      .row.text-center
+        .col-12.col-md-4.mb-4.mb-md-0
+          span.fs-1.text-color-3.fw-bold.me-2.rolling-num(data-target="6") 6
+          span.fs-3 組
+          h4 專案團隊
+          p.text-color-1 （涵蓋多領域，如醫療、法律、教育、台語、立法院、評測資料集）
+        .col-12.col-md-4.mb-4.mb-md-0
+          span.fs-1.text-color-3.fw-bold.rolling-num(data-target="238000") 238,000
+          span.fs-1.text-color-3.fw-bold.me-2 +
+          span.fs-3 筆
+          h4 繁體中文開源資料
+          p.text-color-1 （亦包含釋出之模型等開源資料）
+        .col-12.col-md-4
+          span.fs-1.text-color-3.fw-bold.me-2.rolling-num(data-target="5") 5
+          span.fs-3 場
+          h4 成果交流與推廣活動
+          p.text-color-1 （包含論壇講座、成果交流、成果發表、推廣活動等）
+  .container.px-4.px-lg-5.py-5
+    h1.text-color-1.text-center.mb-5 計畫時間軸
+    img.w-100.mb-5.px-3(src="/assets/img/power_ai/ai_grant_timeline.png")
+    .d-none.d-md-flex.gap-3
+      img.object-fit-cover(src="/assets/img/power_ai/照片2.jpg", width="30%")
+      img.object-fit-cover(src="/assets/img/power_ai/照片1.jpg", width="40%")
+      img.object-fit-cover(src="/assets/img/power_ai/照片3.jpg", width="30%")
+    .d-md-none
+      img.w-100.object-fit-cover(src="/assets/img/power_ai/照片2.jpg")
+      img.w-100.object-fit-cover(src="/assets/img/power_ai/照片1.jpg")
+      img.w-100.object-fit-cover(src="/assets/img/power_ai/照片3.jpg")
+
+  .w-100.part-medium#team
+    each item in _final_data
+      .modal.fade(id="teamModal-" + item.key, tabindex="-1", aria-labelledby="teamModalLabel-" + item.key, aria-hidden="true")
+        .modal-dialog.modal-dialog-centered.modal-lg
+          .modal-content.part-light
+            .modal-header.border-0
+              button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+            .modal-body.p-4
+              .row.mb-4.gy-4.align-items-center
+                .col-md-3
+                  img.w-100(src="/assets/img/power_ai/" + item.avatar)
+                .col-md-9.text-center
+                  h4.text-color-medium.mb-3= item.title
+                  h5.text-color-1.my-4 提案代表人：#{item.host}
+                  .d-flex.gap-3.flex-wrap.justify-content-center
+                    each link in item.links
+                      a.btn.btn-my(href=link.url, target="_blank")= link.title
+              h5.mb-3 專案介紹
+              p.mb-4!= item.description
+              p.mb-4.text-end.text-color-1 License: #{item.license}
+              iframe.w-100(height='250' src='https://www.youtube.com/embed/' + item.yt + '?si=GVUFGmC1pgRqYM0d' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen)
+    .container.px-4.px-lg-5.py-5
+      h1.text-color-2.text-center.mb-5 專案團隊成果
+      .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4
+        each item in _final_data
+          .col: a.text-decoration-none(href="#" + item.key, data-bs-toggle="modal", data-bs-target="#teamModal-" + item.key)
+            .ratio.ratio-1x1: img.object-fit-cover.w-100(src="/assets/img/power_ai/" + item.avatar)
+            h5.text-light.text-center.mt-3= item.title
+  
+  .w-100.part-dark#forum
+    .container.px-4.px-lg-5.py-5
+      h1.text-color-2.text-center.mb-5 GenAI 主題論壇 @COSCUP 2024
+      .row.gx-5.gy-3.align-items-center.mb-5
+        .col-12.col-lg-5
+          iframe.w-100(height='250' src='https://www.youtube.com/embed/wlDf_Iv09ZM?si=GVUFGmC1pgRqYM0d' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen)
+        .col-12.col-lg-7
+          h2.text-light.mb-3 場次一：AI 應用實踐經驗分享
+          .d-flex.flex-column.gap-1.mb-4
+            .text-light 🔸 國立中央大學資工系 蔡宗翰 教授 
+            .text-light 🔸 卓騰語言科技創辦人 王文傑 (Peter Wolf)
+          .d-flex.gap-3
+            a.btn.btn-my(href="https://www.youtube.com/watch?v=wlDf_Iv09ZM" target="_blank") 影片回顧
+            a.btn.btn-my(href="https://g0v.hackmd.io/@jothon/AI_Grant_20240803#%E4%BB%A5%E4%B8%8B%E7%82%BA%E3%80%90%E8%87%AA%E7%94%B1%E5%85%B1%E7%AD%86%E5%8D%80%E3%80%91%E2%9C%8D%EF%B8%8F", target="_blank") 活動共筆
+      .row.gx-5.gy-3.align-items-center.mb-5
+        .col-12.col-lg-5
+          iframe.w-100(height='250' src='https://www.youtube.com/embed/LxM4R-5Fc-s?si=GVUFGmC1pgRqYM0d' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen)
+        .col-12.col-lg-7
+          h2.text-light.mb-3 場次二：GenAI 開源生態系
+          .d-flex.flex-column.gap-1.mb-4
+            .text-light 🔸 台灣人工智慧學校秘書長 侯宜秀 (Isabel Hou) 
+            .text-light 🔸 MediaTek Research 聯發創新基地負責人 許大山 博士 
+            .text-light 🔸 Kuwa AI 應用平台推動者 / 國立高雄大學資工系 吳俊興 副教授
+            .text-light 🔸 Generative AI 社群與李慕約有限公司 李慕約 創辦人
+            .text-light 🔸 零一萬物 01.AI 開源暨開發者關係負責人 林旅強
+          .d-flex.gap-3
+            a.btn.btn-my(href="https://www.youtube.com/watch?v=LxM4R-5Fc-s" target="_blank") 影片回顧
+            a.btn.btn-my(href="https://g0v.hackmd.io/@jothon/AI_Grant_20240803#%E5%A0%B4%E6%AC%A1%E4%BA%8C%EF%BC%9AGenAI-%E9%96%8B%E6%BA%90%E7%94%9F%E6%85%8B%E7%B3%BB", target="_blank") 活動共筆
+      .row.gx-5.gy-3.align-items-center.mb-5
+        .col-12.col-lg-5
+          iframe.w-100(height='250' src='https://www.youtube.com/embed/-SrpSeygsBE?si=GVUFGmC1pgRqYM0d' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen)
+        .col-12.col-lg-7
+          h2.text-light.mb-3 場次三：計畫成果交流
+          .d-flex.flex-column.gap-1.mb-4
+            .text-light 🔸 台灣語言模型競技場 Taiwan Chatbot Arena 
+            .text-light 🔸 LegaL-Mind：智慧法律諮詢系統
+            .text-light 🔸 大量閱讀台灣研究的健康促進小幫手
+            .text-light 🔸 建置定期更新的立委發言觀測儀表板與政治時事資料集
+            .text-light 🔸 台灣AI教學共創實驗室
+            .text-light 🔸 台語自動分詞與詞性標記系統
+          .d-flex.gap-3
+            a.btn.btn-my(href="#", target="_blank") 影片回顧
+            a.btn.btn-my(href="https://g0v.hackmd.io/@jothon/AI_Grant_20240803#%E5%A0%B4%E6%AC%A1%E4%B8%89%EF%BC%9A%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-AI-%E9%96%8B%E6%BA%90%E5%AF%A6%E8%B8%90%E8%A8%88%E7%95%AB%E6%88%90%E6%9E%9C%E4%BA%A4%E6%B5%81", target="_blank") 活動共筆
+  
+  .container.px-4.px-lg-5.py-5
+    h1.text-color-3.text-center.mb-4 訂閱電子報
+    iframe(src="https://aigrant.substack.com/embed" width="100%" height="320" frameborder="0" scrolling="no")
+
+  .w-100.part-light
+    .container.px-4.px-lg-5.py-5.text-center
+      h1.text-color-3.text-center.mb-5 贊助單位
+      img.img-fluid(src="/assets/img/power_ai/brighter_capital.png" style="max-width: 300px;")
+      h1.text-color-3.text-center.my-5 執行與合辦單位
+      .bg-light.rounded-5.p-4.p-md-5
+        .row.align-items-center
+          .col-12.col-md-4.mb-4.mb-md-0
+            img.img-fluid(src="/assets/img/jothon-bg-light.svg" style="max-width: 150px;")
+          .col-12.col-md-8.text-start
+            h2 g0v 零時政府揪松團
+            p.my-4 g0v 零時政府揪松團（g0v jothon）是主辦 g0v 百人大黑客松與基礎松的工作小組（task force），2012 年底開始舉辦雙月大松，2014 年後正式取名為「揪松團」，並於 2016 年開始招募正職員工，重啟社群基礎建設計畫，希望在大黑客松之餘，讓線上與線下的跨界協作更為順暢。
+            .d-flex.flex-wrap.gap-3
+              a.btn.btn-my(href="mailto:g0v-jothon@googlegroups.com") 聯絡我們
+              a.btn.btn-my(href="https://jothon.g0v.tw/" target="_blank") 揪松網
+              a.btn.btn-my(href="http://bit.ly/jothon-LINE" target="_blank") LINE 社群
+              a.btn.btn-my(href="https://ocf.neticrm.tw/civicrm/contribute/transact?reset=1&id=30" target="_blank") 贊助我們
+      .row.justify-content-center.align-items-center.my-5.g-4
+        .col-12.col-md-4
+          img.img-fluid.px-4(src="/assets/img/power_ai/開拓LOGO.png" style="max-width: 300px;")
+        .col-12.col-md-4
+          img.img-fluid.px-4(src="/assets/img/power_ai/國家寶藏.png" style="max-width: 300px;")
+        .col-12.col-md-4
+          img.img-fluid.px-4(src="/assets/img/power_ai/OCF.png" style="max-width: 300px;")
+
+
+  .d-none
+    include ../../footer.pug
+  script.
+    function runNums(target, targetNum, curNum = 0) {
+      $(target).text(Math.floor(curNum));
+      if (targetNum > curNum) {
+        curNum++;
+        if(targetNum - curNum > 20)
+          curNum+=20;
+        setTimeout(function() {
+          runNums(target, targetNum, curNum)
+        }, 40);
+      }
+    }
+
+    function randNums(target, targetNum) {
+      if($(target).hasClass("running")) {
+        if(targetNum < 10) {
+          $(target).text(Math.floor(9*Math.random()));
+        }
+        else if(targetNum < 100) {
+          $(target).text(Math.floor(10 + 89*Math.random()));
+        }
+        else {
+          $(target).text(Math.floor(100 + 899*Math.random()));
+        }
+        setTimeout(function() {
+          randNums(target, targetNum)
+        }, 10);
+      } else {
+        $(target).text(targetNum);
+      }
+    }
+
+    // Add this new script at the end
+    document.addEventListener('DOMContentLoaded', function() {
+      // Function to open modal based on hash
+      function openModalFromHash() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+          const modal = document.getElementById('teamModal-' + hash);
+          if (modal) {
+            const bsModal = new bootstrap.Modal(modal);
+            bsModal.show();
+          }
+        }
+      }
+
+      // Open modal on page load if hash is present
+      openModalFromHash();
+
+      // Listen for hash changes
+      window.addEventListener('hashchange', openModalFromHash);
+
+      // Update hash when modal is shown
+      document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('show.bs.modal', function () {
+          const key = this.id.replace('teamModal-', '');
+          history.pushState(null, null, '#' + key);
+        });
+      });
+
+      // Remove hash when modal is hidden
+      document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('hidden.bs.modal', function () {
+          history.pushState('', document.title, window.location.pathname + window.location.search);
+        });
+      });
+
+      /*document.querySelectorAll('.rolling-num').forEach(num => {
+        $(num).addClass("running");
+        randNums(num, parseInt(num.dataset.target));
+        setTimeout(function() {
+          $(num).removeClass("running");
+        }, 1500)
+      });*/
+    });
