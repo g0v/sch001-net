@@ -58,14 +58,6 @@
     </url>
     <url>
         
-        <loc>https://sch001.g0v.tw/2021/power/</loc>
-    
-        
-        <lastmod>2024-10-27T03:20:30.177Z</lastmod>
-    
-    </url>
-    <url>
-        
         <loc>https://sch001.g0v.tw/2020/means/</loc>
     
         
@@ -75,6 +67,14 @@
     <url>
         
         <loc>https://sch001.g0v.tw/2020/power/</loc>
+    
+        
+        <lastmod>2024-10-27T03:20:30.177Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sch001.g0v.tw/2021/power/</loc>
     
         
         <lastmod>2024-10-27T03:20:30.177Z</lastmod>
@@ -106,15 +106,15 @@
     </url>
     <url>
         
-        <loc>https://sch001.g0v.tw/ai/power/</loc>
+        <loc>https://sch001.g0v.tw/2024ai/power/</loc>
     
         
-        <lastmod>2024-10-27T14:20:50.800Z</lastmod>
+        <lastmod>2024-10-31T08:02:31.825Z</lastmod>
     
     </url>
     <url>
         
-        <loc>https://sch001.g0v.tw/2021/power/en/</loc>
+        <loc>https://sch001.g0v.tw/2020/power/en/</loc>
     
         
         <lastmod>2024-10-27T03:20:30.177Z</lastmod>
@@ -122,7 +122,7 @@
     </url>
     <url>
         
-        <loc>https://sch001.g0v.tw/2020/power/en/</loc>
+        <loc>https://sch001.g0v.tw/2021/power/en/</loc>
     
         
         <lastmod>2024-10-27T03:20:30.177Z</lastmod>
